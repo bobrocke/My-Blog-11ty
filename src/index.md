@@ -2,4 +2,4 @@
 layout: main.liquid
 ---
 
-# This will be parsed into an h1 tag
+<p class="text-sm">This will be parsed into an h1 tag</p>
