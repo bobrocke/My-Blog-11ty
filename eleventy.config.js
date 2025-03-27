@@ -9,10 +9,7 @@ import postcss from "postcss";
 import tailwindcss from "@tailwindcss/postcss";
 
 export default async function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/assets", {
-    // Don't copy the tailwind-input.css file into _site
-    filter: ["!**/*tailwind-input.css"],
-  });
+  eleventyConfig.addPassthroughCopy("src/assets");
 
   // Create a collection of all the posts in src/posts.
   eleventyConfig.addCollection("posts", function (collectionApi) {
@@ -24,13 +21,12 @@ export default async function (eleventyConfig) {
   // And the markdown filter plugin
   eleventyConfig.addPlugin(eleventyPluginMarkdown);
 
-  // Make 11ty reload after Tailwind runs
   eleventyConfig.addWatchTarget("./_site/assets/css/tailwind.css");
 
   // Compile tailwind before eleventy processes the files
   // https://www.humankode.com/eleventy/how-to-set-up-tailwind-4-with-eleventy-3/
   eleventyConfig.on("eleventy.before", async () => {
-    const tailwindInputPath = path.resolve("./src/assets/css/tailwind.css");
+    const tailwindInputPath = path.resolve("./tailwind-input.css");
 
     const tailwindOutputPath = "./_site/assets/css/tailwind.css";
 
