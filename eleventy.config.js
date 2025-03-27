@@ -24,7 +24,11 @@ export default async function (eleventyConfig) {
   // And the markdown filter plugin
   eleventyConfig.addPlugin(eleventyPluginMarkdown);
 
-  //compile tailwind before eleventy processes the files
+  // Make 11ty reload after Tailwind runs
+  eleventyConfig.addWatchTarget("./_site/assets/css/tailwind.css");
+
+  // Compile tailwind before eleventy processes the files
+  // https://www.humankode.com/eleventy/how-to-set-up-tailwind-4-with-eleventy-3/
   eleventyConfig.on("eleventy.before", async () => {
     const tailwindInputPath = path.resolve("./src/assets/css/tailwind.css");
 
@@ -46,13 +50,13 @@ export default async function (eleventyConfig) {
   });
 
   const processor = postcss([
-    //compile tailwind
+    // Compile tailwind
     tailwindcss(),
 
-    //minify tailwind css
-    cssnano({
-      preset: "default",
-    }),
+    // Minify tailwind css
+    //cssnano({
+    //  preset: "default",
+    //}),
   ]);
 }
 
