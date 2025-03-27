@@ -11,7 +11,8 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@jgarber/eleventy-plugin-markdown": "^2.0.1"
+    "@jgarber/eleventy-plugin-markdown": "^2.0.1",
+    "@vizuaalog/bulmajs": "^0.12.2"
   },
   "type": "module"
 }
