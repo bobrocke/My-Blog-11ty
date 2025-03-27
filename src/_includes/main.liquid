@@ -2,4 +2,15 @@
 layout: base.liquid
 ---
 
-{{ content }}
+
+
+<div class="min-h-screen flex flex-col">
+
+
+<main class="flex-1 w-10/12 max-w-screen-sm md:max-w-screen-md mx-auto">
+{% render "nav.liquid"%}
+  {{ content }}
+{% render "footer.liquid"%}
+</main>
+
+</div>
