@@ -9,7 +9,7 @@ export default async function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/blog/*.md").reverse();
   });
 
-  // Add 11ty's syntax highlighter'
+  // Add 11ty plugins
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(eleventyPluginMarkdown);
 }
