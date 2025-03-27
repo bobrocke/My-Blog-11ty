@@ -1,0 +1,17 @@
+{
+  "name": "base-11ty",
+  "version": "1.0.0",
+  "description": "A bare starting point for an 11ty site",
+  "author": "Bob Rockefeller",
+  "license": "MIT",
+  "scripts": {
+    "newpost": "node ./scripts/newPost.cjs",
+    "serve": "yarn exec eleventy -- --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@jgarber/eleventy-plugin-markdown": "^2.0.1"
+  },
+  "type": "module"
+}
