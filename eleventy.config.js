@@ -1,5 +1,6 @@
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
+import twig from "@factorial/eleventy-plugin-twig";
 
 import fs from "fs";
 import path from "path";
@@ -7,6 +8,18 @@ import path from "path";
 import cssnano from "cssnano";
 import postcss from "postcss";
 import tailwindcss from "@tailwindcss/postcss";
+
+const twigOptions = {
+  twig: {
+    namespaces: {},
+  },
+  images: {},
+  dir: {
+    input: "src",
+    output: "_site",
+    watch: "src/**/**/*.{css,js,twig}",
+  },
+};
 
 export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
@@ -20,6 +33,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   // And the markdownify filter plugin
   eleventyConfig.addPlugin(eleventyPluginMarkdown);
+
+  eleventyConfig.addPlugin(twig, twigOptions);
 
   // Rebuild the site if Tailwind has updated its CSS after 11ty has run
   eleventyConfig.addWatchTarget("./_site/assets/css/tailwind.css");
