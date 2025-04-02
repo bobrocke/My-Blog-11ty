@@ -11,23 +11,23 @@ import tailwindcss from "@tailwindcss/postcss";
 export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
 
-  // Create a collection of all the posts in src/posts.
+  // Create a collection of all the posts in src/blog.
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md").reverse();
   });
 
   // Add 11ty's syntax highlighter'
   eleventyConfig.addPlugin(syntaxHighlight);
-  // And the markdown filter plugin
+  // And the markdownify filter plugin
   eleventyConfig.addPlugin(eleventyPluginMarkdown);
 
+  // Rebuild the site if Tailwind has updated its CSS after 11ty has run
   eleventyConfig.addWatchTarget("./_site/assets/css/tailwind.css");
 
-  // Compile tailwind before eleventy processes the files
+  // Compile tailwind before 11ty processes the files
   // https://www.humankode.com/eleventy/how-to-set-up-tailwind-4-with-eleventy-3/
   eleventyConfig.on("eleventy.before", async () => {
     const tailwindInputPath = path.resolve("./tailwind-input.css");
-
     const tailwindOutputPath = "./_site/assets/css/tailwind.css";
 
     const cssContent = fs.readFileSync(tailwindInputPath, "utf8");
