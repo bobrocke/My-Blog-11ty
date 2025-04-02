@@ -1,11 +1,11 @@
 ---
-layout: base.liquid
+layout: layouts/base.liquid
 ---
 
 <div class="min-h-screen flex flex-col">
   <main class="flex-1 w-10/12 max-w-screen-sm md:max-w-screen-md mx-auto">
-    {% render "nav.liquid" %}
+    {% render "partials/header.liquid" %}
       {{ content }}
-    {% render "footer.liquid" %}
+    {% render "partials/footer.liquid" %}
   </main>
 </div>

@@ -1,5 +1,5 @@
 ---
-layout: main.liquid
+layout: layouts/main.liquid
 ---
 
-<p class="text-base mb-5">This will be parsed into an h1 tag</p>
+<p class="text-xs text-red-600 mb-5">This will be parsed into an h1 tag</p>
