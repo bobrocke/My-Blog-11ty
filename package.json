@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "newpost": "node ./scripts/newPost.cjs",
-    "serve": "yarn exec eleventy -- --serve"
+    "serve": "yarn exec eleventy -- --serve",
+    "clean": "rm -rf _site"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
