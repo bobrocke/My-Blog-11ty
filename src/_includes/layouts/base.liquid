@@ -21,7 +21,7 @@
     <main class="flex-1 w-10/12 max-w-screen-sm md:max-w-screen-md mx-auto">
       {% render "partials/header.liquid" %}
         {{ content }}
-      {% render "partials/footer.liquid" %}
+      {% render "partials/footer.liquid", url: page.url %}
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
