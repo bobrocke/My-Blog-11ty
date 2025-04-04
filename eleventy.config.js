@@ -25,32 +25,14 @@ export default async function (eleventyConfig) {
     excerpt_separator: "<!-- more -->",
   });
 
-  /** Converts the given date string to ISO8601 format. */
-  const toISOString = (dateString) => new Date(dateString).toISOString();
-  eleventyConfig.addFilter("toISOString", toISOString);
-
-  /** https://simpixelated.com/custom-date-formatting-in-eleventy-js/ */
+  // https://www.eladnarra.com/blog/2024/dates-and-eleventy/
   eleventyConfig.addFilter("postDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    let thisDateTime = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(
+      "America/New_York",
+      { keepLocalTime: true },
+    );
+    return thisDateTime.toLocaleString(DateTime.DATE_MED);
   });
-
-  // eleventyConfig.addDateParsing(function (dateValue) {
-  //   let localDate;
-  //   if (dateValue instanceof Date) {
-  //     localDate = DateTime.fromJSDate(dateValue, { zone: "utc" }).setZone(
-  //       TIME_ZONE,
-  //       { keepLocalTime: true },
-  //     );
-  //   } else if (typeof dateValue === "string") {
-  //     localDate = DateTime.fromISO(dateValue, { zone: TIME_ZONE });
-  //   }
-  //   if (localDate?.isValid === false) {
-  //     throw new Error(
-  //       `Invalid \`date\` value (${dateValue}) is invalid for ${this.page.inputPath}: ${localDate.invalidReason}`,
-  //     );
-  //   }
-  //   return localDate;
-  // });
 
   // Add 11ty's syntax highlighter'
   eleventyConfig.addPlugin(syntaxHighlight);

@@ -1,7 +1,7 @@
 <div class="text-xs md:text-sm mb-3 mt-1">
   <i class="fa-regular fa-calendar"></i>&nbsp;&nbsp; {{ post.date | postDate }}
 
-  {% assign modifiedDate = post.data.modified %}
+  {% assign modifiedDate = post.data.lastmod %}
   {% if modifiedDate %}
     &nbsp;&nbsp;Last Edited: {{ modifiedDate | postDate }}
   {% endif %}
