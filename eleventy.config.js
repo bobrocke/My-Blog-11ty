@@ -10,7 +10,6 @@ import tailwindcss from "@tailwindcss/postcss";
 
 // For eleventyConfig.addDateParsing below
 import { DateTime } from "luxon";
-const TIME_ZONE = "America/New_York";
 
 export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
@@ -23,6 +22,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: "<!-- more -->",
+    excerpt_alias: "post_excerpt",
   });
 
   // https://www.eladnarra.com/blog/2024/dates-and-eleventy/
@@ -80,4 +80,6 @@ export const config = {
     output: "_site",
   },
   templateFormats: ["html", "liquid", "md"],
+
+  markdownTemplateEngine: false,
 };

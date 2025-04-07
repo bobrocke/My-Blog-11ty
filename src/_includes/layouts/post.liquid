@@ -1,5 +1,33 @@
 ---
 layout: layouts/base.liquid
 ---
-Here it is.
-{{ content }}
+<div class="max-w-none mx-6 mt-8 prose prose-base md:prose-lg prose-a:hover:text-red-600 prose-img:my-1">
+  <h1 class="font-serif text-2xl md:text-4xl mb-2">{{ title }}</h1>
+  {{ content }}
+</div>
+
+{% render "partials/post_meta.liquid", post: page %}
+
+<div class="flex justify-center mt-8">
+  <ul class="inline-flex -space-x-px text-base h-10 list-none">
+    {% if pagination.href.previous %}
+      <li>
+        <a href="{{ pagination.href.previous }}" aria-label="Previous" class="w-30 flex items-center justify-center px-4 h-10 ms-0 leading-tight text-black bg-white border border-gray-300 rounded-s-lg hover:bg-red-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button"><span aria-hidden="true">Previous</span></a>
+      </li>
+    {% else %}
+      <li>
+        <a aria-label="Previous" class="w-30 flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-400 bg-white border border-gray-300 rounded-s-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button"><span aria-hidden="true">Previous</span></a>
+      </li>
+    {% endif %}
+
+    {% if pagination.href.next %}
+      <li>
+        <a href="{{ pagination.href.next }}" aria-label="Next" class="w-30 flex items-center justify-center px-4 h-10 leading-tight text-black bg-white border border-gray-300 rounded-e-lg hover:bg-red-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button"><span aria-hidden="true">Next</span></a>
+      </li>
+    {% else %}
+      <li>
+        <a aria-label="Next" class="w-30 flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 rounded-e-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button"><span aria-hidden="true">Next</span></a>
+      </li>
+    {% endif %}
+  </ul>
+</div>

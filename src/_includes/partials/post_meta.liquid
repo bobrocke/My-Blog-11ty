@@ -5,4 +5,8 @@
   {% if modifiedDate %}
     &nbsp;&nbsp;Last Edited: {{ modifiedDate | postDate }}
   {% endif %}
+
+  {% for category in post.data.categories %}
+    &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-folder"></i>&nbsp;{{ category }}
+  {% endfor %}
 </div>
