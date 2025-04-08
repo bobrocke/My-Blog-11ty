@@ -1,12 +1,15 @@
 ---
 layout: layouts/base.liquid
+pagination:
+  data: collections.posts
+  size: 1
+  alias: posts
 ---
 <div class="max-w-none mx-6 mt-8 prose prose-base md:prose-lg prose-a:hover:text-red-600 prose-img:my-1">
   <h1 class="font-serif text-2xl md:text-4xl mb-2">{{ title }}</h1>
+  {% render "partials/post_meta.liquid", post: page %}
   {{ content }}
 </div>
-
-{% render "partials/post_meta.liquid", post: page %}
 
 <div class="flex justify-center mt-8">
   <ul class="inline-flex -space-x-px text-base h-10 list-none">

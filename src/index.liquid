@@ -11,6 +11,8 @@ layout: layouts/base.liquid
   <div class="mx-6 mt-8">
     <h2><a class="font-serif text-xl hover:text-red-600 md:text-4xl" href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
+    {% render "partials/post_meta.liquid", post: post %}
+
     <div class="max-w-none prose-sm md:lead-1 prose prose-a:hover:text-red-600 md:prose-lg">
       {{ post.data.post_excerpt | markdown }}
     </div>

@@ -9,7 +9,7 @@ tags: [Masonite]
 
 Ruby on Rails, Laravel, and Django are the heavy-hitters in full-stack web development frameworks written in Ruby, PHP, and Python, respectively. Rails has been around since 2004, Laravel since 2011, and Django since 2005. I recently came across Masonite (released in 2018) and had to look into it.
 
-<!--more-->
+<!-- more -->
 
 The Masonite framework is built with Python and so is a Django competitor. It borrows heavily from Laravel and I think that's a good thing, overall. Django is a bit of an odd duck in its code organization -- it expects there to be multiple small apps contained within one project. Masonite is an MVC framework (Django is MTV - Model, Template, View), and has a code scaffolding feature Django does not.
 
