@@ -16,7 +16,28 @@ export default async function (eleventyConfig) {
 
   // Create a collection of all the posts in src/blog.
   eleventyConfig.addCollection("posts", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/blog/*.md").reverse();
+    let posts = collectionApi.getFilteredByGlob("src/blog/*.md").reverse();
+    const numberOfPosts = posts.length;
+    posts.forEach((element, index) => {
+      console.log(": ", posts[index].data.page.url);
+      element.data["numberOfPosts"] = numberOfPosts;
+      element.data["currentPostIndex"] = index;
+
+      // you'll need to deal with the first and last posts
+      // otherwise you'll get an error
+      if (index === 0) {
+        element.data["previousPost"] = null;
+      } else {
+        element.data["previousPost"] = posts[index - 1].page.url;
+      }
+
+      if (index === numberOfPosts - 1) {
+        element.data["nextPost"] = null;
+      } else {
+        element.data["nextPost"] = posts[index + 1].page.url;
+      }
+    });
+    return posts;
   });
 
   eleventyConfig.setFrontMatterParsingOptions({
