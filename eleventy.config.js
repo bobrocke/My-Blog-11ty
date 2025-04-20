@@ -14,7 +14,7 @@ import { DateTime } from "luxon";
 export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
 
-  // Create a collection of all the posts in src/blog.
+  // Create a collection of all the posts in src/blog and add previousPost and nextPost data.
   eleventyConfig.addCollection("posts", function (collectionApi) {
     let posts = collectionApi.getFilteredByGlob("src/blog/*.md").reverse();
     const numberOfPosts = posts.length;
@@ -40,9 +40,25 @@ export default async function (eleventyConfig) {
     return posts;
   });
 
+  // Create a collection of all the different categories found on blog pages
+  eleventyConfig.addCollection("categoryList", function (collection) {
+    let catSet = {};
+    collection.getAll().forEach((item) => {
+      if (!item.data.categories) return;
+
+      item.data.categories.forEach((cat) => {
+        if (!catSet[cat]) {
+          catSet[cat] = [];
+        }
+        catSet[cat].push(item);
+      });
+    });
+    return catSet;
+  });
+
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
-    excerpt_separator: "<!-- more -->",
+    excerpt_separator: "<!--more-->",
     excerpt_alias: "post_excerpt",
   });
 

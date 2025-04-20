@@ -10,7 +10,7 @@ tags: [WordPress]
 
 I've done it before and it looks like I'm doing it again. It's the right time to move my [personal blog](https://www.bobrockefeller.com) from WordPress to a static site for simplicity, portability, and performance.
 
-<!-- more -->
+<!--more-->
 
 My objectives for this move are:
 
