@@ -26,8 +26,8 @@ pagination:
 <ul>
   {% for post in collections.posts-%}
   <li>
-    {% set thisCategory = categoryData[post.data.category].name %}
-    {% set thisCategorySlug = categoryData[post.data.category].slug %}
+    {% assign thisCategory = categoryData[post.data.category].name %}
+    {% assign thisCategorySlug = categoryData[post.data.category].slug %}
     <a href="{{ post.url }}" class="">{{ post.data.title }}</a> in <a href="{{thisCategorySlug}}" class="">{{thisCategory}}</a>
   </li>
   {% endfor %}
