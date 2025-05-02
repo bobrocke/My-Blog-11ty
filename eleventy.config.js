@@ -184,6 +184,7 @@ export default async function (eleventyConfig) {
     );
     return thisDateTime.toLocaleString(DateTime.DATE_MED);
   });
+  eleventyConfig.getFilter("slugify");
 
   // Add 11ty's syntax highlighter'
   eleventyConfig.addPlugin(syntaxHighlight);
