@@ -10,8 +10,7 @@ import cssnano from "cssnano";
 import postcss from "postcss";
 import tailwindcss from "@tailwindcss/postcss";
 
-// For eleventyConfig.addDateParsing below
-import { DateTime } from "luxon";
+import filters from "./_config/filters.js"
 
 export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
@@ -176,15 +175,9 @@ export default async function (eleventyConfig) {
     excerpt_alias: "post_excerpt",
   });
 
-  // https://www.eladnarra.com/blog/2024/dates-and-eleventy/
-  eleventyConfig.addFilter("postDate", (dateObj) => {
-    let thisDateTime = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(
-      "America/New_York",
-      { keepLocalTime: true },
-    );
-    return thisDateTime.toLocaleString(DateTime.DATE_MED);
-  });
-  eleventyConfig.getFilter("slugify");
+  // Add the filters
+  eleventyConfig.addPlugin(filters);
+
 
   // Add 11ty's syntax highlighter'
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -222,9 +215,9 @@ export default async function (eleventyConfig) {
     tailwindcss(),
 
     // Minify tailwind css
-    //cssnano({
-    //  preset: "default",
-    //}),
+    cssnano({
+     preset: "default",
+    }),
   ]);
 }
 
