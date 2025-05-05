@@ -23,7 +23,7 @@ class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300
 
 A 'problem' in many situations is that most of a page's content is generated from a markdown file. The site author won't have access to the HTML in order to style it in the normal way. Both Bulma and TailwindCSS have classes, `content` for Bulma and `prose` for TailwindCSS, that can be applied to a `<div>` enclosing the markdown output. Something like:
 
-```HTML
+```html
 <div class="prose">
   {{ markdown }}
 </div>
