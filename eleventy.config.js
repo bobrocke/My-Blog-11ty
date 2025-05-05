@@ -2,7 +2,6 @@ import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
 import logToConsole from "eleventy-plugin-console-plus";
 
-
 import fs from "fs";
 import path from "path";
 
@@ -25,9 +24,8 @@ export default async function (eleventyConfig) {
   // Add the filters
   eleventyConfig.addPlugin(filters);
 
-  // Add the categories
+  // Add the collections
   eleventyConfig.addPlugin(collections);  
-
 
   // Add 11ty's syntax highlighter'
   eleventyConfig.addPlugin(syntaxHighlight);
