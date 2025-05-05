@@ -1,34 +1,17 @@
 ---
 layout: layouts/base.liquid
-title: "Categories"
-pagination:
-  data: collections.categoryList
-  size: 8
-  alias: category
+title: Categories
 ---
 
 <h1>{{title}}</h1>
 
-{# All entries in the collection have the same categoryData so grabbing the first one. #}
-{%- set categoryData = collections.postsByCategories[0].categoryData -%}
-{# {% console categoryData, "categoryData" %} #}
-
+{% assign categoryData = collections.postsByCategories[0].categoryData %}
+{{ collections.postsByCategories[0] | log }}
 <h2>Paginated posts by Category</h2>
 <ul>
-  {% for name, category in categoryData %}
+  {% for category in categoryData %}
   <li class="underline" >
     <a href="{{ category.slug }}" class="">{{ category.name }} ({{category.numberOfPosts}} posts)</a>
-  </li>
-  {% endfor %}
-</ul>
-
-<h2>All the posts</h2>
-<ul>
-  {% for post in collections.posts-%}
-  <li>
-    {% assign thisCategory = categoryData[post.data.category].name %}
-    {% assign thisCategorySlug = categoryData[post.data.category].slug %}
-    <a href="{{ post.url }}" class="">{{ post.data.title }}</a> in <a href="{{thisCategorySlug}}" class="">{{thisCategory}}</a>
   </li>
   {% endfor %}
 </ul>

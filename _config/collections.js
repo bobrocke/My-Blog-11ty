@@ -1,4 +1,5 @@
 import { chunk } from "lodash-es";
+import slugify from "slugify";
 
 export default function (eleventyConfig) {
   // Create a collection of all the posts in src/blog and add previousPost and nextPost data.
@@ -29,28 +30,28 @@ export default function (eleventyConfig) {
 
   // A collection of the posts by each category with pagination.
   eleventyConfig.addCollection("postsByCategories", (collectionAPI) => {
-    let numberOfresultsPerPage = 2; // number of results per page
+    let numberOfresultsPerPage = 8; // number of results per page
     let slugPrefix = "/posts"; // Optional: the prefix for the slug could be /articles or /blog etc
 
-    // some variables to help with creating our data strucutre
+    // some variables to help with creating our data structure
     let postsByCategories = [];
     let pageDataForAllCategories = [];
     let categoryData = {};
 
     // Create a collection of posts.
-    const posts = collectionAPI.getFilteredByGlob("./src/posts/**/*.md");
+    const posts = collectionAPI.getFilteredByGlob("./src/blog/*.md");
 
     // Create a Set to store unique categories.
     let uniqueCategories = new Set();
 
     // Loop through each post and add its category to the Set.
     posts.forEach((post) => {
-      post.data?.category ? uniqueCategories.add(post.data.category) : null;
+      post.data?.categories ? uniqueCategories.add(post.data.categories) : null;
     });
 
-    // we now have a set of unique categories
+    // We now have a set of uniquie categories
     // console.log(`There are ${posts.length} posts in ${uniqueCategories.size} unique categories`)
-    // console.log(uniqueCategories)
+    console.log(uniqueCategories)
 
     // Loop through each unique category
     uniqueCategories.forEach((categoryName) => {
@@ -91,7 +92,7 @@ export default function (eleventyConfig) {
       }
 
       // create a data structure to hold the category data
-      // makes the UI easier to create.
+      // makes the UI eaier to create.
       categoryData[categoryName] = {
         name: categoryName,
         slug: slug,
@@ -114,7 +115,7 @@ export default function (eleventyConfig) {
 
     //  console.log(`[ pageDataForAllCategories ]:`, pageDataForAllCategories);
 
-    // Create a single flattened array of all the posts and pagination data.
+    // Create a single flattened aray of all the posts and pagination data.
     // This allows us to use pagination in our templates.
     pageDataForAllCategories.forEach((category) => {
       let thisCategoriesPageSlugs = category.pageSlugs;
@@ -126,11 +127,11 @@ export default function (eleventyConfig) {
         let isLastPage =
           category.numberOfPagesOfPosts == index + 1 ? true : false;
 
-        // construct the pagination object and add to blogPostsByCategories Array
+        // contruct the pagination object and add to blogPostsByCategories Array
         postsByCategories.push({
           categoryName: category.categoryName,
 
-          // constructs the pageslugs needed for pagination controls.
+          // contructs the pageslugs needed for pagination controls.
           pageSlugs: {
             all: thisCategoriesPageSlugs,
             next: thisCategoriesPageSlugs[index + 1] || null,
