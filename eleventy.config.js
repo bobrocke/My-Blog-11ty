@@ -182,8 +182,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(logToConsole, { depth: 2 });
 
   eleventyConfig.addPlugin(tailwindcss, {
-    input: "assets/css/tailwind.css",
-    output: "assets/css/tailwind.css"
+    input: "tailwind-input.css",
+    output: "assets/css/tailwind.css",
   });
 }
 
