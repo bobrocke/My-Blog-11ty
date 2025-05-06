@@ -6,7 +6,7 @@ title: Categories
 <h1>{{title}}</h1>
 
 {% assign categoryData = collections.postsByCategories[0].categoryData %}
-{{ collections.postsByCategories[0] | log }}
+
 <h2>Paginated posts by Category</h2>
 <ul>
   {% for category in categoryData %}

@@ -45,13 +45,22 @@ export default function (eleventyConfig) {
     let uniqueCategories = new Set();
 
     // Loop through each post and add its category to the Set.
-    posts.forEach((post) => {
-      post.data?.categories ? uniqueCategories.add(post.data.categories) : null;
+    posts.forEach(post => {
+      if (post.data.categories) {
+        if (Array.isArray(post.data.categories)) {
+          post.data.categories.forEach(category => {
+            uniqueCategories.add(category.toString());
+          })
+        }
+        else {
+            uniqueCategories.add(post.data.categories);
+        }
+      }
     });
 
     // We now have a set of uniquie categories
     // console.log(`There are ${posts.length} posts in ${uniqueCategories.size} unique categories`)
-    console.log(uniqueCategories)
+    // console.log(uniqueCategories)
 
     // Loop through each unique category
     uniqueCategories.forEach((categoryName) => {
@@ -60,11 +69,23 @@ export default function (eleventyConfig) {
       // loop through all the posts.
       // If the current post category matches the current category
       // then add it to the allPostinCurrentCategory array.
-      posts.forEach((post) => {
-        if (post.data.category == categoryName) {
-          allPostinCurrentCategory.push(post);
-        }
+      posts.forEach(post => {
+        if (post.data.categories) {
+          if (Array.isArray(post.data.categories)) {
+            post.data.categories.forEach(category => {
+              if (category.toString() == categoryName) {
+                allPostinCurrentCategory.push(post);
+              }
+            });
+          }
+          } else {
+            if (post.data.category == categoryName) {
+              allPostinCurrentCategory.push(post);
+            }
+          }
       });
+
+      console.log(categoryName);
 
       // chunk up all the posts in this category by the number of results/page we want.
       // We need to do this so we can create pagination.
@@ -92,7 +113,7 @@ export default function (eleventyConfig) {
       }
 
       // create a data structure to hold the category data
-      // makes the UI eaier to create.
+      // makes the UI easier to create.
       categoryData[categoryName] = {
         name: categoryName,
         slug: slug,
@@ -124,13 +145,11 @@ export default function (eleventyConfig) {
       category.chunkedPosts.forEach((posts, index) => {
         // set some properties useful in the UI
         let isFirstPage = index == 0 ? true : false;
-        let isLastPage =
-          category.numberOfPagesOfPosts == index + 1 ? true : false;
+        let isLastPage = category.numberOfPagesOfPosts == index + 1 ? true : false;
 
         // contruct the pagination object and add to blogPostsByCategories Array
         postsByCategories.push({
           categoryName: category.categoryName,
-
           // contructs the pageslugs needed for pagination controls.
           pageSlugs: {
             all: thisCategoriesPageSlugs,
@@ -153,6 +172,7 @@ export default function (eleventyConfig) {
         });
       });
     });
+
     return postsByCategories;
   });
 }
