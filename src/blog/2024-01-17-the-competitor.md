@@ -11,6 +11,8 @@ tags: [M&P Competitor]
 
 The M&P Competitor, that is. After IPSC Nationals in November of 2023, I got started practicing and shooting matches with the M&P Competitor. That has worked out pretty well.
 
+<!--more-->
+
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
   <img src="/images/wp-content/uploads/2023/10/Competitor-L.png" alt="The M&P Competitor" >
   <figcaption>The M&P Competitor</figcaption>

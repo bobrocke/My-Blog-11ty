@@ -11,6 +11,8 @@ tags: []
 
 For my [USPSA](https://uspsa.org), [PCSL](https://www.pcsleague.com), and [IDPA](https://www.idpa.com) practical shooting competitions I've been a huge fan and consistent user of the 1911 platform. But 8 or 10 rounds in a magazine gets old, especially in USPSA. So 2024 is going to be my year to shoot a high-capacity pistol. And there sure are a lot to choose from!
 
+<!--more-->
+
 I don't want to mess with .40 S&W – I did that once and it's just a pain. About the only place that caliber is used anymore is in USPSA competition; police departments switched to 9mm years ago. Because of that, finding range brass is almost impossible, so brass must be purchased, adding to the expense. And then there's the extra kick of recoil. Forget it. I'll shoot 9mm, like the rest of the world.
 
 <figure style="float: left; width: 50%; margin: 1em 1em 1em 0em">

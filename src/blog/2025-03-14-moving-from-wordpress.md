@@ -2,13 +2,13 @@
 title: Moving From WordPress
 date: 2025-03-14 19:28:41
 lastmod: 2025-03-19 19:28:41
-summary: I've done it before and it looks like I'm doing it again. It just may be the right time to move my [personal blog](https://www.bobrockefeller.com) from WordPress to a static site for simplicity, portability, and performance.
+summary: I've done it before and it looks like I'm doing it again. It's the right time to move my [personal blog](https://www.bobrockefeller.com) from WordPress to a static site for simplicity, security, portability, and performance.
 image:
 categories: [Web Development]
 tags: [WordPress]
 ---
 
-I've done it before and it looks like I'm doing it again. It's the right time to move my [personal blog](https://www.bobrockefeller.com) from WordPress to a static site for simplicity, portability, and performance.
+I've done it before and it looks like I'm doing it again. It's the right time to move my [personal blog](https://www.bobrockefeller.com) from WordPress to a static site for simplicity, security, portability, and performance.
 
 <!--more-->
 
@@ -19,18 +19,18 @@ My objectives for this move are:
 - Security -- a static site doesn't have near as many vectors for hacking as a WordPress site.
 - Convenience -- I can write articles in Markdown nearly anywhere and not have to be logged into WordPress
 
-With that in mind, I knew I wanted to use a static site generator and write in simple Markdown. So I needed to pick the right static site generator for this project. My experiments, so far, have been with Jekyll and I like it. But the fact is that Jekyll is a mature system with few updates and many themes that are no longer maintained, or are being maintained only for backward compatibility with the old GitHub Pages workflow.
+With that in mind, I knew I wanted to use a static site generator and write in simple Markdown. So I needed to pick the right static site generator for this project. My experiments, so far, have been with Jekyll and I like it. But the fact is that Jekyll is a mature system with few updates and many themes that are no longer maintained, or are being maintained only for backward compatibility with the old GitHub Pages workflow. And then there's the pain of managing gems, their breaking changes, and their dependencies.
 
-This lack of updates to the system and the themes lead me to consider a few other popular static site generators.
+I needed to consider some other options.
 
 [Next.js](https://nextjs.org/)
-: Written in JavaScript and using React templates, this one is very popular. But it's more of an application framework that can create static sites.
+: Written in JavaScript and using React templates, this one is very popular. But it's more of an application framework that can also create static sites.
 
 [Hugo](https://gohugo.io/)
 : Written in Go and using Go templates, Hugo is coming on like gangbusters. One of its claims to fame is the speed with which it can generate a site. It's also a 'batteries included' system that needs few add-ons.
 
 [Eleventy/11ty](https://www.11ty.dev/)
-: This one is written in JavaScript but is a descendant of Jekyll rather than an application framework. It's not much out of the box, but it's super extensible so you can add what you need. It also can use a number of different template languages, if you have a preference..
+: This one is written in JavaScript but is a descendant of Jekyll rather than an application framework. It's not much out of the box, but it's super extensible so you can add what you need. It can even use a number of different template languages, if you have a preference.
 
 [Nuxt](https://nuxt.com/)
 : Another JavaScript application framework, but using Vue templates.
@@ -47,7 +47,7 @@ Markdown is an inherently portable document format. But plain old Markdown doesn
 
 And that's the problem. The Markdown alternatives don't all agree on syntax and features. Floating an image to the right with a caption requires using either shortcodes, plug-ins, or specialized syntax. None of that is very portable.
 
-The good news for flexibility in image display is that all the Markdown alternatives respect plain HTML. That let's me copy and paste a block of code (or, even better, create a snippet) and just edit the image path, to float left or right, and to add a caption. Maybe change the width.
+The good news for flexibility in image display is that all the Markdown alternatives respect plain HTML. So I can copy and paste a block of code (or, even better, create a snippet) and just edit the image path, the float direction, and add a caption. Maybe change the width.
 
 ```html
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
