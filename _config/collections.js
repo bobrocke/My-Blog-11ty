@@ -28,6 +28,31 @@ export default function (eleventyConfig) {
     return posts;
   });
 
+  eleventyConfig.addCollection("tils", function (collectionApi) {
+    let tils = collectionApi.getFilteredByGlob("src/tils/*.md").reverse();
+    const numberOfPosts = tils.length;
+    tils.forEach((element, index) => {
+      console.log(": ", tils[index].data.page.url);
+      element.data["numberOfPosts"] = numberOfPosts;
+      element.data["currentPostIndex"] = index;
+
+      // you'll need to deal with the first and last posts
+      // otherwise you'll get an error
+      if (index === 0) {
+        element.data["previousPost"] = null;
+      } else {
+        element.data["previousPost"] = tils[index - 1].page.url;
+      }
+
+      if (index === numberOfPosts - 1) {
+        element.data["nextPost"] = null;
+      } else {
+        element.data["nextPost"] = tils[index + 1].page.url;
+      }
+    });
+    return tils;
+  });
+
   // A collection of the posts by each category with pagination.
   eleventyConfig.addCollection("postsByCategories", (collectionAPI) => {
     let numberOfresultsPerPage = 8; // number of results per page
