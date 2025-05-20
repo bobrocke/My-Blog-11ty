@@ -10,8 +10,8 @@ title: Categories
 <h2>Paginated posts by Category</h2>
 <ul>
   {% for category in categoryData %}
-  <li class="underline" >
-    <a href="{{ category.slug }}" class="">{{ category.name }} ({{category.numberOfPosts}} posts)</a>
+  <li>
+    <a href="{{ category[1].slug }}" class="">{{ category[1].name }}</a>
   </li>
   {% endfor %}
 </ul>
