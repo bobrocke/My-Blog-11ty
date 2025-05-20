@@ -5,7 +5,7 @@ lastmod:
 summary:
 description:
 draft: true
-categories: [Web Development]
+categories: [Web Development, CSS]
 tags: [CSS]
 ---
 

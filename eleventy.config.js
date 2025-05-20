@@ -27,7 +27,7 @@ export default async function (eleventyConfig) {
   // And the markdownify filter plugin
   eleventyConfig.addPlugin(eleventyPluginMarkdown);
   // Add console plus plugin
-  eleventyConfig.addPlugin(logToConsole, { depth: 2 });
+  eleventyConfig.addPlugin(logToConsole, { depth: 4 });
 
   eleventyConfig.addPlugin(tailwindcss, {
     input: "tailwind-input.css",
