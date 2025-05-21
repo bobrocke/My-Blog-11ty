@@ -7,6 +7,7 @@
   "scripts": {
     "newpost": "node ./scripts/newPost.cjs",
     "serve": "yarn exec eleventy -- --serve",
+    "build": "yarn exec eleventy",
     "clean": "rm -rf _site"
   },
   "dependencies": {
