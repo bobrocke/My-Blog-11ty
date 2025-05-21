@@ -11,13 +11,13 @@ tags: [1911s]
 
 The makers of 1911s all fall into three general categories – _production_ , _semi-custom_ , and _custom_. What is it that differentiates these groups and why should you care? The most significant and obvious difference is the cost.
 
-<img src="/images/wp-content/uploads/2023/10/image.jpeg" alt="Springfield Armory Logo" style="float: left; width: 30%; margin: 1em 1em 1em 0em">
+<img src="/assets/images/wp-content/uploads/2023/10/image.jpeg" alt="Springfield Armory Logo" style="float: left; width: 30%; margin: 1em 1em 1em 0em">
 
 _Production_ guns are from the names you may know the best in the industry – companies such as [Colt](https://www.colt.com/), [Springfield Armory](https://www.springfield-armory.com/), [Rock Island Armory](https://armscor.com/firearms/ria/), and [Dan Wesson](https://danwessonfirearms.com/). There is variation in quality across the companies, but the common thread is that each model comes with the features it comes with. If you don’t like that group of features, you’ll have to choose a different model or different manufacturer. You’ll be able to buy a new production gun for around $500 up to maybe $1,500.
 
 Because production guns are less expensive (at least by 1911 standards), their quality levels are from pretty basic to pretty good. Rock Island Armory will give you a serviceable weapon, but the fit and finish will be serviceable as well. At the top of the heap in production guns (in my opinion) is Dan Wesson; they are very well made and can approach the quality of some of the semi-custom makers.
 
-<img src="/images/wp-content/uploads/2023/10/image-1.jpeg" alt="Wilson Combat Logo" style="float: right; width: 30%; margin: 1em 0em 1em 1em">
+<img src="/assets/images/wp-content/uploads/2023/10/image-1.jpeg" alt="Wilson Combat Logo" style="float: right; width: 30%; margin: 1em 0em 1em 1em">
 
 For those who want to choose from among a set of options for their 1911, _semi-custom_ pistols would be the way to go. These makers sell a number of standard models but offer many options to customize the gun to your taste and needs. You might want ambidextrous thumb safeties in place of single-sided, or chain link pattern front and rear strap treatments rather than checkered. Perhaps a flush cut and reverse crowned barrel looks good to you.
 
@@ -27,12 +27,12 @@ Speaking of cost, the semi-custom 1911s are a big step up in price from the prod
 
 Delivery is another difference in semi-custom 1911s. You may find a production model at your local gun shop, or they can get it for you in a couple of days. A semi-custom pistol is likely to take three months, or more, to be made. But if they are building a pistol “for you” with the options you’ve chosen, they will start from the frame and slide and build it to your order.
 
-<img src="/images/wp-content/uploads/2023/10/image.png" alt="Stan Chen Customs Logo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
+<img src="/assets/images/wp-content/uploads/2023/10/image.png" alt="Stan Chen Customs Logo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
 
 At the top of the cost, quality, delivery, and options list are full _custom_ makers. These are typically individual premier pistolsmiths with a vast knowledge of 1911s and an artistic flare to complement their world-class skills. They will create the 1911 that you want, exactly like you want it, and offer suggestions for options. Any feature is available that is not patented by another builder.
 
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
-  <a href="/images/wp-content/uploads/2023/10/image-2.jpeg"><img src="/images/wp-content/uploads/2023/10/image-2.jpeg" alt="A Harrison Custom" ></a>
+  <a href="/assets/images/wp-content/uploads/2023/10/image-2.jpeg"><img src="/assets/images/wp-content/uploads/2023/10/image-2.jpeg" alt="A Harrison Custom" ></a>
   <figcaption>A Harrison Custom</figcaption>
 </figure>
 

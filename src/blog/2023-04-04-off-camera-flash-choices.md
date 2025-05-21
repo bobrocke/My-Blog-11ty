@@ -11,13 +11,13 @@ tags: [Godox, Profoto]
 
 For several years my battery-powered off-camera flash ‘system’ has been a mishmash of equipment. I had a matched pair of [optically-triggered speedlights](https://asia.olympus-imaging.com/product/dslr/accessory/flash/fl600r.html) with TTL, a fully manual [radio-triggered strobe](https://www.gavtrain.com/?os_reviews=flashpoint-streaklight-360ws) (discontinued), and a fully manual [radio-triggered speedlight](https://fstoppers.com/reviews/reviews-neewer-tt850-li-ion-flash-8182) (discontinued). My light modifiers were another collection of umbrellas and softboxes from various manufacturers assembled with little rhyme or reason. Clearly, I didn’t have much of a ‘system’ and it certainly wasn’t very modern. It was time for something better.
 
-<img src="/images/wp-content/uploads/2023/10/profoto-logo.png" alt="Profoto Logo" style="float: right; width: 50%; margin: 1em 0em 1em 1em">
+<img src="/assets/images/wp-content/uploads/2023/10/profoto-logo.png" alt="Profoto Logo" style="float: right; width: 50%; margin: 1em 0em 1em 1em">
 
 Having a real system of lights in multiple sizes using the same light modifiers and the same radio controllers/receivers was important to me. Pretty quickly my choices for strobes came down to [Godox](https://godox.com/) (variously branded as Godox, Neewer, FlashPoint, and perhaps others) and [Profoto](https://profoto.com/us/products/lights). There are many other brands, but they don’t have the breadth of options these two do.
 
 Godox and Profoto offer strobes for on-camera, off-camera (battery-powered), and studio (AC-powered) use. Their strobes all have built-in radio receivers and both offer radio transmitters for the big camera brands (Nikon, Canon, FujiFilm, and Sony). Godox also supports Olympus/Panasonic and Profoto supports Leica. Each provides for the option of both **T** hrough **t** he **L** ens (TTL) exposure control and **H** igh **S** peed **S** ync (HHS).
 
-<img src="/images/wp-content/uploads/2023/10/image-2.png" alt="Godox Logo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
+<img src="/assets/images/wp-content/uploads/2023/10/image-2.png" alt="Godox Logo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
 
 Of course, the _huge_ difference between Godox and Profoto is the price; Profoto can be 3 times the price of Godox. Some of that price difference is certainly in the name and reputation. Godox is a Chinese company manufacturing in China; Profoto, a Swedish company, has its equipment made worldwide. But some of that price difference is also in the design, quality, and support. Godox does not currently have _any_ support in the US beyond their major sales outlets (primarily [B&H](https://www.bhphotovideo.com/) for Godox and [Adorama](https://www.adorama.com/) for FlashPoint). Their 100ADpro and V1 are widely reported as having a green color cast which suggests their designs may be lacking. Profoto is solid, well-supported, professional-grade equipment in every sense.
 

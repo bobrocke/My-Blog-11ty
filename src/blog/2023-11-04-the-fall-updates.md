@@ -16,7 +16,7 @@ I wrote about my [approach to selecting a post-processing software](2023-09-06-s
 <!--more-->
 
 <figure style="display: block; margin: 1em auto 1em auto">
-  <img src="/images/wp-content/uploads/2023/10/AI-masking-screen-shot.png" alt="Capture One's AI Masking" >
+  <img src="/assets/images/wp-content/uploads/2023/10/AI-masking-screen-shot.png" alt="Capture One's AI Masking" >
   <figcaption>Capture One's AI Masking</figcaption>
 </figure>
 
@@ -25,7 +25,7 @@ Capture One no longer uses a year in the name. The latest update is now simply C
 PhotoLab Elite 7 was the biggest disappointment to me. It brought an improved interface for local adjustments, but little else of interest. And certainly not anything to displace Lightroom Classic in my toolchain. This is too bad because DxO's raw conversions and noise reduction are still best-in-class. I was hoping for at least additional Digital Asset Management (DAM) features.
 
 <figure style="float: left; width: 30%; margin: 1em 1em 1em 0em">
-  <img src="/images/wp-content/uploads/2023/10/Point-Color-Screen-Shot.png" alt="Lightroom's Point Color" >
+  <img src="/assets/images/wp-content/uploads/2023/10/Point-Color-Screen-Shot.png" alt="Lightroom's Point Color" >
   <figcaption>Lightrooms's Point Color</figcaption>
 </figure>
 
@@ -38,6 +38,6 @@ With upgrades in hand, I can spend some time with each program in an attempt to 
 Unless there is a big change in my opinion over the next few days of experiments, this is how I see the rankings of these four programs:
 
 <figure style="display: block; margin: 1em auto 1em auto">
-  <img src="/images/wp-content/uploads/2023/11/scores-updated.jpeg" alt="Updated Decision Matrix" >
+  <img src="/assets/images/wp-content/uploads/2023/11/scores-updated.jpeg" alt="Updated Decision Matrix" >
   <figcaption>Updated Decision Matrix</figcaption>
 </figure>

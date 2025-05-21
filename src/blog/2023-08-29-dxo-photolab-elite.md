@@ -11,7 +11,7 @@ tags: [PhotoLab]
 
 I’ve been working with PhotoLab Elite 6 over the last couple of weeks re-editing some of my better images from the last few years. The more I work with it, the more I see the missing pieces yet to be included to make it a real competitor to Lightroom Classic, Capture One, and Photo RAW. And that’s making me question if PhotoLab Elite can really replace Lightroom Classic for me.
 
-<img src="/images/wp-content/uploads/2023/10/image-1.png" alt="DxO PhotoLab Logo" style="float: right; width: 30%; margin: 1em 0em 1em 1em">
+<img src="/assets/images/wp-content/uploads/2023/10/image-1.png" alt="DxO PhotoLab Logo" style="float: right; width: 30%; margin: 1em 0em 1em 1em">
 
 In [my last post](2023-08-18-from-lightroom-to-photolab-elite.md), I described some things I missed about Lightroom Classic and how I was working around them in PhotoLab Elite. I’m still doing that. But some of those shortcomings are getting harder and harder to tolerate:
 

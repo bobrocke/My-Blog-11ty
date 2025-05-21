@@ -14,7 +14,7 @@ The M&P Competitor, that is. After IPSC Nationals in November of 2023, I got sta
 <!--more-->
 
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
-  <img src="/images/wp-content/uploads/2023/10/Competitor-L.png" alt="The M&P Competitor" >
+  <img src="/assets/images/wp-content/uploads/2023/10/Competitor-L.png" alt="The M&P Competitor" >
   <figcaption>The M&P Competitor</figcaption>
 </figure>
 
@@ -25,7 +25,7 @@ But more importantly, magazines with a [Henning Group](https://www.henningshop.c
 I have a couple of disappointments with the pistol. The first is the trigger. For a gun designed primarily for competition, its trigger is only slightly better than all other M&P triggers. A replacement trigger group is a near necessity and the [APEX Tactical](https://www.apextactical.com) flat-faced forward set [upgrade kit](https://www.apextactical.com/flat-faced-forward-set-trigger-kit-for-metal-frame-m-p-m2-0) fits the bill perfectly for me. With the right combination of included springs I have the trigger at about 1 ½# to the wall and then a crisp break with 1 ½# more pounds applied.
 
 <figure style="float: left; width: 50%; margin: 1em 1em 1em 0em">
-  <img src="/images/wp-content/uploads/2023/10/Competitor-R.png" alt="The M&P Competitor" >
+  <img src="/assets/images/wp-content/uploads/2023/10/Competitor-R.png" alt="The M&P Competitor" >
   <figcaption>The M&P Competitor</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ The sights are more of a problem. I like a 0.100\" wide front sight with a fiber
 I compromised with a 0.125\" front sight, but it's not the competition sight picture I really want. No one makes an alternative competition rear sight and even Smith & Wesson sells nothing other than the stock 0.154\" width. Who at S&W thought those very wide sights were what competition shooters want today?
 
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
-  <img src="/images/wp-content/uploads/2024/05/13199-OnWhite-3Q-Left__43554.png" alt="The M&P Competitor" >
+  <img src="/assets/images/wp-content/uploads/2024/05/13199-OnWhite-3Q-Left__43554.png" alt="The M&P Competitor" >
   <figcaption>The M&P Competitor</figcaption>
 </figure>
 

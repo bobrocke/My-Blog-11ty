@@ -16,13 +16,13 @@ Over time, the coding requirements for a Grav site became a problem because I wo
 All this switching around reminds me that I should recommend maintaining your domain name registration somewhere separate from your hosting. I use [Hover](https://www.hover.com) and have for years. Whenever I've changed hosts, or even email providers, it's been easy to go back to Hover and redirect my domain to wherever I need it to go.
 
 <figure style="display: block; margin: 1em auto 1em auto; width: 50%; float: right">
-  <img src="/images/wp-content/uploads/2023/10/block-editing.jpeg" alt="The Block Editor" >
+  <img src="/assets/images/wp-content/uploads/2023/10/block-editing.jpeg" alt="The Block Editor" >
   <figcaption>The Block Editor</figcaption>
 </figure>
 
 All that to say WordPress has [changed a great deal](https://wordpress.org/about/history/) since my last experience and for the better. Its security holes seem to have been made smaller and I'm not getting any SPAM, yet, for the test site I have running. And better still is the [full site editing](https://fullsiteediting.com) features of the current versions. This block editing approach works a lot like Squarespace and makes it easy to modify a site's theme and create new content.
 
-<img src="/images/wp-content/uploads/2023/10/WordPress-logotype-wmark.png" alt="WordPress Logo" style="float: left; width: 25%; margin: 1em 1em 1em 0em">
+<img src="/assets/images/wp-content/uploads/2023/10/WordPress-logotype-wmark.png" alt="WordPress Logo" style="float: left; width: 25%; margin: 1em 1em 1em 0em">
 
 The wide range of themes available for WordPress is another thing in its favor. Many are excellent and some are even free. I'm experimenting with the free [Mesa WPEX](https://wordpress.org/themes/mesa-wpex/) theme using my own customizations and I like it. The design is clean and attractive with the ability to fine tune it to my needs and preferences.
 

@@ -16,7 +16,7 @@ For my [USPSA](https://uspsa.org), [PCSL](https://www.pcsleague.com), and [IDPA]
 I don't want to mess with .40 S&W – I did that once and it's just a pain. About the only place that caliber is used anymore is in USPSA competition; police departments switched to 9mm years ago. Because of that, finding range brass is almost impossible, so brass must be purchased, adding to the expense. And then there's the extra kick of recoil. Forget it. I'll shoot 9mm, like the rest of the world.
 
 <figure style="float: left; width: 50%; margin: 1em 1em 1em 0em">
-  <a href="/images/wp-content/uploads/2023/10/rival-s.png"><img src="/images/wp-content/uploads/2023/10/rival-s.png" alt="Canik Rival-S"></a>
+  <a href="/assets/images/wp-content/uploads/2023/10/rival-s.png"><img src="/assets/images/wp-content/uploads/2023/10/rival-s.png" alt="Canik Rival-S"></a>
   <figcaption>Canik Rival-S</figcaption>
 </figure>
 
@@ -25,7 +25,7 @@ So what gun? I'd like a relatively inexpensive gun that has plenty of third-part
 There are still teething problems with the Rival-S (mostly about magazine over-insertion and out-of-battery failures) that Canik is bound to work out, but I didn't want to have to somehow manage those problems in the meantime. Plus, the grip felt sort of boxy to me and I didn't like it all that much. As for the aesthetics, I find the Rival-S butt ugly. Who told them to make all those cuts in the slide!?
 
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
-  <a href="/images/wp-content/uploads/2023/10/Competitor-L.png"><img src="/images/wp-content/uploads/2023/10/Competitor-L.png" alt="M&P Competitor" ></a>
+  <a href="/assets/images/wp-content/uploads/2023/10/Competitor-L.png"><img src="/assets/images/wp-content/uploads/2023/10/Competitor-L.png" alt="M&P Competitor" ></a>
   <figcaption>M&P Competitor</figcaption>
 </figure>
 

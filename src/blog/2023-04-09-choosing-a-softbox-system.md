@@ -11,7 +11,7 @@ tags: []
 
 After I settled on the right off-camera lighting system for me (Profoto), I needed to choose between [Glow](https://www.adorama.com/brands/Glow) (an Adorama brand) and [Profoto](https://profoto.com/us/products/light-shaping-tools) (specifically their OCF line) for a system of softboxes. As with the lighting system choice, I wanted a range of light modifiers that worked together and in the same general way so as not to complicate things by having to remember how each of a variety of different softboxes was assembled and adjusted.
 
-<img src="/images/wp-content/uploads/2023/10/profoto-logo.png" alt="Profoto Logo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
+<img src="/assets/images/wp-content/uploads/2023/10/profoto-logo.png" alt="Profoto Logo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
 
 Once again, I was faced with the large cost difference between Glow and Profoto equipment. Profoto is undeniably good equipment, but the price can be hard to swallow. In the end, I went with the old adage ‘buy once, cry once’ and will be using the Profoto OCF system.
 

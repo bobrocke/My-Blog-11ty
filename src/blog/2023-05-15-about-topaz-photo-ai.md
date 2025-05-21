@@ -12,7 +12,7 @@ tags: [Topaz Photo AI]
 In my last post, I ended by saying I had chosen Lightroom Classic and [Topaz Photo AI](https://www.topazlabs.com/topaz-photo-ai) for my post-production needs. It didn’t take long for me to realize that Lightroom Classic’s new [Denoise feature](https://helpx.adobe.com/lightroom-classic/help/whats-new/2023-3.html) made that a bad choice, for me.
 
 <figure style="float: left; width: 30%; margin: 1em 1em 1em 0em">
-  <a href="/images/wp-content/uploads/2023/10/image-4.jpeg"><img src="/images/wp-content/uploads/2023/10/image-4.jpeg" alt="Lightroom’s Denoise Panel"></a>
+  <a href="/assets/images/wp-content/uploads/2023/10/image-4.jpeg"><img src="/assets/images/wp-content/uploads/2023/10/image-4.jpeg" alt="Lightroom’s Denoise Panel"></a>
   <figcaption>Lightroom’s Denoise Panel</figcaption>
 </figure>
 
