@@ -1,12 +1,12 @@
 <div class="text-xs md:text-sm mb-3 mt-1">
-  <i class="fa-regular fa-calendar"></i>&nbsp;&nbsp; {{ post.date | postDate }}
+  {{ post.date | postDate }}
 
   {% assign modifiedDate = post.data.lastmod %}
   {% if modifiedDate %}
-    &nbsp;&nbsp;Last Edited: {{ modifiedDate | postDate }}
+    &nbsp;&nbsp;Updated: {{ modifiedDate | postDate }}
   {% endif %}
 
   {% for category in post.data.categories %}
-    &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-folder"></i>&nbsp;{{ category }}
+    &nbsp;&nbsp;&nbsp;&nbsp;About: {{ category }}
   {% endfor %}
 </div>

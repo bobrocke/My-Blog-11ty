@@ -1,13 +1,12 @@
 ---
 layout: layouts/base.liquid
-title: Categories
+title: Topics
 ---
 
 <h1>{{title}}</h1>
 
 {% assign categoryData = collections.postsByCategories[0].categoryData %}
 
-<h2>Paginated posts by Category</h2>
 <ul>
   {% for category in categoryData %}
   <li>
