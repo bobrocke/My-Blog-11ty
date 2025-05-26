@@ -16,8 +16,6 @@ layout: layouts/base.liquid
     <div class="max-w-none prose-sm md:lead-1 prose prose-a:hover:text-red-600 md:prose-lg">
       {{ post.data.post_excerpt | markdown }}
     </div>
-
-    <a class="float-right text-sm md:text-base hover:text-red-600" href="{{ post.url }}">Read more...</a>
   </div>
 {% endfor %}
 
