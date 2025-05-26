@@ -1,7 +1,7 @@
 ---
 title: Settling on TailwindCSS
 date: 2025-04-30
-lastmod:
+lastmod: 2025-05-10
 summary:
 description:
 draft:
@@ -24,7 +24,11 @@ and you get a reasonably styled button. It's easy to be sure all your buttons lo
 TailwindCSS goes at it from another direction. You could style a button like this:
 
 ```html
-<button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"> Button </button>
+<button
+  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+>
+  Button
+</button>
 ```
 
 Behind Bulma's simple `button` class is plenty of CSS scattered in many places across `bulma.css`. Here's a few examples:
@@ -33,7 +37,11 @@ Behind Bulma's simple `button` class is plenty of CSS scattered in many places a
 margin: 0;
 font-family: var(--bulma-body-family);
 cursor: pointer;
-outline-color: hsl(var(--bulma-focus-h), var(--bulma-focus-s), var(--bulma-focus-l));
+outline-color: hsl(
+  var(--bulma-focus-h),
+  var(--bulma-focus-s),
+  var(--bulma-focus-l)
+);
 outline-offset: var(--bulma-focus-offset);
 outline-style: var(--bulma-focus-style);
 outline-width: var(--bulma-focus-width);
@@ -60,9 +68,7 @@ Another thing to know is that TailwindCSS works very differently than traditiona
 A problem in many situations is that some of a page's content is generated from a markdown file. The site author won't have access to the HTML in order to style it in the normal way. Both Bulma and TailwindCSS have classes, `content` for Bulma and `prose` for TailwindCSS, that can be applied to a `<div>` enclosing the markdown output. Something like:
 
 ```html
-<div class="prose">
-  {{ markdown }}
-</div>
+<div class="prose">{{ markdown }}</div>
 ```
 
 Those classes can then style the HTML tags output by the markdown renderer. TailwindCSS allows its `prose` class to be extended in a number of ways, for example `prose-a:text-blue-600` and `prose-a:hover:text-red-600`. Similar modifiers work for Bulma, but there are fewer available. If you need more, it's back to CSS overrides or new classes.

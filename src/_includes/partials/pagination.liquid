@@ -3,7 +3,6 @@
 <div class="flex justify-center mt-8 text-sm">
 
   {% if pagination %}
-    {% assign pagenumber = pagination.pageNumber %}
     <ul class="list-style-type: none inline-flex -space-x-px text-base h-10">
       {% if page.url == pagination.href.first %}
         <li>
@@ -25,19 +24,35 @@
         </li>
       {% endif %}
 
+      {% assign pagenumber = pagination.pageNumber %}
+      {% assign total_pages = pagination.pages.size %}
 
-        {% for pageEntry in pagination.pages %}
-          {% if page.url ==  pagination.hrefs[forloop.index0] %}
-            <li>
-              <a aria-current="page" aria-label="Page {{ trail.num  }}" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button">{{ forloop.index }}</a>
-            </li>
-          {% else %}
-            <li>
-              <a href="{{ pagination.hrefs[forloop.index0] }}" aria-label="Page {{ trail.num  }}" class="flex items-center justify-center px-4 h-10 leading-tight text-black bg-white border border-gray-300 hover:bg-red-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button">{{ forloop.index }}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
+      {% assign start_index = pagenumber | minus: 2 %}
+      {% if start_index < 1 %}
+        {% assign start_index = 1 %}
+      {% endif %}
 
+      {% assign end_index = start_index | plus: 4 %}
+      {% if end_index > total_pages%}
+        {% assign end_index = total_pages%}
+        {% assign start_index = end_index | minus: 4 %}
+        {% if start_index < 1 %}
+          {% assign start_index = 1 %}
+        {% endif %}
+      {% endif %}
+
+      {% for i in (start_index..end_index) %}
+      {% assign j = i | minus: 1 %}
+        {% if page.url == pagination.hrefs[j] %}
+          <li>
+            <a aria-current="page" aria-label="Page {{ i }}" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button">{{ i }}</a>
+          </li>
+        {% else %}
+          <li>
+            <a href="{{ pagination.hrefs[j] }}" aria-label="Page {{ i }}" class="flex items-center justify-center px-4 h-10 leading-tight text-black bg-white border border-gray-300 hover:bg-red-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button">{{ i }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
 
       {% if pagination.href.next %}
         <li>

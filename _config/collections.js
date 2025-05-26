@@ -56,7 +56,7 @@ export default function (eleventyConfig) {
   // A collection of the posts by each category with pagination.
   eleventyConfig.addCollection("postsByCategories", (collectionAPI) => {
     let numberOfresultsPerPage = 8; // number of results per page
-    let slugPrefix = "/blog"; // Optional: the prefix for the slug could be /articles or /blog etc
+    let slugPrefix = "/topics"; // Optional: the prefix for the slug could be /articles or /blog etc
 
     // some variables to help with creating our data structure
     let postsByCategories = [];
