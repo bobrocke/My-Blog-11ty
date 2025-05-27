@@ -5,6 +5,8 @@ pagination:
   size: 1
   alias: postsCategories
 permalink: /{{ postsCategories.slug }}/
+eleventyComputed:
+    title: "{{ postsCategories.categoryName }}"
 ---
 
 <h1>Posts about {{postsCategories.categoryName}}</h1>
