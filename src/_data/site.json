@@ -18,10 +18,6 @@
       "url": "/topics"
     },
     {
-      "name": "Tags",
-      "url": "/tags"
-    },
-    {
       "name": "TIL",
       "url": "/tils"
     }

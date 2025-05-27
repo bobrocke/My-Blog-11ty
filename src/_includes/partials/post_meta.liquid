@@ -15,4 +15,8 @@
     {% endfor %}
     &nbsp;&nbsp;&nbsp;&nbsp;About: <a href="{{ categoryURL }}">{{ category }}</a>
   {% endfor %}
+
+  {% for tag in post.data.tags %}
+    # <a href="/tags/{{ tag }}">{{ tag }}</a>
+  {% endfor %}
 </div>
