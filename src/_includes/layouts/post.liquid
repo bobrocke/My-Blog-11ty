@@ -8,25 +8,15 @@ layout: layouts/base.liquid
     {% assign publishedDate = post.date %}
     {% assign modifiedDate = post.data.lastmod %}
     {% assign categories = post.data.categories %}
+    {% assign thisPost = post %}
   {%  endif %}
  {% endfor %}
 
-
-
-
  <div class="mx-6 mt-8">
   <h1 class="font-serif text-2xl md:text-4xl">{{ title }}</h1>
-  <div class="text-xs md:text-sm mb-3 mt-1">
-    {{ publishedDate | postDate }}
 
-    {% if modifiedDate %}
-      &nbsp;&nbsp;Updated: {{ modifiedDate | postDate }}
-    {% endif %}
+  {% render "partials/post_meta.liquid", post: thisPost, postsByCategories: collections.postsByCategories %}
 
-    {% for category in categories %}
-      &nbsp;&nbsp;&nbsp;&nbsp;About: {{ category }}
-    {% endfor %}
-  </div>
   <div class="max-w-none prose prose-base md:prose-lg prose-a:hover:text-red-600 prose-img:my-1">
     {{ content }}
   </div>
