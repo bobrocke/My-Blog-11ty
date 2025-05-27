@@ -6,7 +6,9 @@
     &nbsp;&nbsp;Updated: {{ modifiedDate | postDate }}
   {% endif %}
 
+      {{ collections.postsByCategories | log }}
+
   {% for category in post.data.categories %}
-    &nbsp;&nbsp;&nbsp;&nbsp;About: {{ category }}
+    &nbsp;&nbsp;&nbsp;&nbsp;About: {{ category }} {{ categoryURL }}
   {% endfor %}
 </div>

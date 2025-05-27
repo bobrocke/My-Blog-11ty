@@ -11,6 +11,8 @@ tags: [WordPress]
 
 I moved my websites off of WordPress several years ago due to the security problems I was having and the complexity of customizing themes. There were just too many files in too many places to modify when modifying a theme to suit me. So I switched to [Grav](https://getgrav.org) and found its straightforward approach was what I needed.
 
+<!--more-->
+
 Over time, the coding requirements for a Grav site became a problem because I would take breaks, sometimes long breaks, between posting and site modifications. When I got started again, I almost had to learn Grav all over. Looking for a way to use a more drag-and-drop interface, I switched to Squarespace. And it was a good, if somewhat expensive, thing. But now I'm looking at a $200/year subscription with few options for transferring my content to another host or platform.
 
 All this switching around reminds me that I should recommend maintaining your domain name registration somewhere separate from your hosting. I use [Hover](https://www.hover.com) and have for years. Whenever I've changed hosts, or even email providers, it's been easy to go back to Hover and redirect my domain to wherever I need it to go.

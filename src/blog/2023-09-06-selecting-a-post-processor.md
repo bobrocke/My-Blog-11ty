@@ -12,6 +12,8 @@ tags: []
 
 I’ve spent the last couple of months working back and forth between the raw processors [Capture One](https://www.captureone.com/en), [Lightroom Classic](https://www.adobe.com/products/photoshop-lightroom-classic.html), [PhotoLab Elite](https://www.dxo.com/dxo-photolab/), and [Photo RAW](https://www.on1.com/products/photo-raw/) in an attempt to settle on just one going into 2024. Owning more than one is just too expensive and too complicated trying to keep edits and metadata in sync. My primary raw post-processing tools have been Capture One and Lightroom Classic. So that’s where I started my efforts.
 
+<!--more-->
+
 Needless to say, attempting to compare and select from these very capable applications isn’t easy. To try making it more so, I decided to use a [_decision matrix_](https://en.wikipedia.org/wiki/Decision_matrix#:~:text=A%20decision%20matrix%20is%20a,based%20on%20certain%20decision%20criteria.) in an attempt to force more objectivity into a greatly subjective choice.
 
 ### Selection Criteria

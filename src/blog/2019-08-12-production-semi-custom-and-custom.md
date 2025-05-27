@@ -11,6 +11,8 @@ tags: [1911s]
 
 The makers of 1911s all fall into three general categories – _production_ , _semi-custom_ , and _custom_. What is it that differentiates these groups and why should you care? The most significant and obvious difference is the cost.
 
+<!--more-->
+
 <img src="/assets/images/wp-content/uploads/2023/10/image.jpeg" alt="Springfield Armory Logo" style="float: left; width: 30%; margin: 1em 1em 1em 0em">
 
 _Production_ guns are from the names you may know the best in the industry – companies such as [Colt](https://www.colt.com/), [Springfield Armory](https://www.springfield-armory.com/), [Rock Island Armory](https://armscor.com/firearms/ria/), and [Dan Wesson](https://danwessonfirearms.com/). There is variation in quality across the companies, but the common thread is that each model comes with the features it comes with. If you don’t like that group of features, you’ll have to choose a different model or different manufacturer. You’ll be able to buy a new production gun for around $500 up to maybe $1,500.

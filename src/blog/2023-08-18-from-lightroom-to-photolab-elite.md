@@ -12,6 +12,8 @@ tags: [PhotoLab]
 
 Over the years I have used many (too many) different image post-processing applications, even so far back as when Adobe Bridge was the only DAM available other than the Finder. When Apple’s Aperture first came out, I jumped on it right away, loving it until Apple discontinued it. That was a sad day, for me.
 
+<!--more-->
+
 I ended up replacing Aperture with Lightroom, as did many, but I never warmed to it. After a while, I switched to Capture One and got along with it well enough. Back to Lightroom (now Classic). And now to PhotoLab Elite.
 
 ### So why PhotoLab Elite and why now?

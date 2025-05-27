@@ -11,6 +11,8 @@ tags: [Squarespace]
 
 The Squarespace platform allows the web developer a lot of flexibility in creating unique designs. But, naturally, there are limits and some developers will want to go beyond them to create websites that are even more unique. Although not covered by Squarespace’s support team, CSS and JavaScript can be used by more advanced web developers.
 
+<!--more-->
+
 CSS is the easiest way to make Squarespace sites look the way you want them to. From the Home page in the Squarespace site editor, go to Design: Custom CSS and you’ll find a text editing field into which you can enter CSS code. The trick here is to understand what code to enter.
 
 The [Squarespace Forum for customizing with code](https://forum.squarespace.com/forum/39-customize-with-code/) is a great place to get help in finding that code. A number of very experienced Squarespace developers are quick to help out newer members. If you know a little about CSS, it’s all about knowing what [CSS Selectors](https://www.w3schools.com/css/css_selectors.asp) to target.

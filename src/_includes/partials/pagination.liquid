@@ -24,7 +24,7 @@
         </li>
       {% endif %}
 
-      {% assign pagenumber = pagination.pageNumber %}
+      {% assign pagenumber = pagination.pageNumber | plus: 1 %}
       {% assign total_pages = pagination.pages.size %}
 
       {% assign start_index = pagenumber | minus: 2 %}

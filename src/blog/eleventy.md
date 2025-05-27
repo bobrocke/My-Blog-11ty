@@ -11,7 +11,7 @@ datemodified:
 
 I finished moving this blog from WordPress to Hugo. But I read about a number of other static site generators before I chose Hugo. Hugo is very popular and very capable, but it does have its oddities. Eleventy, or 11ty, is another very popular system and I felt as if I needed to understand it better before absolutely deciding on Hugo.
 
-<!-- more -->
+<!--more-->
 
 So I'm re-writing my blog with 11ty---no better way to learn about it.
 
@@ -42,13 +42,13 @@ Dates in 11ty are hard. The default is UTC time and it took me a while to figure
 ```js
 import { DateTime } from "luxon";
 
-  eleventyConfig.addFilter("postDate", (dateObj) => {
-    let thisDateTime = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(
-      "America/New_York",
-      { keepLocalTime: true },
-    );
-    return thisDateTime.toLocaleString(DateTime.DATE_MED);
-  });
-  ```
+eleventyConfig.addFilter("postDate", (dateObj) => {
+  let thisDateTime = DateTime.fromJSDate(dateObj, { zone: "utc" }).setZone(
+    "America/New_York",
+    { keepLocalTime: true },
+  );
+  return thisDateTime.toLocaleString(DateTime.DATE_MED);
+});
+```
 
 The community around 11ty is very active and helpful; especially on their Discord channel.

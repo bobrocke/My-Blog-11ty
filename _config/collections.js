@@ -172,7 +172,7 @@ export default function (eleventyConfig) {
         let isLastPage =
           category.numberOfPagesOfPosts == index + 1 ? true : false;
 
-        // construct the pagination object and add to blogPostsByCategories Array
+        // construct the pagination object and add to postsByCategories Array
         postsByCategories.push({
           categoryName: category.categoryName,
 

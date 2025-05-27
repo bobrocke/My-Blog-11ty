@@ -11,6 +11,8 @@ tags: [Fujifilm]
 
 After many years of happy shooting with the Olympus OM-D E-M1 (and its Mark II upgrade) I’ve made the switch to the [Fujifilm X-T4](https://fujifilm-x.com/en-us/products/cameras/x-t4/). It’s really more of a switch back because I shot a Fujifilm X-T1 immediately before the Olympus. So why the flip-flop?
 
+<!--more-->
+
 <img src="/assets/images/wp-content/uploads/2023/10/Fujifilm-Logo.png" alt="Fujifilm Logo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
 
 A feature that I have always loved about the X-Tx series of cameras are the physical dials for selecting aperture, shutter speed, ISO, and exposure compensation. Not only do they look retro, they allow me to quickly see how the camera is set up. If changes are to be made, there’s no need to remember what unmarked dial does what or which menu item is right.

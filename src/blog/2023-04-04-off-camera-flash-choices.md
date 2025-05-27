@@ -11,6 +11,8 @@ tags: [Godox, Profoto]
 
 For several years my battery-powered off-camera flash ‘system’ has been a mishmash of equipment. I had a matched pair of [optically-triggered speedlights](https://asia.olympus-imaging.com/product/dslr/accessory/flash/fl600r.html) with TTL, a fully manual [radio-triggered strobe](https://www.gavtrain.com/?os_reviews=flashpoint-streaklight-360ws) (discontinued), and a fully manual [radio-triggered speedlight](https://fstoppers.com/reviews/reviews-neewer-tt850-li-ion-flash-8182) (discontinued). My light modifiers were another collection of umbrellas and softboxes from various manufacturers assembled with little rhyme or reason. Clearly, I didn’t have much of a ‘system’ and it certainly wasn’t very modern. It was time for something better.
 
+<!--more-->
+
 <img src="/assets/images/wp-content/uploads/2023/10/profoto-logo.png" alt="Profoto Logo" style="float: right; width: 50%; margin: 1em 0em 1em 1em">
 
 Having a real system of lights in multiple sizes using the same light modifiers and the same radio controllers/receivers was important to me. Pretty quickly my choices for strobes came down to [Godox](https://godox.com/) (variously branded as Godox, Neewer, FlashPoint, and perhaps others) and [Profoto](https://profoto.com/us/products/lights). There are many other brands, but they don’t have the breadth of options these two do.

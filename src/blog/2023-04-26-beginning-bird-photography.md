@@ -11,6 +11,8 @@ tags: []
 
 The first thing to know about bird photography is that it’s hard. And the second thing to know is that you will need a long lens.
 
+<!--more-->
+
 So I got a Fujifilm XF 100-400mm f/4.5-5.6 R LM OIOS WR lens. For full-frame camera folks, that’s equivalent to 600mm at the long end. And that’s not long enough, or else I haven’t yet learned how to get close enough. Maybe I’ll add an [XF1.4X TC WR](https://fujifilm-x.com/global/products/lenses/xf14x-tc-wr/) teleconverter to help with that.
 
 <figure style="float: left; width: 50%; margin: 1em 1em 1em 0em">
