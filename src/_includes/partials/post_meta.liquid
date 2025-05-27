@@ -6,9 +6,13 @@
     &nbsp;&nbsp;Updated: {{ modifiedDate | postDate }}
   {% endif %}
 
-      {{ collections.postsByCategories | log }}
-
   {% for category in post.data.categories %}
-    &nbsp;&nbsp;&nbsp;&nbsp;About: {{ category }} {{ categoryURL }}
+    {% for array in postsByCategories %}
+      {% if array.categoryName == category %}
+        {% assign categoryURL = array.slug %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    &nbsp;&nbsp;&nbsp;&nbsp;About: <a href="{{ categoryURL }}">{{ category }}</a>
   {% endfor %}
 </div>
