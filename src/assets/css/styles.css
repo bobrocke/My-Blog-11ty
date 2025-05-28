@@ -3,5 +3,3 @@ figcaption {
   font-size: 0.85rem;
   margin-top: 0 !important;
 }
-
-@custom-variant dark (&:where(.dark, .dark *));
