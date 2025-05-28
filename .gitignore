@@ -4,6 +4,7 @@ node_modules
 _site
 yarn.lock
 .zed
+.vscode
 codebook.toml
 scripts
 ToDo.md

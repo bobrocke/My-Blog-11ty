@@ -4,9 +4,4 @@ figcaption {
   margin-top: 0 !important;
 }
 
-@theme {
-  --font-sans: "PT Sans", "sans-serif";
-  --font-serif: "PT Serif", "serif";
-}
-
 @custom-variant dark (&:where(.dark, .dark *));
