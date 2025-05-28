@@ -3,6 +3,7 @@ ReadMe.md
 node_modules
 _site
 yarn.lock
+pnpm-lock.yaml
 .zed
 .vscode
 codebook.toml
