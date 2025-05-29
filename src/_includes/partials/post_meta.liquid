@@ -1,11 +1,12 @@
 <div class="text-xs md:text-sm mb-3 mt-1">
-  <i class="lni lni-calendar-days"></i>{{ post.date | postDate }}
+  <i class="fa-regular fa-calendar"></i>&nbsp;&nbsp;{{ post.date | postDate }}
 
   {% assign modifiedDate = post.data.lastmod %}
   {% if modifiedDate %}
     &nbsp;&nbsp;Updated: {{ modifiedDate | postDate }}
   {% endif %}
 
+  &nbsp;&nbsp;&nbsp;<i class="fa-regular fa-folder"></i>&nbsp;
   {% for category in post.data.categories %}
     {% for array in postsByCategories %}
       {% if array.categoryName == category %}
@@ -13,10 +14,12 @@
         {% break %}
       {% endif %}
     {% endfor %}
-    &nbsp;&nbsp;&nbsp;&nbsp;About: <a href="{{ categoryURL }}">{{ category }}</a>
+    <a class="hover:text-red-600" href="{{ categoryURL }}">{{ category }}</a>{% unless forloop.last %}, {% endunless -%}
   {% endfor %}
 
+
   {% for tag in post.data.tags %}
-    # <a href="/tags/{{ tag }}">{{ tag }}</a>
+    {% if forloop.first %}&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-hashtag"></i>{% endif %}
+    <a class="hover:text-red-600" href="/tags/{{ tag }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless -%}
   {% endfor %}
 </div>

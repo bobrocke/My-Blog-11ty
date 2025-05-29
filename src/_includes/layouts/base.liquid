@@ -9,7 +9,6 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.ico">
 
-    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"/>
     <link rel="stylesheet" href="/assets/css/tailwind.css"/>
 
@@ -26,11 +25,12 @@
 
   <body class="mx-auto w-screen max-w-4xl p-6 dark:bg-gray-500">
     <main>
-      {% render "partials/header.liquid", site: site, title: title %}
+      {% render "partials/header.liquid", page: page, site: site, title: title %}
         {{ content }}
       {% render "partials/footer.liquid" %}
     </main>
 
+    <script src="https://kit.fontawesome.com/0c37cebf77.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="/assets/js/lightbox.js"></script>
 
