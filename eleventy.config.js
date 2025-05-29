@@ -39,7 +39,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(tailwindcss, {
     input: "tailwind-input.css",
     output: "assets/css/tailwind.css",
-    minify: true,
+    minify: false,
   });
 }
 

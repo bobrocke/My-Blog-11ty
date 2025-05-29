@@ -1,5 +1,5 @@
 <div class="text-xs md:text-sm mb-3 mt-1">
-  {{ post.date | postDate }}
+  <i class="lni lni-calendar-days"></i>{{ post.date | postDate }}
 
   {% assign modifiedDate = post.data.lastmod %}
   {% if modifiedDate %}
