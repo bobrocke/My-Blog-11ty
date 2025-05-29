@@ -3,23 +3,23 @@
 
     {% if title == "Home" %}
       <a class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span class="self-center text-xl font-sans tracking-wider font-semibold text-white whitespace-nowrap dark:text-white">Bob Rockefeller</span>
+          <span class="self-center text-xl font-sans tracking-widest font-semibold text-white whitespace-nowrap dark:text-white">Bob Rockefeller</span>
       </a>
     {% else %}
       <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span class="self-center text-xl font-sans hover:text-red-600 tracking-wider font-semibold text-white whitespace-nowrap dark:text-white">Bob Rockefeller</span>
+          <span class="self-center text-xl font-sans hover:text-red-600 tracking-widest font-semibold text-white whitespace-nowrap dark:text-white">Bob Rockefeller</span>
       </a>
     {% endif %}
 
     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 hover:text-red-600 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
     </button>
 
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 md:bg-black md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="font-medium flex flex-col p-4 mt-4 border border-gray-100 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 
         {% for menu in site.menu %}
           {% if menu.name == title %}
@@ -34,9 +34,9 @@
         {% endfor %}
 
         <li>
-          <button id="theme-toggle" type="button" class="text-white mt-[.125em]">
-            <span id="theme-toggle-dark-icon" class="hidden w-5 h-5 hover:text-red-600 dark:hover:text-red-900"><i class="lni lni-moon-half-right-5"></i></span>
-            <span id="theme-toggle-light-icon" class="hidden w-5 h-5 hover:text-red-600 dark:hover:text-red-900"><i class="lni lni-sun-1"></i></span>
+          <button id="theme-toggle" type="button" class="block py-2 px-3 text-white mt-[.125em] hover:text-red-600 md:p-0 dark:hover:text-red-900">
+            <span id="theme-toggle-dark-icon" class="hidden w-5 h-5"><i class="lni lni-moon-half-right-5"></i></span>
+            <span id="theme-toggle-light-icon" class="hidden w-5 h-5"><i class="lni lni-sun-1"></i></span>
           </button>
         </li>
       </ul>
