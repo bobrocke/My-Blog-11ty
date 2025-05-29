@@ -3,14 +3,16 @@ layout: layouts/base.liquid
 title: Topics
 ---
 
-<h1>{{title}}</h1>
+<div class="mx-6 mt-8">
+  <h1 class="font-sans text-2xl md:text-4xl">{{ title }}</h1>
 
-{% assign categoryData = collections.postsByCategories[0].categoryData %}
+  {% assign categoryData = collections.postsByCategories[0].categoryData %}
 
-<ul>
-  {% for category in categoryData %}
-  <li>
-    <a href="{{ category[1].slug }}" class="">{{ category[1].name }}</a>
-  </li>
-  {% endfor %}
-</ul>
+  <ul class="mt-6 ml-6">
+    {% for category in categoryData %}
+    <li class="pb-4 text-lg md:text-2xl hover:text-red-600 dark:hover:text-red-900">
+      <a href="{{ category[1].slug }}" class="">{{ category[1].name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

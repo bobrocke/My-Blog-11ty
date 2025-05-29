@@ -8,12 +8,17 @@ permalink: /tags/{{ tag }}/
 eleventyComputed:
     title: "{{ tag }}"
 ---
+<div class="mx-6 mt-8">
+  <h1 class="font-sans text-2xl md:text-4xl">Tagged “{{ tag }}”</h1>
 
-<h1>Tagged “{{ tag }}”</h1>
+  <ul class="mt-6 ml-6">
+  {% assign taglist = collections[tag] %}
+  {% for post in taglist | reverse %}
+    <li class="pb-4">
+      <a class="text-lg md:text-2xl hover:text-red-600 dark:hover:text-red-900" href="{{ post.url }}">{{ post.data.title }}</a>
 
-<ol>
-{% assign taglist = collections[tag] %}
-{% for post in taglist | reverse %}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-{% endfor %}
-</ol>
+      {% render "partials/post_meta.liquid", page: page, post: post, postsByCategories: collections.postsByCategories %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
