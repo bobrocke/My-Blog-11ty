@@ -8,7 +8,8 @@ import filters from "./_config/filters.js";
 import collections from "./_config/collections.js";
 
 export default async function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("src/assets/js");
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
@@ -38,6 +39,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(tailwindcss, {
     input: "tailwind-input.css",
     output: "assets/css/tailwind.css",
+    minify: true,
   });
 }
 
