@@ -1,6 +1,7 @@
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
 import logToConsole from "eleventy-plugin-console-plus";
+import markdownItDef from "markdown-it-deflist";
 
 import tailwindcss from "eleventy-plugin-tailwindcss-4";
 
@@ -10,6 +11,8 @@ import collections from "./_config/collections.js";
 export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/js");
+
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItDef));
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,

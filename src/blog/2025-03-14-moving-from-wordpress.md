@@ -23,22 +23,22 @@ With that in mind, I knew I wanted to use a static site generator and write in s
 
 I needed to consider some other options.
 
-[Next.js](https://nextjs.org/)
+Next.js
 : Written in JavaScript and using React templates, this one is very popular. But it's more of an application framework that can also create static sites.
 
-[Hugo](https://gohugo.io/)
+Hugo
 : Written in Go and using Go templates, Hugo is coming on like gangbusters. One of its claims to fame is the speed with which it can generate a site. It's also a 'batteries included' system that needs few add-ons.
 
-[Eleventy/11ty](https://www.11ty.dev/)
+Eleventy/11ty
 : This one is written in JavaScript but is a descendant of Jekyll rather than an application framework. It's not much out of the box, but it's super extensible so you can add what you need. It can even use a number of different template languages, if you have a preference.
 
-[Nuxt](https://nuxt.com/)
+Nuxt
 : Another JavaScript application framework, but using Vue templates.
 
-[Gatsby](https://www.gatsbyjs.com/)
+Gatsby
 : And another JavaScript application framework using React templates!
 
-[Astro](https://astro.build/)
+Astro
 : One more JavaScript application framework and with a choice of many possible template languages.
 
 I'm trying out Hugo. I don't want the complexity of an application framework for a static site blog, and learning Go might be interesting. It should take care of my performance, security, and convenience objectives. The portability part will take a bit of work, and discipline, on my part.

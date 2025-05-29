@@ -10,16 +10,12 @@
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
       "name": "Topics",
       "url": "/topics"
     },
     {
-      "name": "TIL",
-      "url": "/tils"
+      "name": "About",
+      "url": "/about"
     }
   ]
 }
