@@ -9,7 +9,7 @@ layout: layouts/base.liquid
 
 {% for post in posts %}
   <div class="mx-6 mt-8">
-    <h2><a class="font-sans text-xl hover:text-red-600 md:text-4xl" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <h2><a class="font-sans text-xl hover:text-red-600 md:text-4xl dark:text-gray-300" href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
     {% render "partials/post_meta.liquid", page: page, post: post, postsByCategories: collections.postsByCategories %}
 
