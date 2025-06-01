@@ -40,7 +40,7 @@ The Alien's recoil is 'different.' Most of the recoil energy comes straight back
 
 Although the pistol looks like a striker-fired gun from the outside, it's really hammer fired. The hammer is up in the top rail and pivots down to strike the firing pin. So the trigger feels more like a hammer fired trigger – almost no take-up, no creep, and then a very crisp 3 ½# release. If the trigger didn't pivot from the top, you'd think it was a 1911 trigger; it's that clean and crisp.
 
-<img src="/assets/images/wp-content/uploads/2024/05/SB.jpg" alt="S&B Ammo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
+<img src="/assets/images/wp-content/uploads/2024/05/SB.png" alt="S&B Ammo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
 
 I did mention disadvantages. The primary one derives from the clever gas delayed blow back design. The gun is **_very_** picky about the ammunition it likes. It wants FMJ bullets and clean powder. [Sellier & Bellot 124gr FMJ ammunition](https://www.sellierbellot.us/products/pistol-and-revolver-ammunition/pistol-and-revolver-cartridges/detail/286/) is the factory ammo to choose because that's what the pistol was designed around (both Laugo Arms and Sellier & Bellot are Czech companies, after all).
 

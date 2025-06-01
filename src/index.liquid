@@ -9,11 +9,11 @@ layout: layouts/base.liquid
 
 {% for post in posts %}
   <div class="mx-6 mt-8">
-    <h2><a class="font-sans text-xl hover:text-red-600 md:text-4xl dark:text-gray-300" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <h2><a class="font-sans text-xl hover:text-red-600 md:text-4xl dark:text-gray-300 dark:hover:text-black" href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
     {% render "partials/post_meta.liquid", page: page, post: post, postsByCategories: collections.postsByCategories %}
 
-    <div class="font-serif max-w-none prose-sm md:lead-1 prose prose-a:hover:text-red-600 md:prose-lg">
+    <div class="font-serif max-w-none prose-sm md:lead-1 dark:text-gray-300 prose prose-a:hover:text-red-600 md:prose-lg dark:prose-a:text-gray-300 dark:prose-a:hover:text-black dark:prose-headings:text-gray-300">
       {{ post.data.post_excerpt | markdown }}
     </div>
   </div>
