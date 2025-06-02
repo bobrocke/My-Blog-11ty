@@ -13,13 +13,13 @@ After many years of happy shooting with the Olympus OM-D E-M1 (and its Mark II u
 
 <!--more-->
 
-<img src="/assets/images/wp-content/uploads/2023/10/Fujifilm-Logo.png" alt="Fujifilm Logo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
+<img src="/assets/images/wp-content/uploads/2023/10/Fujifilm-Logo.png" alt="Fujifilm Logo" style="float: left; width: 30%; margin: 1em 1em 1em 0em">
 
 A feature that I have always loved about the X-Tx series of cameras are the physical dials for selecting aperture, shutter speed, ISO, and exposure compensation. Not only do they look retro, they allow me to quickly see how the camera is set up. If changes are to be made, there’s no need to remember what unmarked dial does what or which menu item is right.
 
 Focus mode (manual, single, or continuous) and drive mode (single, continuous low, or continuous high) have their own switch and dial, respectively. The ergonomics of the controls suit me well.
 
-<figure style="float: right; width: 50%; margin: 1em 0em 1em 1em"><a href="/assets/images/wp-content/uploads/2023/10/Fuji-XF-16-55mm-f2.8-R-LM-WR.jpg"><img src="/assets/images/wp-content/uploads/2023/10/Fuji-XF-16-55mm-f2.8-R-LM-WR.jpg" alt="Alt"></a><figcaption>Fujinon XF 16-55mm f/2.8</figcaption></figure>
+<figure style="float: right; width: 50%; margin: 1em 0em 1em 1em"><a href="/assets/images/wp-content/uploads/2023/10/Fuji-XF-16-55mm-f2.8-R-LM-WR.png"><img src="/assets/images/wp-content/uploads/2023/10/Fuji-XF-16-55mm-f2.8-R-LM-WR.png" alt="Alt"></a><figcaption>Fujinon XF 16-55mm f/2.8</figcaption></figure>
 
 In general, the Fujifilm and Olympus systems are comparable. Both have some excellent lenses that cover all the bases. Both have weather resistant lenses that are better constructed and better sealed. And both will do the job for any but the most demanding photographers.
 

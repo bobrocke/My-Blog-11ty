@@ -17,7 +17,7 @@ With the exception of WordPress, the others all required a fair amount of file s
 
 [Squarespace](https://www.squarespace.com/) has been on my radar for several years, at least back to 2019. Its clever combination of web server, WYSIWYG design, elegant themes, and superb support can’t help but be attractive. For me, back then, the system was too restrictive and didn’t offer enough flexibility or options to make it viable for what I wanted to do.
 
-<img src="/assets/images/wp-content/uploads/2023/10/squarespace-logo-horizontal-black.jpg" alt="Squarespace Logo" style="display: block; margin: 1em auto 1em auto">
+<img src="/assets/images/wp-content/uploads/2023/10/squarespace-logo.png" alt="Squarespace Logo" style="display: block; margin: 1em auto 1em auto">
 
 Now Squarespace has reached Version 7.1 and the flexibility is there. At least it has through my trial period getting a skeleton of my combined sites up and running. Some things can’t be changed without a huge amount of effort and unsupported custom code, but I can live with that. One thing of particular importance to me is the ability to set up multiple blogs for my multiple hobbies. Having different galleries for my different photography interests is pretty simple, too.
 
