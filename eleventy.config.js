@@ -24,6 +24,9 @@ export default async function (eleventyConfig) {
     if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
       return false;
     }
+    if (data.draft && process.env.DRAFTS !== "1") {
+      return false;
+    }
   });
 
   // Add my filters
