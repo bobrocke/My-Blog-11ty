@@ -18,7 +18,7 @@ I've started back shooting a [Laugo Arms Alien](https://laugoarmsusa.com) pistol
   <figcaption>The Alien</figcaption>
 </figure>
 
-Several years ago I owned two Alien Full Kits - one I shot and one I left unfired. I very much liked the way the gun handled and shot. But I was concerned about the pistol’s longer term viability in the US both in terms of spare part availability and continued service ([Lancer Systems](https://lancer-systems.com/product-category/laugo/) was handling both as the US distributor for Laugo Arms at the time). So I sold them. That was a mistake.
+Several years ago I owned two Alien Full Kits - one I shot and one I left unfired. I very much liked the way the gun handled and shot. But I was concerned about the pistol’s longer term viability in the US both in terms of spare part availability and continued service (Lancer Systems was handling both as the US distributor for Laugo Arms at the time). So I sold them. That was a mistake.
 
 Today, [Laugo Arms USA](https://laugoarmsusa.com) has responsibility for US sales and service. Individual spare parts are available for sale on their website along with all the current Alien pistol models. They also seem knowledgeable and responsive. My past fears were not justified. Lancer Systems still has a few Alien models in stock at closeout prices so I was able to get a Full Kit (the original black and green model with the Glock grip angle) at a bit of a discount.
 
@@ -46,7 +46,7 @@ I did mention disadvantages. The primary one derives from the clever gas delayed
 
 I'll post a follow-up article soon discussing ammunition requirements in more detail and offering some suggestions on what components make sense if you want to reload your own.
 
-Another disadvantage comes from the gun's uniqueness. You won't drop into your local gun store and find magazines or holsters, for example. Although the Full Kit includes a serviceable holster, it may not fit your needs and there are only four companies I'm aware of that make holsters to fit: [Big Dog Steel](https://bigdogsteel.com/product/carnivore-competition-holster/), [EagleWorks](https://eagleworksholsters.com/kydex-holster/holster-laugo-arms-alien/), [Red Hill Tactical](https://www.redhilltactical.com/Laugo-Alien-Holster-Competition_p_3194.html), and [Smith Concealment](https://www.facebook.com/smithconcealment/about). Magazines are only available from [Laugo Arms USA](https://laugoarmsusa.com/product-category/parts-accessories/magazines/) and there are different magazines for each model.
+Another disadvantage comes from the gun's uniqueness. You won't drop into your local gun store and find magazines or holsters, for example. Although the Full Kit includes a serviceable holster, it may not fit your needs and there are only four companies I'm aware of that make holsters to fit: [Big Dog Steel](https://bigdogsteel.com/product/carnivore-competition-holster/), [Red Hill Tactical](https://www.redhilltactical.com/Laugo-Alien-Holster-Competition_p_3194.html), and [Smith Concealment](https://www.facebook.com/smithconcealment/about). Magazines are only available from [Laugo Arms USA](https://laugoarmsusa.com/product-category/parts-accessories/magazines/) and there are different magazines for each model.
 
 The gun can get hot around the trigger guard and front of the frame. Because some gas from the chamber is directly ported into the gas chamber, extra heat is introduced. It may not be a problem under USPSA match conditions, but I can imagine it getting uncomfortable under sustained rapid fire.
 

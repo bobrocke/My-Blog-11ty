@@ -22,7 +22,7 @@ So I began with a list of characteristics, or feature sets, that I thought were 
 
 - Initial Conversion – translating the .raw file into an image to edit: color fidelity, details extracted, lens and camera corrections, artifacts generated, and the starting point provided for more editing.
 - Digital Asset Management (DAM) – ingesting new images, metadata management, file management, and searching/filtering images based on their metadata.
-- Global Adjustments – adjustments available, denoising, and the effects of individual controls.
+- Global Adjustments – adjustments available, de-noising, and the effects of individual controls.
 - Local Adjustments – adjustments available, masking, the effects of individual controls, and any layering available.
 - Intangibles – the look and feel of the application, the company’s attitude toward user suggestions, and the responsiveness of the company to bugs and user suggestions.
 - Printing – templates, specific sharpening for paper and size, and the flexibility of printed output.

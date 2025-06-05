@@ -9,7 +9,7 @@ categories:
 tags: [Godox, Profoto]
 ---
 
-For several years my battery-powered off-camera flash ‘system’ has been a mishmash of equipment. I had a matched pair of [optically-triggered speedlights](https://asia.olympus-imaging.com/product/dslr/accessory/flash/fl600r.html) with TTL, a fully manual [radio-triggered strobe](https://www.gavtrain.com/?os_reviews=flashpoint-streaklight-360ws) (discontinued), and a fully manual [radio-triggered speedlight](https://fstoppers.com/reviews/reviews-neewer-tt850-li-ion-flash-8182) (discontinued). My light modifiers were another collection of umbrellas and softboxes from various manufacturers assembled with little rhyme or reason. Clearly, I didn’t have much of a ‘system’ and it certainly wasn’t very modern. It was time for something better.
+For several years my battery-powered off-camera flash ‘system’ has been a mishmash of equipment. I had a matched pair of optically-triggered speedlights with TTL, a fully manual radio-triggered strobe (discontinued), and a fully manual radio-triggered speedlight (discontinued). My light modifiers were another collection of umbrellas and softboxes from various manufacturers assembled with little rhyme or reason. Clearly, I didn’t have much of a ‘system’ and it certainly wasn’t very modern. It was time for something better.
 
 <!--more-->
 
