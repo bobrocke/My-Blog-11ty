@@ -1,4 +1,4 @@
-import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import syntaxHighlight from "eleventy-plugin-highlightjs";
 import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
 import logToConsole from "eleventy-plugin-console-plus";
 import markdownItDef from "markdown-it-deflist";
@@ -35,7 +35,7 @@ export default async function (eleventyConfig) {
   // Add my collections
   eleventyConfig.addPlugin(collections);
 
-  // Add 11ty's syntax highlighter
+  // Add the Highlight.js syntax highlighter
   eleventyConfig.addPlugin(syntaxHighlight);
   // And the markdownify filter plugin
   eleventyConfig.addPlugin(eleventyPluginMarkdown);
