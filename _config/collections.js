@@ -28,6 +28,7 @@ export default function (eleventyConfig) {
     return posts;
   });
 
+  // Create a collection of all the tils (Today I Learned) in src/tils and add previousPost and nextPost data.
   eleventyConfig.addCollection("tils", function (collectionApi) {
     let tils = collectionApi.getFilteredByGlob("src/tils/*.md").reverse();
     const numberOfPosts = tils.length;
@@ -53,7 +54,7 @@ export default function (eleventyConfig) {
     return tils;
   });
 
-  // A collection of the posts by each category with pagination.
+  // Create a collection of the posts in each category with pagination.
   eleventyConfig.addCollection("postsByCategories", (collectionAPI) => {
     let numberOfresultsPerPage = 8; // number of results per page
     let slugPrefix = "/topics"; // Optional: the prefix for the slug could be /articles or /blog etc

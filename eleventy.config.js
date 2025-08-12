@@ -1,7 +1,13 @@
+// eleventy-plugin-highlightjs = HighLightJS eleventy-plugin-syntaxhighlight = PrismJS
+// PrismJS may be getting old
 import syntaxHighlight from "eleventy-plugin-highlightjs";
+// @jgarber/eleventy-plugin-markdown = Markdown-It and adds the Liquid markdown filter to makrdownify
 import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
+// eleventy-plugin-console-plus improves on the standard console.log function
 import logToConsole from "eleventy-plugin-console-plus";
+// markdown-it-deflist add definition list formating to Markdown-It
 import markdownItDef from "markdown-it-deflist";
+// eleventy-plugin-img-magnifier is a lightbox
 import imgMagnifier from "eleventy-plugin-img-magnifier";
 
 import tailwindcss from "eleventy-plugin-tailwindcss-4";
@@ -38,11 +44,11 @@ export default async function (eleventyConfig) {
 
   // Add the Highlight.js syntax highlighter
   eleventyConfig.addPlugin(syntaxHighlight);
-  // And the markdownify filter plugin
+  // Add the Markdown-it processor and the markdownify filter plugin
   eleventyConfig.addPlugin(eleventyPluginMarkdown);
   // Add console plus plugin
   eleventyConfig.addPlugin(logToConsole, { depth: 4 });
-  // Add image magnifier plugin
+  // Add image magnifier lightbox plugin
   eleventyConfig.addPlugin(imgMagnifier);
 
   eleventyConfig.addPlugin(tailwindcss, {
