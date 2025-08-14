@@ -22,7 +22,6 @@
     {% unless forloop.last %}, {% endunless -%}
   {% endfor %}
 
-
   {% for tag in post.data.tags %}
     {% if forloop.first %}&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-hashtag"></i>{% endif %}
     {% if page.url contains tag %}
