@@ -1,0 +1,9 @@
+<div class="text-xs md:text-sm text-gray-400 dark:text-gray-400">
+  <i class="fa-regular fa-calendar"></i>&nbsp;&nbsp;{{ post.date | postDate }}
+
+  {% assign modifiedDate = post.data.lastmod %}
+  {% if modifiedDate %}
+    &nbsp;&nbsp;Updated: {{ modifiedDate | postDate }}
+  {% endif %}
+
+</div>

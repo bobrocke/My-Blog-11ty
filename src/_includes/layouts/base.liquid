@@ -35,13 +35,12 @@
     {% endif %}
   </head>
 
-  <body class="mx-auto w-screen max-w-4xl p-6 dark:bg-gray-500">
-    <main>
-      {% render "partials/header.liquid", page: page, site: site, title: title %}
-        {{ content }}
-      {% render "partials/footer.liquid" %}
-    </main>
-
+  <body class="grid max-w-5xl
+    md:grid-cols-[200px_1fr] md:px-6 md:pt-6 md:mx-auto
+    dark:bg-gray-700">
+    {% render "partials/menus.liquid", page: page, site: site, title: title %}
+      {{ content }}
+    {% render "partials/footer.liquid" %}
   </body>
 
   <script src="https://kit.fontawesome.com/0c37cebf77.js" crossorigin="anonymous"></script>

@@ -1,0 +1,83 @@
+<nav class="bg-black border-red-600 border-b-6
+  md:border-r-6 md:border-b-0
+  dark:border-red-900">
+  <div class="flex flex-wrap items-center justify-between py-4 px-6 mx-auto">
+    <div class="md:hidden">
+      {% if page.url == "/" %}
+        <img src="/assets/images/logo-horiz.svg" alt="Logo" height="50" width="160" />
+      {% else %}
+        <a href="/">
+          <img src="/assets/images/logo-horiz.svg" alt="Logo" height="50" width="160" />
+        </a>
+      {% endif %}
+    </div>
+
+    <div class="hidden md:block">
+      {% if page.url == "/" %}
+        <img src="/assets/images/logo-vert.svg" alt="Logo" width="180"/>
+      {% else %}
+        <a href="/">
+          <img src="/assets/images/logo-vert.svg" alt="Logo" width="180"/>
+        </a>
+      {% endif %}
+    </div>
+
+    <button data-collapse-toggle="navbar-default" type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500
+      md:hidden
+      dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+
+    <div class="w-full hidden md:block" id="navbar-default">
+      <ul class="flex flex-col p-4 mt-4 font-medium text-white border border-gray-100
+        md:border-0 md:text-xl md:text-center
+        dark:text-gray-400">
+
+        {% for menu in site.menu %}
+          {% if menu.url == page.url %}
+            <li>
+              <a class="block px-3 py-2">{{ menu.name }}</a>
+            </li>
+          {% else %}
+            <li>
+              <a class="block px-3 py-2 hover:text-red-600" href="{{ menu.url }}">{{ menu.name }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+
+        <li class="md:mx-auto">
+          <button id="theme-toggle" type="button" class="block px-3 py-2 text-white hover:text-red-600">
+            <span id="theme-toggle-dark-icon" class="hidden w-5 h-5"><i class="fa-solid fa-moon"></i></span>
+            <span id="theme-toggle-light-icon" class="hidden w-5 h-5"><i class="fa-solid fa-sun"></i></span>
+          </button>
+        </li>
+      </ul>
+      <ul class="hidden md:block flex flex-col p-4 mt-4 font-medium text-white text-center
+        dark:text-gray-400">
+        <li>
+          <a class="block px-3 py-2 hover:text-red-600" href="https://github.com/bobrocke" title="Bob on GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li>
+          <a class="block px-3 py-2 hover:text-red-600" href="https://stackoverflow.com/users/1938118/bob-rockefeller" title="Bob on Stack Overflow" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+        </li>
+        <li>
+          <a class="block px-3 py-2 hover:text-red-600" href="https://www.linkedin.com/in/bob-rockefeller/" title="Bob on LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a class="block px-3 py-2 hover:text-red-600" href="https://twitter.com/bobrocke" title="Bob on Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a class="block px-3 py-2 hover:text-red-600" href="https://www.facebook.com/bob.rockefeller/" title="Bob on Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <span class="block text-xs text-center mt-6">&copy; {{ 'now' | date: '%Y' }} <br> Bob Rockefeller. <br> All Rights Reserved.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
