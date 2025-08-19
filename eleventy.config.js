@@ -7,9 +7,6 @@ import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
 import logToConsole from "eleventy-plugin-console-plus";
 // markdown-it-deflist add definition list formating to Markdown-It
 import markdownItDef from "markdown-it-deflist";
-// eleventy-plugin-img-magnifier is a lightbox
-// https://github.com/teotimepacreau/eleventy-plugin-img-magnifier
-import imgMagnifier from "eleventy-plugin-img-magnifier";
 
 import tailwindcss from "eleventy-plugin-tailwindcss-4";
 
@@ -49,8 +46,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyPluginMarkdown);
   // Add console plus plugin
   eleventyConfig.addPlugin(logToConsole, { depth: 4 });
-  // Add image magnifier lightbox plugin
-  eleventyConfig.addPlugin(imgMagnifier);
 
   eleventyConfig.addPlugin(tailwindcss, {
     input: "tailwind-input.css",
