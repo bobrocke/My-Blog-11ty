@@ -14,7 +14,7 @@ I've started back shooting a [Laugo Arms Alien](https://laugoarmsusa.com) pistol
 <!--more-->
 
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
-  <a class="glightbox" href="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Magwell-Left-Side.png"><img src="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Magwell-Left-Side.png" alt="The Alien Pistol" ></a>
+  <a href="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Magwell-Left-Side.png" class="glightbox"><img src="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Magwell-Left-Side.png" alt="The Alien Pistol" ></a>
   <figcaption>The Alien</figcaption>
 </figure>
 
