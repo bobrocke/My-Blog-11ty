@@ -1,11 +1,4 @@
-<div class="text-xs md:text-sm mb-3 mt-1 dark:text-gray-300">
-  <i class="fa-regular fa-calendar"></i>&nbsp;&nbsp;{{ post.date | postDate }}
-
-  {% assign modifiedDate = post.data.lastmod %}
-  {% if modifiedDate %}
-    &nbsp;&nbsp;Updated: {{ modifiedDate | postDate }}
-  {% endif %}
-
+<div class="text-xs mb-3 md:text-sm text-gray-400">
   {% for category in post.data.categories %}
     {% for array in postsByCategories %}
       {% if array.categoryName == category %}
@@ -13,7 +6,7 @@
         {% break %}
       {% endif %}
     {% endfor %}
-    {% if forloop.first %}&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-folder"></i>&nbsp;{% endif %}
+    {% if forloop.first %}<i class="fa-regular fa-folder"></i>&nbsp;{% endif %}
     {% if page.url == categoryURL %}
       {{ category }}
     {% else %}

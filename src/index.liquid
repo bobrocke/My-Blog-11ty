@@ -7,16 +7,20 @@ pagination:
 layout: layouts/base.liquid
 ---
 
-{% for post in posts %}
-  <div class="mx-6 mt-8">
-    <h2><a class="font-sans text-xl hover:text-red-600 md:text-4xl dark:text-gray-300 dark:hover:text-black" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+<div class="break-after-column">
+  {% for post in posts %}
+    <div class="m-8">
+      {% render "partials/post-meta-dates.liquid", page: page, post: post %}
 
-    {% render "partials/post_meta.liquid", page: page, post: post, postsByCategories: collections.postsByCategories %}
+      <h2><a class="font-sans text-xl hover:text-red-600 md:text-4xl dark:text-gray-300 dark:hover:text-black" href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
-    <div class="font-serif max-w-none prose-sm md:lead-1 dark:text-gray-300 prose prose-a:hover:text-red-600 md:prose-lg dark:prose-a:text-gray-300 dark:prose-a:hover:text-black dark:prose-headings:text-gray-300">
-      {{ post.data.post_excerpt | markdown }}
+      {% render "partials/post-meta-tax.liquid", page: page, post: post, postsByCategories: collections.postsByCategories %}
+
+      <div class="font-serif max-w-none prose-sm md:lead-1 dark:text-gray-300 prose prose-a:hover:text-red-600 md:prose-lg dark:prose-a:text-gray-300 dark:prose-a:hover:text-black dark:prose-headings:text-gray-300">
+        {{ post.data.post_excerpt | markdown }}
+      </div>
     </div>
-  </div>
-{% endfor %}
+  {% endfor %}
+</div>
 
 {% render "partials/pagination.liquid", pagination: pagination, page: page %}
