@@ -5,7 +5,7 @@ import syntaxHighlight from "eleventy-plugin-highlightjs";
 import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
 // eleventy-plugin-console-plus improves on the standard console.log function
 import logToConsole from "eleventy-plugin-console-plus";
-// markdown-it-deflist add definition list formating to Markdown-It
+// markdown-it-deflist add definition list formatting to Markdown-It
 import markdownItDef from "markdown-it-deflist";
 
 import tailwindcss from "eleventy-plugin-tailwindcss-4";
