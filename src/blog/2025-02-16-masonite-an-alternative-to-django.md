@@ -11,7 +11,7 @@ Ruby on Rails, Laravel, and Django are the heavy-hitters in full-stack web devel
 
 <!--more-->
 
-The Masonite framework is built with Python and so is a Django competitor. It borrows heavily from Laravel and I think that's a good thing, overall. Django is a bit of an odd duck in its code organization -- it expects there to be multiple small apps contained within one project. Masonite is an MVC framework (Django is MTV - Model, Template, View), and has a code scaffolding feature Django does not.
+The Masonite framework is built with Python and so is a Django competitor. It borrows heavily from Laravel and I think that's a good thing, overall. Django is a bit of an odd duck in its code organization -- it expects there to be multiple small apps contained within one project. Masonite is an MVC framework (Django is MTV - Model, Template, View), and has a code scaffolding feature that Django does not.
 
 Masonite uses `python craft` in place of Laravel's `php artisan` to create the boilerplate code for such things as controllers, views, models, and database migrations. Ruby on Rails has the same ability using `rails generate`. Django doesn't have any scaffolding out-of-the-box, but it can be added.
 
@@ -72,7 +72,7 @@ Rails Routes automatically have names, so there's no need for more typing.
 
 Having said all that, I find that Python syntax is nicer than PHP's, but not as elegant as Ruby's. Which is getting away from the point that Masonite is more like Rails than it is like Django. So if you don't like some of Django's concepts, but you like Python, you may well be happy with Masonite.
 
-Django also goes against the grain with its MVT architecture. Django Models are like everyone else's Models. But Django has Views where Masonite has Controllers. And Masonite's Views are Django's Templates.
+Django also goes against the grain with its MVT architecture. Django Models are like everyone else's Models. Django has Views where Masonite has Controllers. And Masonite's Views are Django's Templates.
 
 If you stick with Django long enough, those differences won't matter. But for a while, especially if you have experience with an MCV framework, you'll find yourself constantly making the translation.
 

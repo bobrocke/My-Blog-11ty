@@ -38,7 +38,7 @@ Django
 : For perfectionists with deadlines. Maybe so, but I found it unwieldy and strange. On the good side, Django includes many useful conveniences such as a complete admin interface and user authentication. Python is a wonderful language, but deploying apps written in Python is evil.
 
 Flask
-: A Python micro-framework. Well designed and intended for expansion -- which is good because if you want much besides the basics, you'll be hunting for database drivers, admin panels, authentication, and everything in between. If you know what you want to add, you're good, but if not, you'll be hunting and testing for a while. And then you have to deploy your app -- Python deployment nightmares are real.
+: A Python micro-framework. Well designed and intended for expansion -- which is good because if you want much besides the basics, you'll be hunting for database drivers, admin panels, authentication, and everything in between. If you already know which extensions you want to add, you're good, but if not, you'll be hunting and testing for a while. And then you have to deploy your app -- Python deployment nightmares are real.
 
 Masonite
 : An interesting alternative to Django and Flask. And it might have gotten more of my attention if not for the difficulty in deploying Python apps and the lack of documentation or support.

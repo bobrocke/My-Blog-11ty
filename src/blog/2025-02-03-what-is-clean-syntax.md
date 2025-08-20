@@ -1,13 +1,13 @@
 ---
 title: What is Clean Syntax?
-summary: Programmers talk about *clean syntax* and say this or that language or framework has such a property. I've noted that Ruby and Ruby on Rails have this thing, too. So what is it?
+summary: Programmers talk about *clean syntax* and say this or that language or framework has such a property. I've noted that Ruby and Ruby on Rails have this thing. So what is it?
 image:
 categories: [Web Development]
 tags:
 date: 2025-02-03 21:20:00
 ---
 
-Programmers talk about _clean syntax_ and say this or that language or framework has such a property. I've noted that Ruby and Ruby on Rails have this thing, too. So what is it?
+Programmers talk about _clean syntax_ and say this or that language or framework has such a property. I've noted that Ruby and Ruby on Rails have this thing. So what is it?
 
 <!--more-->
 
@@ -55,7 +55,7 @@ Rails:
 get "colors", to: "colors#colors"
 ```
 
-Here, Rails 'knows' the definition is in the `routes.rb` file, so must be a route definition. And it 'knows' there's a controller `colors` with a method `colors`.
+Here, Rails 'knows', since the definition is in the `routes.rb` file, that it must be a route definition. And it 'knows' there's a controller `colors` with a method `colors`.
 
 So combining Rails _convention over configuration_ with Ruby's simple syntax results in less code that is easier to read. The downside is that you must understand Rails' conventions.
 

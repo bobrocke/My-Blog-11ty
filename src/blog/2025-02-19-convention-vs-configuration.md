@@ -29,7 +29,7 @@ $color = DB::table("colors")->find(1);
 @color = Color.first
 ```
 
-Rails 'knows' there's a table named `Color` in the database and gets the first record.
+-- Rails 'knows' there's a table named `Color` in the database and gets the first record.
 
 Creating a Laravel named Route is:
 

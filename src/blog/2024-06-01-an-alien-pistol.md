@@ -20,7 +20,7 @@ I've started back shooting a [Laugo Arms Alien](https://laugoarmsusa.com) pistol
 
 Several years ago I owned two Alien Full Kits - one I shot and one I left unfired. I very much liked the way the gun handled and shot. But I was concerned about the pistol’s longer term viability in the US both in terms of spare part availability and continued service (Lancer Systems was handling both as the US distributor for Laugo Arms at the time). So I sold them. That was a mistake.
 
-Today, [Laugo Arms USA](https://laugoarmsusa.com) has responsibility for US sales and service. Individual spare parts are available for sale on their website along with all the current Alien pistol models. They also seem knowledgeable and responsive. My past fears were not justified. Lancer Systems still has a few Alien models in stock at closeout prices so I was able to get a Full Kit (the original black and green model with the Glock grip angle) at a bit of a discount.
+Today, [Laugo Arms USA](https://laugoarmsusa.com) has responsibility for US sales and service. Individual spare parts are available for sale on their website along with all the current Alien pistol models. They also seem knowledgeable and responsive. My past fears were not justified. Lancer Systems still had a few Alien models in stock at closeout prices so I was able to get a Full Kit (the original black and green model with the Glock grip angle) at a bit of a discount.
 
 <figure style="float: left; width: 50%; margin: 1em 1em 1em 0em">
   <a href="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-USA-Alien-Full-Kit-Cased.png"><img src="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-USA-Alien-Full-Kit-Cased.png" alt="The Alien Full Kit"></a>
@@ -36,9 +36,9 @@ I mention the original Alien because Laugo Arms has introduced a new [Creator](h
 
 In return for the Alien's uniqueness you get some significant advantages and a few disadvantages. The good stuff is reduced muzzle flip due to the peculiar design having the barrel mounted to the frame and very low with respect to your shooting hand. Having a barrel that does not tilt, rotate, or otherwise change position means its accuracy is improved over other designs. The top rail, where the sights are mounted, does not reciprocate with the slide. Combined with reduced muzzle flip, the sights hardly move making it very easy to take the next aimed shot.
 
-The Alien's recoil is 'different.' Most of the recoil energy comes straight back into the palm of your firing hand because there is virtually no muzzle flip. It feels solid and returns to zero almost immediately. But if you are used to a more traditional pistol, the recoil will not feel especially 'soft.' The weight of the gun at about 40oz helps soak up some recoil force, too.
+The Alien's recoil is _different_. Most of the recoil energy comes straight back into the palm of your firing hand because there is virtually no muzzle flip. It feels solid and returns to zero almost immediately. But if you are used to a more traditional pistol, the recoil will not feel especially soft. The weight of the gun at about 40oz helps soak up some recoil force, too.
 
-Although the pistol looks like a striker-fired gun from the outside, it's really hammer fired. The hammer is up in the top rail and pivots down to strike the firing pin. So the trigger feels more like a hammer fired trigger – almost no take-up, no creep, and then a very crisp 3 ½# release. If the trigger didn't pivot from the top, you'd think it was a 1911 trigger; it's that clean and crisp.
+Although the pistol looks like a striker-fired gun from the outside, it's really hammer fired. The hammer is in the top rail and pivots down to strike the firing pin. So the trigger feels more like a hammer fired trigger – almost no take-up, no creep, and then a very crisp 3 ½# release. If the trigger didn't pivot from the top, you'd think it was a 1911 trigger; it's that clean and crisp.
 
 <img src="/assets/images/wp-content/uploads/2024/05/SB.png" alt="S&B Ammo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
 

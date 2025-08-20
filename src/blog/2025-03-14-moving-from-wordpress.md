@@ -8,18 +8,18 @@ categories: [Web Development]
 tags: [WordPress]
 ---
 
-I've done it before and it looks like I'm doing it again. It's the right time to move my [personal blog](https://www.bobrockefeller.com) from WordPress to a static site for simplicity, security, portability, and performance.
+I've done it before and it looks like I'm doing it again. It's time to move my [personal blog](https://www.bobrockefeller.com) from WordPress to a static site for simplicity, security, portability, and performance.
 
 <!--more-->
 
 My objectives for this move are:
 
 - Portability -- you can export a WordPress site into various formats but all of them take a lot of work to make functional in a new system.
-- Performance -- WordPress on my shared hosting site just wasn't very fast.
+- Performance -- WordPress on my shared hosting service just wasn't very fast.
 - Security -- a static site doesn't have near as many vectors for hacking as a WordPress site.
-- Convenience -- I can write articles in Markdown nearly anywhere and not have to be logged into WordPress
+- Convenience -- I can write articles in Markdown wherever I am using any text editor and not have to be logged into WordPress
 
-With that in mind, I knew I wanted to use a static site generator and write in simple Markdown. So I needed to pick the right static site generator for this project. My experiments, so far, have been with Jekyll and I like it. But the fact is that Jekyll is a mature system with few updates and many themes that are no longer maintained, or are being maintained only for backward compatibility with the old GitHub Pages workflow. And then there's the pain of managing gems, their breaking changes, and their dependencies.
+With that in mind, I knew I wanted to use a static site generator and write in simple Markdown. So I needed to pick the right system for this project. My experiments, so far, have been with Jekyll and I like it. But the fact is that Jekyll is a mature system with few updates and many themes that are no longer maintained, or are being maintained only for backward compatibility with the old GitHub Pages workflow. And then there's the pain of managing gems, their breaking changes, and their dependencies.
 
 I needed to consider some other options.
 
