@@ -11,11 +11,11 @@
     },
     {
       "name": "Topics",
-      "url": "/topics"
+      "url": "/topics/"
     },
     {
       "name": "About",
-      "url": "/about"
+      "url": "/about/"
     }
   ]
 }
