@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
 @import "./assets/css/syntax.css";
+@import "./assets/css/lightbox.css";
 @import "./assets/css/styles.css";
 
 @plugin "@tailwindcss/typography";
