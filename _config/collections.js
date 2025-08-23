@@ -55,6 +55,7 @@ export default function (eleventyConfig) {
   });
 
   // Create a collection of the posts in each category with pagination.
+  // https://chriskirknielsen.com/blog/double-pagination-in-eleventy/
   eleventyConfig.addCollection("postsByCategories", (collectionAPI) => {
     let numberOfresultsPerPage = 8; // number of results per page
     let slugPrefix = "/topics"; // Optional: the prefix for the slug could be /articles or /blog etc
@@ -65,7 +66,7 @@ export default function (eleventyConfig) {
     let categoryData = {};
 
     // Create a collection of posts.
-    const posts = collectionAPI.getFilteredByGlob("./src/blog/*.md");
+    const posts = collectionAPI.getFilteredByGlob("./src/blog/*.md").reverse();
 
     // Create a Set to store unique categories.
     let uniqueCategories = new Set();

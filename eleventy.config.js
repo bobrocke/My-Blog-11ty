@@ -1,7 +1,7 @@
 // eleventy-plugin-highlightjs = HighLightJS eleventy-plugin-syntaxhighlight = PrismJS
 // PrismJS may be getting old
 import syntaxHighlight from "eleventy-plugin-highlightjs";
-// @jgarber/eleventy-plugin-markdown = Markdown-It and adds the Liquid markdown filter to makrdownify
+// @jgarber/eleventy-plugin-markdown = Markdown-It and adds the Liquid markdown filter to markdownify text
 import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
 // eleventy-plugin-console-plus improves on the standard console.log function
 import logToConsole from "eleventy-plugin-console-plus";
