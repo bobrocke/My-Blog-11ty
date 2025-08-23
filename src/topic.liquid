@@ -47,7 +47,7 @@ eleventyComputed:
 
 
       {% for i in (1..postsCategories.pageSlugs.count) %}
-      {% assign j = i | minus: 1 %}
+        {% assign j = i | minus: 1 %}
         {% if i == postsCategories.currentPage %}
           <li>
             <a aria-current="page" aria-label="Page {{ i }}" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button">{{ i }}</a>
