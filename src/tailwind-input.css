@@ -12,6 +12,60 @@
 @theme {
   --font-sans: "PT Sans", "sans-serif";
   --font-serif: "PT Serif", "serif";
+  --font-mono: "Monaco", "monospace";
+
+  /* Light Theme */
+  --bg-color-light: lightgray;
+  --bg-color-black: black;
+  --color-primary: black;
+  --color-primary-dim: gray;
+  --color-primary-invert: white;
+  --color-primary-highlight: red;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+dt {
+  @variant dark {
+    color: rgb(107, 114, 128);
+  }
+}
+
+.r-metadata {
+  @apply text-xs text-primary-dim md:text-sm;
+}
+
+.r-article-title {
+  @apply text-2xl font-bold md:text-4xl
+  dark:text-gray-400;
+}
+
+.r-content {
+  @apply max-w-none font-serif mt-6
+    prose prose-pre:text-wrap prose-a:hover:text-primary-highlight prose-base prose-h2:font-sans prose-h2:mt-8 prose-h2:mb-2
+    md:prose-xl
+    dark:text-gray-400 dark:prose-a:text-gray-400 dark:prose-code:text-gray-300 dark:prose-strong:text-gray-300 dark:prose-headings:text-gray-500;
+}
+
+.r-next-previous {
+  @apply w-30 flex items-center justify-center px-4 h-10 leading-tight text-primary bg-white border border-gray-300  hover:bg-primary-highlight
+  dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-900 dark:hover:text-red-600;
+}
+
+.r-pagination-button {
+  @apply flex items-center justify-center px-4 h-10 ms-0 leading-tight text-black bg-white border border-gray-300 hover:bg-primary-highlight
+  dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-red-600;
+}
+
+.r-disabled {
+  @apply text-primary-dim bg-white border border-gray-300 hover:bg-white
+  dark:bg-gray-800 dark:border-gray-700 dark:text-gray-600;
+}
+
+.r-logo-button {
+  @apply block px-3 py-2 hover:text-primary-highlight;
+}
+
+.r-menu {
+  @apply block px-3 py-2 hover:text-red-600;
+}

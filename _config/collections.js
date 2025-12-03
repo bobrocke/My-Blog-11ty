@@ -57,7 +57,7 @@ export default function (eleventyConfig) {
   // Create a collection of the posts in each category with pagination.
   // https://chriskirknielsen.com/blog/double-pagination-in-eleventy/
   // https://github.com/dwkns/posts-by-categories/tree/main
-  eleventyConfig.addCollection("postsByCategories", (collectionAPI) => {
+  eleventyConfig.addCollection("postsByCategories", function (collectionAPI) {
     let numberOfresultsPerPage = 8; // number of results per page
     let slugPrefix = "/topics"; // Optional: the prefix for the slug could be /articles or /blog etc
 

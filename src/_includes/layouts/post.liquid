@@ -12,14 +12,14 @@ layout: layouts/base.liquid
   {%  endif %}
  {% endfor %}
 
- <div class="m-8">
+ <div class="mx-8">
   {% render "partials/post-meta-dates.liquid", page: page, post: thisPost %}
 
-  <h1 class="font-sans text-2xl md:text-4xl dark:text-gray-300">{{ title }}</h1>
+  <h1 class="r-article-title">{{ title }}</h1>
 
   {% render "partials/post-meta-tax.liquid", page: page, post: thisPost, postsByCategories: collections.postsByCategories %}
 
-  <div class="max-w-none font-serif prose prose-base prose-headings:font-sans prose-headings:font-normal prose-figcaption:font-sans prose-code:text-wrap md:prose-lg prose-a:hover:text-red-600 prose-img:my-1 dark:text-gray-300 dark:prose-strong:text-gray-300 dark:prose-code:text-gray-300 dark:prose-headings:text-gray-300 dark:prose-figcaption:text-gray-300 dark:prose-a:text-gray-300 dark:prose-a:hover:text-black">
+  <div class="r-content">
     {{ content }}
   </div>
 </div>
