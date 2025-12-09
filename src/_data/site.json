@@ -10,8 +10,12 @@
       "url": "/"
     },
     {
-      "name": "Topics",
-      "url": "/topics/"
+      "name": "Categories",
+      "url": "/categories/"
+    },
+    {
+      "name": "Tags",
+      "url": "/tags/"
     },
     {
       "name": "About",

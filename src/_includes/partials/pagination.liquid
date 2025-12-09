@@ -66,7 +66,7 @@
             {% endif %}
           {% endif %}
 
-          <!-- The page block window -->
+          <!-- The pages in the page block window -->
           {% if page.url == pagination.hrefs[j] %}
             <li>
               <a aria-current="page" aria-label="Page {{ i }}" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button">{{ i }}</a>
@@ -85,6 +85,7 @@
           {% endif %}
         {% endfor %}
       {% endif %}
+
       <!-- The fixed last block -->
       {% assign last_page = pagination.pages.size | minus: 1 %}
 

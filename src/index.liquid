@@ -21,6 +21,7 @@ layout: layouts/base.liquid
       </div>
     </div>
   {% endfor %}
-</div>
 
-{% render "partials/pagination.liquid", pagination: pagination, page: page %}
+  {% render "partials/pagination.liquid", pagination: pagination, page: page %}
+
+</div>

@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.liquid
-title: Topics
+title: Categories
 ---
 
 <div class="mx-6 mt-8">
@@ -10,9 +10,9 @@ title: Topics
 
   <ul class="mt-6 ml-6">
     {% for category in categoryData %}
-    <li class="pb-4 text-lg md:text-2xl hover:text-red-600 dark:text-gray-300 dark:hover:text-black">
-      <a href="{{ category[1].slug }}" class="">{{ category[1].name }}</a>
-    </li>
+      <li class="pb-4 text-lg md:text-2xl hover:text-red-600 dark:text-gray-300 dark:hover:text-black">
+        <a href="{{ category[1].slug }}" >{{ category[1].name }}</a>
+      </li>
     {% endfor %}
   </ul>
 </div>

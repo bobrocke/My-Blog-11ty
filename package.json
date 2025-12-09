@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "newpost": "node ./scripts/newPost.cjs",
-    "serve": "eleventy --serve",
-    "serve-d": "DRAFTS=1 eleventy --serve",
+    "serve": "eleventy --serve --quiet",
+    "serve-d": "DRAFTS=1 eleventy --serve --quiet",
     "build": "eleventy",
     "clean": "rm -rf _site"
   },

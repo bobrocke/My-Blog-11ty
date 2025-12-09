@@ -7,7 +7,7 @@ export default function (eleventyConfig) {
     let posts = collectionApi.getFilteredByGlob("src/blog/*.md").reverse();
     const numberOfPosts = posts.length;
     posts.forEach((element, index) => {
-      console.log(": ", posts[index].data.page.url);
+      // console.log(": ", posts[index].data.page.url);
       element.data["numberOfPosts"] = numberOfPosts;
       element.data["currentPostIndex"] = index;
 
@@ -33,7 +33,7 @@ export default function (eleventyConfig) {
     let tils = collectionApi.getFilteredByGlob("src/tils/*.md").reverse();
     const numberOfPosts = tils.length;
     tils.forEach((element, index) => {
-      console.log(": ", tils[index].data.page.url);
+      // console.log(": ", tils[index].data.page.url);
       element.data["numberOfPosts"] = numberOfPosts;
       element.data["currentPostIndex"] = index;
 
@@ -59,7 +59,7 @@ export default function (eleventyConfig) {
   // https://github.com/dwkns/posts-by-categories/tree/main
   eleventyConfig.addCollection("postsByCategories", function (collectionAPI) {
     let numberOfresultsPerPage = 8; // number of results per page
-    let slugPrefix = "/topics"; // Optional: the prefix for the slug could be /articles or /blog etc
+    let slugPrefix = "/categories"; // Optional: the prefix for the slug could be /articles or /blog etc
 
     // some variables to help with creating our data structure
     let postsByCategories = [];
@@ -83,7 +83,7 @@ export default function (eleventyConfig) {
             uniqueCategories.add(element.toString());
           });
         } else {
-          // Assume it is a string
+          // Category is a string
           uniqueCategories.add(post.data.categories);
         }
       }
@@ -114,7 +114,7 @@ export default function (eleventyConfig) {
         }
       });
 
-      // chunk up all the posts in this category by the number of results/page we want.
+      // chunk up all the posts in this category by the number of results per page we want.
       // We need to do this so we can create pagination.
       // chunk() is from lodash-es imported above
       let chunks = chunk(allPostinCurrentCategory, numberOfresultsPerPage);
@@ -204,5 +204,22 @@ export default function (eleventyConfig) {
 
     // console.log(postsByCategories);
     return postsByCategories;
+  });
+
+  // Create a collection of all tags used in /blog
+  eleventyConfig.addCollection("tagList", function (collectionAPI) {
+    const tagsSet = new Set();
+    collectionAPI.getFilteredByGlob(["blog/*.md"]).forEach((item) => {
+      if (item.data.tags) {
+        // Ensure item.data.tags is an array, even if it's a single string
+        const itemTags = Array.isArray(item.data.tags)
+          ? item.data.tags
+          : [item.data.tags];
+        itemTags.forEach((tag) => tagsSet.add(tag));
+      }
+    });
+
+    // Convert Set to Array and sort alphabetically
+    return Array.from(tagsSet).sort();
   });
 }
