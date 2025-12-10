@@ -178,8 +178,6 @@ export default function (eleventyConfig) {
         // construct the pagination object and add to postsByCategories Array
         postsByCategories.push({
           categoryName: category.categoryName,
-
-          // constructs the page slugs needed for pagination controls.
           pageSlugs: {
             all: thisCategoriesPageSlugs,
             next: thisCategoriesPageSlugs[index + 1] || null,
@@ -221,5 +219,22 @@ export default function (eleventyConfig) {
 
     // Convert Set to Array and sort alphabetically
     return Array.from(tagsSet).sort();
+  });
+
+  // Create a collection of all categories used in /blog
+  eleventyConfig.addCollection("categoryList", function (collectionAPI) {
+    const categoriesSet = new Set();
+    collectionAPI.getFilteredByGlob(["blog/*.md"]).forEach((item) => {
+      if (item.data.categories) {
+        // Ensure item.data.tags is an array, even if it's a single string
+        const itemCategories = Array.isArray(item.data.categories)
+          ? item.data.categories
+          : [item.data.categories];
+        itemCategories.forEach((category) => tagsSet.add(category));
+      }
+    });
+
+    // Convert Set to Array and sort alphabetically
+    return Array.from(categoriesSet).sort();
   });
 }

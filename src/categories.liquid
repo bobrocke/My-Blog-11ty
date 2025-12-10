@@ -1,18 +1,21 @@
 ---
 layout: layouts/base.liquid
 title: Categories
+pagination:
+  data: collections.categoryList
+  size: 10
 ---
 
 <div class="mx-6 mt-8">
   <h1 class="font-sans text-2xl md:text-4xl dark:text-gray-300">{{ title }}</h1>
 
-  {% assign categoryData = collections.postsByCategories[0].categoryData %}
-
   <ul class="mt-6 ml-6">
-    {% for category in categoryData %}
+    {% for category in pagination.items %}
       <li class="pb-4 text-lg md:text-2xl hover:text-red-600 dark:text-gray-300 dark:hover:text-black">
-        <a href="{{ category[1].slug }}" >{{ category[1].name }}</a>
+        <a href="/categories/{{ category }}" >{{ category }}</a>
       </li>
     {% endfor %}
   </ul>
+
+   {% render "partials/pagination.liquid", pagination: pagination, page: page %}
 </div>
