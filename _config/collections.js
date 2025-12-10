@@ -58,7 +58,7 @@ export default function (eleventyConfig) {
   // https://chriskirknielsen.com/blog/double-pagination-in-eleventy/
   // https://github.com/dwkns/posts-by-categories/tree/main
   eleventyConfig.addCollection("postsByCategories", function (collectionAPI) {
-    let numberOfresultsPerPage = 8; // number of results per page
+    let numberOfresultsPerPage = 4; // number of results per page
     let slugPrefix = "/categories"; // Optional: the prefix for the slug could be /articles or /blog etc
 
     // some variables to help with creating our data structure

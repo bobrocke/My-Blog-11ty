@@ -16,8 +16,11 @@ eleventyComputed:
       <li class="pb-4">
         {% render "partials/post-meta-dates.liquid", page: page, post: post %}
         <a class="text-lg md:text-2xl hover:text-red-600 dark:text-gray-300 dark:hover:text-black" href="{{ post.url }}" >{{ post.data.title }}</a>
-
         {% render "partials/post-meta-tax.liquid", page: page, post: post, postsByCategories: collections.postsByCategories %}
+
+        <div class="r-content">
+          {{ post.data.post_excerpt | markdown }}
+        </div>
       </li>
     {%- endfor -%}
   </ul>
