@@ -1,0 +1,84 @@
+/*
+Semantic Styles for HTML
+*/
+
+:not(pre) > code {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: bold;
+  background-color: var(--color-bg-lightest);
+  padding: calc(var(--space-3xs) / 2) var(--space-3xs);
+  border-radius: 5px;
+}
+
+a {
+  color: var(--color-text-primary);
+
+  &:hover {
+    color: var(--color-text-accent);
+  }
+}
+
+body {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-light);
+  font-family: var(--font-serif);
+  font-size: var(--text-m);
+}
+
+dd {
+  margin-left: var(--space-s);
+  margin-bottom: var(--space-xs);
+}
+
+dt {
+  font-weight: bold;
+}
+
+figcaption {
+  text-align: center !important;
+  font-size: var(--text-sm);
+  margin-top: 0 !important;
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+}
+
+h1 {
+  font-size: var(--text-2xl);
+}
+
+h2 {
+  font-size: var(--text-xl);
+}
+
+h3 {
+  font-size: var(--text-lg);
+}
+
+p {
+  margin-bottom: var(--space-xs);
+}
+
+p + ul {
+  margin-top: calc(var(--space-xs) * -1);
+}
+
+pre {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-wrap: wrap;
+  margin-bottom: var(--space-xs);
+  padding: var(--space-xs);
+}
+
+ul {
+  margin-bottom: var(--space-xs);
+}

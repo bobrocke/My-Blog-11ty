@@ -8,14 +8,13 @@ import logToConsole from "eleventy-plugin-console-plus";
 // markdown-it-deflist add definition list formatting to Markdown-It
 import markdownItDef from "markdown-it-deflist";
 
-import tailwindcss from "eleventy-plugin-tailwindcss-4";
-
 import filters from "./_config/filters.js";
 import collections from "./_config/collections.js";
 
 export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/js");
+  eleventyConfig.addPassthroughCopy("src/assets/css");
 
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItDef));
 
@@ -46,12 +45,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyPluginMarkdown);
   // Add console plus plugin
   eleventyConfig.addPlugin(logToConsole, { depth: 10 });
-
-  eleventyConfig.addPlugin(tailwindcss, {
-    input: "tailwind-input.css",
-    output: "assets/css/tailwind.css",
-    minify: false,
-  });
 }
 
 export const config = {

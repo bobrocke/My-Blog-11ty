@@ -1,0 +1,343 @@
+/*
+Composition from CUBE CSS
+Layout rules
+*/
+
+body {
+  margin: var(--space-m);
+}
+
+footer {
+  display: flex;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: clamp(4rem, 20vw, 200px) 1fr;
+  }
+
+  .content {
+    grid-column: 2;
+    margin: 0 var(--space-m);
+  }
+
+  .pagination {
+    grid-column: 2;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+/*
+Utilities from CUBE CSS
+CSS classes that do one job and do that one job well.
+*/
+
+.inactive {
+  color: var(--color-text-secondary);
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+Blocks from CUBE CSS
+A block is a skeletal component or organisational structure.
+*/
+
+/*
+Blog
+*/
+
+.blog-title a {
+  text-decoration: none;
+}
+
+.blog-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+
+  a {
+    text-decoration: none;
+    color: var(--color-text-secondary);
+  }
+
+  &.blog-dates {
+    margin-bottom: calc(var(--space-3xs) * -1);
+  }
+
+  &.blog-taxonomies {
+    margin-top: calc(var(--space-3xs) * -1);
+    margin-bottom: var(--space-xs);
+  }
+}
+
+ul.button-nav {
+  padding: 0;
+  margin-bottom: 0;
+
+  & > li {
+    float: left;
+    border: 2px solid var(--color-text-secondary);
+    padding: var(--space-3xs) var(--space-xs);
+    font-weight: bold;
+  }
+
+  & > li + li {
+    margin-left: -2px;
+  }
+
+  & > li:first-child {
+    border-top-left-radius: var(--space-2xs);
+    border-bottom-left-radius: var(--space-2xs);
+  }
+
+  & > li:last-child {
+    border-top-right-radius: var(--space-2xs);
+    border-bottom-right-radius: var(--space-2xs);
+  }
+}
+
+.prose a,
+p a {
+  text-decoration: underline dotted;
+}
+
+.prose.post-summary {
+  margin-bottom: var(--space-l);
+}
+
+/*
+Footer
+*/
+
+footer {
+  background-color: var(--color-bg-darkest);
+  padding: var(--space-xs);
+  margin-top: var(--space-m);
+  color: var(--color-text-light);
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+
+  a {
+    color: var(--color-text-light);
+    margin-right: var(--space-xs);
+  }
+}
+
+/*
+Navigation
+*/
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg-darkest);
+  padding: var(--space-xs);
+  color: var(--color-text-light);
+  position: relative;
+  margin-bottom: var(--space-xs);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-text-light);
+  font-family: var(--font-sans);
+}
+
+nav li {
+  font-family: var(--font-sans);
+}
+
+nav a.icon {
+  margin-left: auto;
+  font-size: var(--text-3xl);
+  color: var(--color-text-light);
+}
+
+button#theme-toggle {
+  color: var(--color-text-light);
+  background-color: var(--color-bg-darkest);
+  border-style: none;
+}
+
+button#theme-toggle:hover {
+  color: var(--color-text-accent);
+}
+
+nav {
+  .vert-logo {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: var(--color-bg-darkest);
+  }
+
+  .nav-list ul {
+    list-style: none;
+    font-size: var(--text-lg);
+    padding-left: var(--space-m);
+  }
+
+  .nav-list li {
+    padding: var(--space-3xs);
+  }
+
+  .copyright {
+    margin-top: var(--space-m);
+    font-size: var(--text-xs);
+  }
+}
+
+@media (min-width: 600px) {
+  nav {
+    display: block;
+    margin-bottom: 0;
+
+    .vert-logo {
+      display: block;
+    }
+
+    .horiz-logo {
+      display: none;
+    }
+
+    a.icon {
+      display: none;
+    }
+
+    .nav-list {
+      display: block;
+      position: static;
+    }
+
+    .nav-list ul {
+      text-align: center;
+      font-size: var(--text-m);
+      padding: 0;
+      margin-top: var(--space-xs);
+    }
+
+    .links {
+      display: block;
+    }
+  }
+}
+
+/*
+Page Navigation
+*/
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+
+  a {
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+
+  a:hover {
+    color: var(--color-text-accent);
+  }
+
+  & > div {
+    border: 2px solid var(--color-text-secondary);
+    padding: var(--space-3xs) var(--space-xs);
+  }
+
+  & > div:first-child {
+    border-top-left-radius: var(--space-2xs);
+    border-bottom-left-radius: var(--space-2xs);
+  }
+
+  & > div:last-child {
+    border-top-right-radius: var(--space-2xs);
+    border-bottom-right-radius: var(--space-2xs);
+  }
+}
+
+/*
+Pagination
+*/
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-m);
+
+  ul {
+    display: flex;
+    list-style: none;
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+  }
+
+  ul a {
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+
+  ul a:hover {
+    color: var(--color-text-accent);
+  }
+
+  .location {
+    padding-left: var(--space-s);
+    padding-right: var(--space-s);
+  }
+}
+
+/*
+Taxonomy
+*/
+
+.taxonomy > ul {
+  list-style: none;
+  font-family: var(--font-sans);
+  font-size: var(--text-lg);
+}
+
+.taxonomy a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.taxonomy a:hover {
+  color: var(--color-text-accent);
+}
+
+/*
+Exceptions from CUBE CSS
+Layout rules
+*/
+
+h1.heading {
+  margin-bottom: var(--space-s);
+}
