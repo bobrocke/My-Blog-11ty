@@ -1,6 +1,7 @@
 // eleventy-plugin-highlightjs = HighLightJS; eleventy-plugin-syntaxhighlight = PrismJS
 // PrismJS may be getting old
 import syntaxHighlight from "eleventy-plugin-highlightjs";
+// import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 // @jgarber/eleventy-plugin-markdown = Markdown-It and adds the Liquid markdown filter to markdownify text
 import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
 // eleventy-plugin-console-plus improves on the standard console.log function
@@ -15,6 +16,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("src/assets/css");
+  eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItDef));
 

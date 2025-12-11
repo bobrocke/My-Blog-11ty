@@ -77,6 +77,7 @@ pre {
   text-wrap: wrap;
   margin-bottom: var(--space-xs);
   padding: var(--space-xs);
+  background-color: var(--color-bg-darkest);
 }
 
 ul {

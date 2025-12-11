@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.ico">
 
+    <link rel="stylesheet" href="/assets/css/syntax.css"/>
     <link rel="stylesheet" href="/assets/css/bootstrap-icons.css"/>
     <link rel="stylesheet" href="/assets/css/brands.css"/>
     <link rel="stylesheet" href="/assets/css/lightbox.css"/>
@@ -37,23 +38,37 @@
     {% endif %}
   </head>
 
-  <body class="grid max-w-5xl
-    md:grid-cols-[200px_1fr] md:px-6 md:pt-6 md:mx-auto
-    dark:bg-gray-700">
+  <body>
     {% render "partials/menus.liquid", page: page, site: site, title: title %}
       {{ content }}
     {% render "partials/footer.liquid" %}
-
-    <script type="text/javascript" src="/assets/js/lightbox.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <script src="https://kit.fontawesome.com/0c37cebf77.js" crossorigin="anonymous"></script>
   </body>
 
+  <script type="text/javascript" src="/assets/js/lightbox.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+
+  {% if prod %}
+    <!-- Start of Woopra Code -->
+    <script>
+      !function(){var t,o,c,e=window,n=document,r=arguments,a="script",i=["call","cancelAction","config","identify","push","track","trackClick","trackForm","update","visit"],s=function(){var t,o=this,c=function(t){o[t]=function(){return o._e.push([t].concat(Array.prototype.slice.call(arguments,0))),o}};for(o._e=[],t=0;t<i.length;t++)c(i[t])};for(e.__woo=e.__woo||{},t=0;t<r.length;t++)e.__woo[r[t]]=e[r[t]]=e[r[t]]||new s;(o=n.createElement(a)).async=1,o.src="https://static.woopra.com/js/w.js",(c=n.getElementsByTagName(a)[0]).parentNode.insertBefore(o,c)}("woopra");
+
+      woopra.config({
+        domain: "bobrockefeller.com",
+        outgoing_tracking: true,
+        download_tracking: true,
+        click_tracking: true
+      });
+
+      woopra.track();
+    </script>
+    <!-- End of Woopra Code -->
+  {% endif %}
+
+  <!--Dark/Light theme toggler -->
   <script>
     var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
     var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
-    // Change the icons inside the button based on previous settings
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       themeToggleLightIcon.classList.remove('hidden');
     } else {
@@ -90,21 +105,4 @@
       }
     });
   </script>
-
-  {% if prod %}
-    <!-- Start of Woopra Code -->
-    <script>
-      !function(){var t,o,c,e=window,n=document,r=arguments,a="script",i=["call","cancelAction","config","identify","push","track","trackClick","trackForm","update","visit"],s=function(){var t,o=this,c=function(t){o[t]=function(){return o._e.push([t].concat(Array.prototype.slice.call(arguments,0))),o}};for(o._e=[],t=0;t<i.length;t++)c(i[t])};for(e.__woo=e.__woo||{},t=0;t<r.length;t++)e.__woo[r[t]]=e[r[t]]=e[r[t]]||new s;(o=n.createElement(a)).async=1,o.src="https://static.woopra.com/js/w.js",(c=n.getElementsByTagName(a)[0]).parentNode.insertBefore(o,c)}("woopra");
-
-      woopra.config({
-        domain: "bobrockefeller.com",
-        outgoing_tracking: true,
-        download_tracking: true,
-        click_tracking: true
-      });
-
-      woopra.track();
-    </script>
-    <!-- End of Woopra Code -->
-  {% endif %}
 </html>

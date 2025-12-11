@@ -12,38 +12,36 @@ layout: layouts/base.liquid
   {%  endif %}
  {% endfor %}
 
- <div class="mx-8">
+ <div class="content">
   {% render "partials/post-meta-dates.liquid", page: page, post: thisPost %}
 
-  <h1 class="r-article-title">{{ title }}</h1>
+  <h1>{{ title }}</h1>
 
   {% render "partials/post-meta-tax.liquid", page: page, post: thisPost, postsByCategories: collections.postsByCategories %}
 
-  <div class="r-content">
+  <div class="prose">
     {{ content }}
   </div>
-</div>
 
-<div class="flex justify-center my-8 md:col-span-2">
-  <ul class="inline-flex -space-x-px text-base h-10 list-none">
-    {% if previousPageURL %}
-      <li>
-        <a href="{{ previousPageURL }}" aria-label="Newer" class="w-30 flex items-center justify-center px-4 h-10 leading-tight text-black bg-white border border-gray-300 rounded-s-lg hover:bg-red-600 dark:bg-gray-600 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button"><span aria-hidden="true">Newer</span></a>
-      </li>
-    {% else %}
-      <li>
-        <a aria-label="Newer" class="w-30 flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 rounded-s-lg dark:bg-gray-500 dark:border-gray-700 dark:text-gray-400" role="button"><span aria-hidden="true">Newer</span></a>
-      </li>
-    {% endif %}
+  <div class="page-nav">
+      {% if previousPageURL %}
+        <div>
+          <a href="{{ previousPageURL }}" aria-label="Newer Post" role="button"><i class="bi bi-caret-left-fill"></i>Newer Post</a>
+        </div>
+      {% else %}
+        <div class="inactive">
+          <span aria-label="Newer Post" role="button" aria-disabled="true"><i class="bi bi-caret-left-fill"></i>Newer Post</span>
+        </div>
+      {% endif %}
 
-    {% if nextPageURL %}
-      <li>
-        <a href="{{ nextPageURL }}" aria-label="Older" class="w-30 flex items-center justify-center px-4 h-10 leading-tight text-black bg-white border border-gray-300 rounded-e-lg hover:bg-red-600 dark:bg-gray-600 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button"><span aria-hidden="true">Older</span></a>
-      </li>
-    {% else %}
-      <li>
-        <a aria-label="Older" class="w-30 flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-400 bg-white border border-gray-300 rounded-e-lg dark:bg-gray-500 dark:border-gray-700 dark:text-gray-400" role="button"><span aria-hidden="true">Older</span></a>
-      </li>
-    {% endif %}
-  </ul>
+      {% if nextPageURL %}
+        <div>
+          <a href="{{ nextPageURL }}" aria-label="Older Post" role="button">Older Post<i class="bi bi-caret-right-fill"></i></a>
+        </div>
+      {% else %}
+        <div>
+          <span aria-label="Older Post" role="button" aria-disabled="true">Older Post<i class="bi bi-caret-right-fill"></i></span>
+        </div>
+      {% endif %}
+  </div>
 </div>
