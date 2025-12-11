@@ -1,11 +1,9 @@
 ---
 title: Off-Camera Flash Choices
-summary: My off-camera flash 'system' has been a mishmash of equipment. Clearly, I didn’t have much of a ‘system’ and it certainly wasn’t very modern. It was time for something better.
 date: 2023-04-04 21:55:27
 publish: true
 pin: false
-categories:
-  - Photography Gear
+categories: [Photography Gear]
 tags: [Godox, Profoto]
 ---
 
@@ -25,6 +23,6 @@ Of course, the _huge_ difference between Godox and Profoto is the price; Profoto
 
 Light modifiers have many more companies to choose from, but [Glow](https://www.adorama.com/brands/Glow) (an Adorama brand) and [Profoto](https://profoto.com/us/products/light-shaping-tools) are viable options for the whole scope of lighting modifiers from small speedlight octas up through the largest studio softboxes. Godox’s line of light modifiers is not well-reviewed. Profoto has the edge with its innovative [OCF II](https://profoto.com/us/tips/the-new-profoto-ocf-ii-modifiers) line of softboxes, grids, and gels while Glow has the very nice [EZ Lock](https://www.adorama.com/g/glow-ez-lock-light-modifiers) and ParaSnap systems.
 
-For strobes, I opted for used Profoto equipment; the cost of new being prohibitive for an amateur/hobbyist photographer. The now discontinued [B2 system](https://profoto.com/int/b2?gclid=Cj0KCQjw8e-gBhD0ARIsAJiDsaXSXr0dQCPueSbEWvz5AoYSkK6_DzhIyJeKUkiP2ZRl2cN2WZzqVnwaAhuXEALw_wcB) seemed right for me and I was able to get two Location Kits on eBay for a reasonable price and in good condition. That gives me 250 Ws of power from each pack and a total of four heads to distribute that power between. I’ll write more about my experiences with that system after I’ve had some time to learn it and do a little bit of shooting.
+For strobes, I opted for used Profoto equipment; the cost of new being prohibitive for an amateur/hobbyist photographer. The now discontinued [B2 system](https://www.profoto.com/us/en/shop/products/lights/studio-packs/packs/b2-location-kit-250-airttl5/) seemed right for me and I was able to get two Location Kits on eBay for a reasonable price and in good condition. That gives me 250 Ws of power from each pack and a total of four heads to distribute that power between. I’ll write more about my experiences with that system after I’ve had some time to learn it and do a little bit of shooting.
 
 I’m still settling on my choice for lighting modifiers; both Glow and Profoto offer what I need. I have one softbox from each to try out: an [OCF 24" Octa](https://www.adorama.com/pp101211.html) by Profoto (bought used from Adorama) and a new [36" EZ Lock Octa](https://www.adorama.com/glsbez36octa.html) by Glow. As you might imagine, the Profoto OCF Octa is well suited to the B2 heads. The OCF II line of gels and grids make it easy to quickly chnage modifiers. Just as with the Godox comparison, the Profoto gear is a good bit more expensive than the Glow equipment.

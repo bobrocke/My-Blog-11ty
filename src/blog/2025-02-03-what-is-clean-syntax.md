@@ -1,10 +1,8 @@
 ---
 title: What is Clean Syntax?
-summary: Programmers talk about *clean syntax* and say this or that language or framework has such a property. I've noted that Ruby and Ruby on Rails have this thing. So what is it?
-image:
-categories: [Web Development]
-tags:
 date: 2025-02-03 21:20:00
+categories: [Web Development]
+tags: [Ruby on Rails, Laravel]
 ---
 
 Programmers talk about _clean syntax_ and say this or that language or framework has such a property. I've noted that Ruby and Ruby on Rails have this thing. So what is it?

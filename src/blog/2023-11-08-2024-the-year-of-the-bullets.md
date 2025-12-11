@@ -1,12 +1,10 @@
 ---
 title: "2024: The Year of the Bullets"
-summary: For my [USPSA](https://uspsa.org), [PCSL](https://www.pcsleague.com), and [IDPA](https://www.idpa.com) practical shooting competitions I've been a huge fan and consistent user of the 1911 platform. But 8 or 10 rounds in a magazine gets old, especially in USPSA. So 2024 is going to be my year to shoot a high-capacity pistol. And there sure are a lot to choose from!
 date: 2023-11-08 17:52:58
 publish: true
 pin: false
-categories:
-  - Competition Pistols
-tags: []
+categories: [Competition Pistols]
+tags: [M&P Competitor]
 ---
 
 For my [USPSA](https://uspsa.org), [PCSL](https://www.pcsleague.com), and [IDPA](https://www.idpa.com) practical shooting competitions I've been a huge fan and consistent user of the 1911 platform. But 8 or 10 rounds in a magazine gets old, especially in USPSA. So 2024 is going to be my year to shoot a high-capacity pistol. And there sure are a lot to choose from!

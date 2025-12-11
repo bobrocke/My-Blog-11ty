@@ -1,11 +1,9 @@
 ---
 title: An Alien Pistol
 date: 2024-06-01 15:11:18
-summary: I've started back shooting a [Laugo Arms Alien](https://laugoarmsusa.com) pistol and I still like it. These pistols are niche firearms that offer a unique design not found together in any other current pistol that I know. And if you have had a chance to shoot one, you'll know exactly what I mean by unique.
 publish: true
 pin: false
-categories:
-  - Competition Pistols
+categories: [Competition Pistols]
 tags: [Laugo Arms Alien]
 ---
 
@@ -46,7 +44,7 @@ I did mention disadvantages. The primary one derives from the clever gas delayed
 
 I'll post a follow-up article soon discussing ammunition requirements in more detail and offering some suggestions on what components make sense if you want to reload your own.
 
-Another disadvantage comes from the gun's uniqueness. You won't drop into your local gun store and find magazines or holsters, for example. Although the Full Kit includes a serviceable holster, it may not fit your needs and there are only four companies I'm aware of that make holsters to fit: [Big Dog Steel](https://bigdogsteel.com/product/carnivore-competition-holster/), [Red Hill Tactical](https://www.redhilltactical.com/Laugo-Alien-Holster-Competition_p_3194.html), and [Smith Concealment](https://www.facebook.com/smithconcealment/about). Magazines are only available from [Laugo Arms USA](https://laugoarmsusa.com/product-category/parts-accessories/magazines/) and there are different magazines for each model.
+Another disadvantage comes from the gun's uniqueness. You won't drop into your local gun store and find magazines or holsters, for example. Although the Full Kit includes a serviceable holster, it may not fit your needs and there are only four companies I'm aware of that make holsters to fit: [Big Dog Steel](https://bigdogsteel.com/product/carnivore-competition-holster/), [Red Hill Tactical](https://redhilltactical.com/product/laugo-alien-holster-competition/), and [Smith Concealment](https://www.facebook.com/smithconcealment/about). Magazines are only available from [Laugo Arms USA](https://laugoarmsusa.com/product-category/parts-accessories/magazines/) and there are different magazines for each model.
 
 The gun can get hot around the trigger guard and front of the frame. Because some gas from the chamber is directly ported into the gas chamber, extra heat is introduced. It may not be a problem under USPSA match conditions, but I can imagine it getting uncomfortable under sustained rapid fire.
 

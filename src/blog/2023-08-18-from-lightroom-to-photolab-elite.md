@@ -5,9 +5,8 @@ date: 2023-08-18 23:40:35
 publish: true
 pin: false
 toc: false
-categories:
-  - Photography Software
-tags: [PhotoLab]
+categories: [Photography Software]
+tags: [PhotoLab, Lightroom]
 ---
 
 Over the years I have used many (too many) different image post-processing applications, even so far back as when Adobe Bridge was the only DAM available other than the Finder. When Apple’s Aperture first came out, I jumped on it right away, loving it until Apple discontinued it. That was a sad day, for me.

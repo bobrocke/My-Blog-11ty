@@ -1,13 +1,11 @@
 ---
 title: Selecting a Post-Processor
-summary: I’ve spent the last couple of months working back and forth between the raw processors [Capture One](https://www.captureone.com/en), [Lightroom Classic](https://www.adobe.com/products/photoshop-lightroom-classic.html), [PhotoLab Elite](https://www.dxo.com/dxo-photolab/), and [Photo RAW](https://www.on1.com/products/photo-raw/) in an attempt to settle on just one going into 2024.
 date: 2023-09-06 23:27:06
 publish: true
 pin: false
 toc: false
-categories:
-  - Photography Software
-tags: []
+categories: [Photography Software]
+tags: [PhotoLab, Lightroom, ON1]
 ---
 
 I’ve spent the last couple of months working back and forth between the raw processors [Capture One](https://www.captureone.com/en), [Lightroom Classic](https://www.adobe.com/products/photoshop-lightroom-classic.html), [PhotoLab Elite](https://www.dxo.com/dxo-photolab/), and [Photo RAW](https://www.on1.com/products/photo-raw/) in an attempt to settle on just one going into 2024. Owning more than one is just too expensive and too complicated trying to keep edits and metadata in sync. My primary raw post-processing tools have been Capture One and Lightroom Classic. So that’s where I started my efforts.

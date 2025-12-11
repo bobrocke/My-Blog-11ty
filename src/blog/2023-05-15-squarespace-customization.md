@@ -4,8 +4,7 @@ summary: The Squarespace platform allows the web developer a lot of flexibility 
 date: 2023-05-15 23:01:59
 publish: true
 pin: false
-categories:
-  - Web Development
+categories: [Web Development]
 tags: [Squarespace]
 ---
 

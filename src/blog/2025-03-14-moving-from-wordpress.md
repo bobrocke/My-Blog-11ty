@@ -2,7 +2,6 @@
 title: Moving From WordPress
 date: 2025-03-14 19:28:41
 lastmod: 2025-03-19 19:28:41
-summary: I've done it before and it looks like I'm doing it again. It's the right time to move my [personal blog](https://www.bobrockefeller.com) from WordPress to a static site for simplicity, security, portability, and performance.
 image:
 categories: [Web Development]
 tags: [WordPress]
@@ -69,6 +68,6 @@ Coding for portability includes what goes in the YAML front matter. For example,
 
 I may end up just using the front matter for excerpts because that might actually be the 'standard'. Before I'm sure, I'll need to do more work in learning how other static site generators use YAML front matter in hopes of finding what really is 'standard' and what will be a portability problem.
 
-So far Hugo is working out pretty well. The learning curve is a little steep for me, not knowing the Go Template Language, and Hugo's documentation doesn't help -- it's broken into so many little pieces that finding what I want is better done with a web search. But most of the available themes are well maintained and several of them are very nice. Right now I'm working with [Roadster](https://roadster-hugo.pages.dev/) which is a fork of Mainroad (because that author no longer maintains it). Hugo is updated frequently and can break themes, so maintenance is important.
+So far Hugo is working out pretty well. The learning curve is a little steep for me, not knowing the Go Template Language, and Hugo's documentation doesn't help -- it's broken into so many little pieces that finding what I want is better done with a web search. But most of the available themes are well maintained and several of them are very nice. Right now I'm working with [Roadster](https://roadster.mansoorbarri.com/) which is a fork of Mainroad (because that author no longer maintains it). Hugo is updated frequently and can break themes, so maintenance is important.
 
 Hugo is indeed very fast generating my site. Jekyll was pretty fast, but Hugo is almost instant. Its development server is very good at seeing file changes and updating the browser which makes tweaking things so much easier. I like it.

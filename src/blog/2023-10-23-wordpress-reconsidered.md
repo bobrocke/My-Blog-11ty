@@ -1,11 +1,9 @@
 ---
 title: WordPress Reconsidered
-summary: I moved my websites off of WordPress several years ago due to the security problems I was having and the complexity of customizing themes. There were just too many files in too many places to modify when modifying a theme to suit me. So I switched to [Grav](https://getgrav.org) and found its straightforward approach was what I needed.
 date: 2023-10-23 19:03:18
 publish: true
 pin: false
-categories:
-  - Web Development
+categories: [Web Development]
 tags: [WordPress]
 ---
 

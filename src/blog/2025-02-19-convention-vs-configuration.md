@@ -1,10 +1,8 @@
 ---
 title: Convention vs. Configuration
 date: 2025-02-19 12:09:00
-summary: Ruby on Rails is well known for its philosophy of _convention over configuration_. And there are definitely benefits to that approach. But are there also significant disadvantages?
-image:
 categories: [Web Development]
-tags:
+tags: [Ruby on Rails, Laravel]
 ---
 
 Ruby on Rails is well known for its philosophy of _convention over configuration_. And there are definitely benefits to that approach. But are there also significant disadvantages?

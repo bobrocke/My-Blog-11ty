@@ -1,11 +1,9 @@
 ---
 title: The Big Switch
-summary: After many years of happy shooting with the Olympus OM-D E-M1 (and its Mark II upgrade) I’ve made the switch to the [Fujifilm X-T4](https://fujifilm-x.com/en-us/products/cameras/x-t4/). It’s really more of a switch back because I shot a Fujifilm X-T1 immediately before the Olympus. So why the flip-flop?
 date: 2023-04-15 22:23:07
 publish: true
 pin: false
-categories:
-  - Photography Gear
+categories: [Photography Gear]
 tags: [Fujifilm]
 ---
 
@@ -23,7 +21,7 @@ Focus mode (manual, single, or continuous) and drive mode (single, continuous lo
 
 In general, the Fujifilm and Olympus systems are comparable. Both have some excellent lenses that cover all the bases. Both have weather resistant lenses that are better constructed and better sealed. And both will do the job for any but the most demanding photographers.
 
-Some of the key reasons I wanted to switch back are that Fujifilm now has **I** n **B** ody **I** mage **S** tabilization (IBIS) – the X-T1 did not, the APS-C sensor which is a nice happy medium between the Olympus’ micro four-thirds and a full frame, and the [Profoto light system I picked](https://www.bobrockefeller.com/photography/flash-choices) does not support Olympus in its newest controllers. Nor does Elinchrom; there are just too few Olympus shooters for them to provide for.
+Some of the key reasons I wanted to switch back are that Fujifilm now has **I** n **B** ody **I** mage **S** tabilization (IBIS) – the X-T1 did not, the APS-C sensor which is a nice happy medium between the Olympus’ micro four-thirds and a full frame, and the [Profoto light system I picked](/blog/2023-04-04-off-camera-flash-choices) does not support Olympus in its newest controllers. Nor does Elinchrom; there are just too few Olympus shooters for them to provide for.
 
 APS-C sensors, being larger than micro four-thirds sensors, offer a few advantages over them. Their photosites can be larger with the same megapixel count allowing for better low-light noise performance. If a shallow depth of field is important to you, APS-C sensors offer less depth of field at a given aperture.
 

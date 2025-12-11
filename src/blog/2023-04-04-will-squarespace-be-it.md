@@ -1,11 +1,9 @@
 ---
 title: Will Squarespace Be It?
-summary: My experiments in web development have led me all over the field of Content Management Systems (CMSs) from WordPress to Squarespace with stops at [Kirby](https://getkirby.com/), [concrete5](https://www.concretecms.com/), [SilverStripe](https://www.silverstripe.org/), [Perch](https://perchrunway.com/), [Statamic](https://statamic.com/), and [Grav](https://getgrav.org/). Some of those have changed names and/or underpinnings, but clearly, I’ve tried too many.
 date: 2023-04-04 18:48:42
 publish: true
 pin: false
-categories:
-  - Web Development
+categories: [Web Development]
 tags: [Squarespace]
 ---
 

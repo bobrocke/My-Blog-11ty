@@ -1,8 +1,6 @@
 ---
 title: Masonite, an Alternative to Django
 date: 2025-02-11 10:09:00
-summary: Ruby on Rails, Laravel, and Django are the heavy-hitters in full-stack web development frameworks written in Ruby, PHP, and Python, respectively. Rails has been around since 2004, Laravel since 2011, and Django since 2005. I recently came across Masonite (released in 2018) and had to look into it.
-image:
 categories: [Web Development]
 tags: [Masonite]
 ---
