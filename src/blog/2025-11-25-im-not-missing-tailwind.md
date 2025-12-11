@@ -36,7 +36,7 @@ It works. But guess what? The more you de-clutter and de-duplicate your Tailwind
 
 I don't like Tailwind's default color system, either, especially for gray or neutral colors. The steps between colors at the lightest and darkest ends of the spectrum have too little contrast. It's hard to tell one from the next one.
 
-<img src="/images/post-images/tailwind-neutral-scale.png" alt="Neutral Scale" style="display: block; margin: 1em auto 1em auto">
+<img src="/assets/images/post-images/tailwind-neutral-scale.png" alt="Neutral Scale" style="display: block; margin: 1em auto 1em auto">
 
 You may not be able to tell, but there are 11 separate shades of neutral shown.
 
