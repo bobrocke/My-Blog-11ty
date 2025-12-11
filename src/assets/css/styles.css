@@ -1,9 +1,0 @@
-figcaption {
-  text-align: center !important;
-  font-size: 0.85rem;
-  margin-top: 0 !important;
-}
-
-code[class*="language-"] {
-  white-space: pre-wrap;
-}

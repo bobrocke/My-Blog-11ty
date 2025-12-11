@@ -15,13 +15,13 @@ There are plenty of complaints across the web about the Go template language; it
 
 This initializes and sets the variable `$end` to `$start` plus `2`:
 
-```go
+```twig
 {{ $end := add $start 2 }}
 ```
 
 And this tests to see if `$start` is less than `2`:
 
-```go
+```twig
 {{ if lt $start 2 }}
 ```
 
@@ -29,7 +29,7 @@ Neither is impossible to decipher, but once you add enough template logic to bui
 
 The Tailwind problem is my own doing from a sincere attempt to use it as I think is intended. But I ended up with code like this:
 
-```go
+```twig
 {{ if eq $.Paginator.PageNumber $k }}
   <li>
     <a aria-current="page" aria-label="Page {{ $k }}" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-600" role="button">{{ $k }}</a>

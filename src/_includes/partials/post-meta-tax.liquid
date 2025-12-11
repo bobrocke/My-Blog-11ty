@@ -1,4 +1,4 @@
-<div class="text-xs mb-3 md:text-sm text-gray-400">
+<div class="blog-meta blog-taxonomies">
   {% for category in post.data.categories %}
     {% for array in postsByCategories %}
       {% if array.categoryName == category %}
@@ -6,21 +6,22 @@
         {% break %}
       {% endif %}
     {% endfor %}
-    {% if forloop.first %}<i class="fa-regular fa-folder"></i>&nbsp;{% endif %}
+
+    {% if forloop.first %}<i class="bi bi-folder"></i>&nbsp;{% endif %}
     {% if page.url == categoryURL %}
       {{ category }}
     {% else %}
-      <a class="hover:text-red-600 dark:hover:text-black" href="{{ categoryURL }}">{{ category }}</a>
+      <a href="{{ categoryURL }}">{{ category }}</a>
     {% endif %}
     {% unless forloop.last %}, {% endunless -%}
   {% endfor %}
 
   {% for tag in post.data.tags %}
-    {% if forloop.first %}&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-hashtag"></i>{% endif %}
+    {% if forloop.first %}&nbsp;&nbsp;&nbsp;<i class="bi bi-tag"></i>{% endif %}
     {% if page.url contains tag %}
       {{ tag }}
     {% else %}
-      <a class="hover:text-red-600 dark:hover:text-black" href="/tags/{{ tag }}">{{ tag }}</a>
+      <a href="/tags/{{ tag }}">{{ tag }}</a>
     {% endif %}
     {% unless forloop.last %}, {% endunless -%}
   {% endfor %}
