@@ -2,7 +2,7 @@
   <i class="bi bi-calendar"></i>&nbsp;&nbsp;{{ post.date | postDate }}
 
   {% if post.data.lastmod %}
-    &nbsp;&nbsp;Updated: {{ modifiedDate | postDate }}
+    &nbsp;&nbsp;Updated: {{ post.data.lastmod | postDate }}
   {% endif %}
 
 </div>

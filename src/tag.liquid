@@ -10,23 +10,20 @@ eleventyComputed:
 ---
 <!--https://www.11ty.dev/docs/quicktips/tag-pages/-->
 <!--This is a special case for tags which 11ty handles differently-->
-<div class="m-8">
-  <h1 class="font-sans text-2xl md:text-4xl">Posts about {{ tag }}</h1>
+<div class="content">
+  <h1 class="heading">Posts about {{ tag }}</h1>
 
-  <ul class="mt-6 ml-6">
-    {% assign posts = collections[tag] %}
-    {% for post in posts | reverse %}
-      <li class="pb-4">
+    {% for post in collections[tag] | reverse %}
+      <div>
         {% render "partials/post-meta-dates.liquid", page: page, post: post %}
 
-        <a class="text-lg md:text-2xl hover:text-red-600 dark:hover:text-red-900" href="{{ post.url }}">{{ post.data.title }}</a>
+        <h2 class="blog-title" <a href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
         {% render "partials/post-meta-tax.liquid", page: page, post: post, postsByCategories: collections.postsByCategories %}
 
-        <div class="r-content">
+        <div class="prose post-summary">
           {{ post.data.post_excerpt | markdown }}
         </div>
-      </li>
+      </div>
     {% endfor %}
-  </ul>
 </div>

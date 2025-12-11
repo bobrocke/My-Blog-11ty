@@ -205,9 +205,10 @@ export default function (eleventyConfig) {
   });
 
   // Create a collection of all tags used in /blog
-  eleventyConfig.addCollection("tagList", function (collectionAPI) {
+  eleventyConfig.addCollection("tagList", function (collectionApi) {
+    let posts = collectionApi.getFilteredByGlob("src/blog/*.md");
     const tagsSet = new Set();
-    collectionAPI.getFilteredByGlob(["blog/*.md"]).forEach((item) => {
+    posts.forEach((item) => {
       if (item.data.tags) {
         // Ensure item.data.tags is an array, even if it's a single string
         const itemTags = Array.isArray(item.data.tags)

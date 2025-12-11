@@ -109,6 +109,10 @@ p a {
   text-decoration: underline dotted;
 }
 
+.prose {
+  text-wrap: balance;
+}
+
 .prose.post-summary {
   margin-bottom: var(--space-l);
 }

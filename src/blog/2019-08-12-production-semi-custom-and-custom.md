@@ -4,8 +4,7 @@ summary: The makers of 1911s all fall into three general categories – _product
 date: 2019-08-12 23:16:18
 publish: true
 pin: false
-categories:
-  - Competition Pistols
+categories: [Competition Pistols]
 tags: [1911s]
 ---
 
