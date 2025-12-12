@@ -178,7 +178,9 @@ export default function (eleventyConfig) {
         // construct the pagination object and add to postsByCategories Array
         postsByCategories.push({
           categoryName: category.categoryName,
-          pageSlugs: {
+          pages: thisCategoriesPageSlugs,
+
+          href: {
             all: thisCategoriesPageSlugs,
             next: thisCategoriesPageSlugs[index + 1] || null,
             previous: thisCategoriesPageSlugs[index - 1] || null,
