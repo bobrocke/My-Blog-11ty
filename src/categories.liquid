@@ -8,7 +8,7 @@ title: Categories
 
   {% assign categoryData = collections.postsByCategories[0].categoryData %}
 
-  <ul class="mt-6 ml-6">
+  <ul>
     {% for category in categoryData %}
     <li>
       <a href="{{ category[1].slug }}" class="">{{ category[1].name }}</a>

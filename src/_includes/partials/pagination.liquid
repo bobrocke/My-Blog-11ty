@@ -1,12 +1,12 @@
 <!-- pagination.html -->
 
 <div class="pagination">
-  {% if pagination %}
+  {% if pagination.hrefs.size > 1 %}
     <ul class="button-nav">
 
       <!-- Variables -->
       {% assign pagenumber = pagination.pageNumber | plus: 1 %}
-      {% assign total_pages = pagination.pages.size %}
+      {% assign total_pages = pagination.hrefs.size %}
       {% assign start_index = pagenumber | minus: 1 %}
 
       {% if start_index < 2 %}
@@ -53,7 +53,7 @@
       </li>
 
       <!-- The page block window -->
-      {% if start_index >= 0 or end_index >= 0 %}
+      {% if start_index > 0 or end_index > 0 %}
         {% for i in (start_index..end_index) %}
           {% assign j = i | minus: 1 %}
 
@@ -83,13 +83,13 @@
       {% endif %}
 
       <!-- The fixed last block -->
-      {% assign last_page = pagination.pages.size | minus: 1 %}
+      {% assign last_page = pagination.hrefs.size | minus: 1 %}
 
       <li>
         {% if page.url == pagination.hrefs[last_page] %}
-          <span aria-current="page" aria-label="Page {{ pagination.pages.size }}" role="button" class="inactive">{{ pagination.pages.size }}</span>
+          <span aria-current="page" aria-label="Page {{ pagination.pages.size }}" role="button" class="inactive">{{ pagination.hrefs.size }}</span>
         {% else %}
-          <a href="{{ pagination.hrefs[last_page] }}" aria-label="Page {{ pagination.pages.size }}"  role="button">{{ pagination.pages.size }}</a>
+          <a href="{{ pagination.hrefs[last_page] }}" aria-label="Page {{ pagination.pages.size }}"  role="button">{{ pagination.hrefs.size }}</a>
         {% endif %}
       </li>
 

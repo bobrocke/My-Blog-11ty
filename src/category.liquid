@@ -24,62 +24,6 @@ eleventyComputed:
     </div>
   {%- endfor -%}
 
-  {% if postsCategories.totalPages > 1 %}
-    <div class="flex justify-center mt-8 text-sm">
-    <ul class="list-style-type: none inline-flex -space-x-px text-base h-10">
-      {% if page.url == postsCategories.pageSlugs.first %}
-        <li>
-          <a aria-disabled="true" aria-label="First" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-400 bg-white border border-e-0 border-gray-300 rounded-s-lg dark:bg-gray-500 dark:border-gray-700 dark:text-gray-400" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-        </li>
-      {% else %}
-        <li>
-          <a href="{{ postsCategories.pageSlugs.first }}" aria-label="First" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-black bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-red-600 dark:bg-gray-600 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-        </li>
-      {% endif %}
+   {% render "partials/pagination.liquid", pagination: postsCategories, page: page %}
 
-      {% if postsCategories.pageSlugs.previous %}
-        <li class="page-item">
-          <a href="{{ postsCategories.pageSlugs.previous }}" aria-label="Previous" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-black bg-white border border-gray-300 hover:bg-red-600 dark:bg-gray-600 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button"><span aria-hidden="true">&laquo;</span></a>
-        </li>
-      {% else %}
-        <li class="page-item disabled">
-          <a aria-disabled="true" aria-label="Previous" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-500 dark:border-gray-700 dark:text-gray-400" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-        </li>
-      {% endif %}
-
-
-      {% for i in (1..postsCategories.pageSlugs.count) %}
-        {% assign j = i | minus: 1 %}
-        {% if i == postsCategories.currentPage %}
-          <li>
-            <a aria-current="page" aria-label="Page {{ i }}" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button">{{ i }}</a>
-          </li>
-        {% else %}
-          <li>
-            <a href="{{ postsCategories.pageSlugs.all[j] }}" aria-label="Page {{ i }}" class="flex items-center justify-center px-4 h-10 leading-tight text-black bg-white border border-gray-300 hover:bg-red-600 dark:bg-gray-600 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button">{{ i }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
-
-      {% if postsCategories.pageSlugs.next %}
-        <li>
-          <a href="{{ postsCategories.pageSlugs.next }}" aria-label="Next" class="flex items-center justify-center px-4 h-10 leading-tight text-black bg-white border border-gray-300 hover:bg-red-600 dark:bg-gray-600 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700" role="button"><span aria-hidden="true">&raquo;</span></a>
-        </li>
-      {% else %}
-        <li>
-          <a aria-disabled="true" aria-label="Next" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-500 dark:border-gray-700 dark:text-gray-400" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
-        </li>
-      {% endif %}
-
-      {% if page.url == postsCategories.pageSlugs.last %}
-        <li>
-          <a aria-disabled="true" aria-label="Last" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 rounded-e-lg dark:bg-gray-500 dark:border-gray-700 dark:text-gray-400" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
-        </li>
-      {% else %}
-        <li>
-          <a href="{{postsCategories.pageSlugs.last }}" aria-label="Last" class="flex items-center justify-center px-4 h-10 leading-tight text-black bg-white border border-gray-300 rounded-e-lg hover:bg-red-600 dark:bg-gray-600 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-        </li>
-      {% endif %}
-    </ul>
-  {% endif %}
 </div>
