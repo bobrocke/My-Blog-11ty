@@ -109,6 +109,13 @@ p a {
   text-decoration: underline dotted;
 }
 
+.prose a:hover,
+p a:hover {
+  color: var(--color-text-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
 .prose {
   text-wrap: balance;
 }
