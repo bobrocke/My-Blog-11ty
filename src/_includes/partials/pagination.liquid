@@ -1,8 +1,8 @@
 <!-- pagination.html -->
 
-<div class="flex justify-center my-8 text-sm md:col-span-2">
+<div class="pagination">
   {% if pagination %}
-    <ul class="list-style-type: none inline-flex -space-x-px text-base h-10">
+    <ul class="button-nav">
 
       <!-- Variables -->
       {% assign pagenumber = pagination.pageNumber | plus: 1 %}
@@ -35,24 +35,22 @@
       {% endif %}
 
       <!-- The left arrow -->
-      {% if pagination.href.previous %}
-        <li class="page-item">
-          <a href="{{ pagination.href.previous }}" aria-label="Previous" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight rounded-s-lgtext-black bg-white border border-gray-300 hover:bg-red-600 dark:bg-gray-600 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button"><span aria-hidden="true">&laquo;</span></a>
-        </li>
-      {% else %}
-        <li class="page-item disabled">
-          <a aria-disabled="true" aria-label="Previous" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight rounded-s-lg text-gray-400 bg-white border border-gray-300 dark:bg-gray-500 dark:border-gray-700 dark:text-gray-400" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-        </li>
-      {% endif %}
+      <li>
+        {% if pagination.href.previous %}
+          <a href="{{ pagination.href.previous }}" aria-label="Previous" role="button"title="Previous Page"> <i class="bi bi-caret-left-fill"></i></a>
+        {% else %}
+          <span aria-disabled="true" aria-label="Previous" role="button"><i class="bi bi-caret-left-fill inactive"></i></span>
+        {% endif %}
+      </li>
 
       <!-- The fixed page 1 block -->
-      {% if page.url == pagination.hrefs[0] %}
-        <li>
-          <a aria-current="page" aria-label="Page 1" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button"> 1 </a>
-        </li>
-      {% else %}
-          <a href="{{ pagination.hrefs[0] }}" aria-label="Page 1" class="flex items-center justify-center px-4 h-10 leading-tight text-black bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button"> 1 </a>
-      {% endif %}
+      <li>
+        {% if page.url == pagination.hrefs[0] %}
+          <span aria-disabled="true" aria-label="Page 1" role="button" class="inactive">1</span>
+        {% else %}
+          <a href="{{ pagination.hrefs[0] }}" aria-label="Page 1" role="button">1</a>
+        {% endif %}
+      </li>
 
       <!-- The page block window -->
       {% if start_index >= 0 or end_index >= 0 %}
@@ -67,15 +65,13 @@
           {% endif %}
 
           <!-- The pages in the page block window -->
-          {% if page.url == pagination.hrefs[j] %}
-            <li>
-              <a aria-current="page" aria-label="Page {{ i }}" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button">{{ i }}</a>
-            </li>
-          {% else %}
-            <li>
-              <a href="{{ pagination.hrefs[j] }}" aria-label="Page {{ i }}" class="flex items-center justify-center px-4 h-10 leading-tight text-black bg-white border border-gray-300 hover:bg-red-600 dark:bg-gray-600 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" role="button">{{ i }}</a>
-            </li>
-          {% endif %}
+          <li>
+            {% if page.url == pagination.hrefs[j] %}
+                <span aria-disabled="true" aria-current="page" role="button" aria-label="Page {{ i }}" role="button">{{ i }}</span>
+            {% else %}
+                <a href="{{ pagination.hrefs[j] }}" aria-label="Page {{ i }}" role="button">{{ i }}</a>
+            {% endif %}
+          </li>
 
           <!-- A gap if the next block is the final page block -->
           {% if forloop.last %}
@@ -89,26 +85,22 @@
       <!-- The fixed last block -->
       {% assign last_page = pagination.pages.size | minus: 1 %}
 
-      {% if page.url == pagination.hrefs[last_page] %}
-        <li>
-          <a aria-current="page" aria-label="Page {{ pagination.pages.size }}" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button">{{ pagination.pages.size }}</a>
-        </li>
-      {% else %}
-        <li>
-          <a href="{{ pagination.hrefs[last_page] }}" aria-label="Page {{ pagination.pages.size }}" class="flex items-center justify-center px-4 h-10 leading-tight text-black bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" role="button">{{ pagination.pages.size }}</a>
-        </li>
-      {% endif %}
+      <li>
+        {% if page.url == pagination.hrefs[last_page] %}
+          <span aria-current="page" aria-label="Page {{ pagination.pages.size }}" role="button" class="inactive">{{ pagination.pages.size }}</span>
+        {% else %}
+          <a href="{{ pagination.hrefs[last_page] }}" aria-label="Page {{ pagination.pages.size }}"  role="button">{{ pagination.pages.size }}</a>
+        {% endif %}
+      </li>
 
-    <!-- The right arrow -->
-      {% if pagination.href.next %}
-        <li>
-          <a href="{{ pagination.href.next }}" aria-label="Next" class="flex items-center justify-center px-4 h-10 leading-tight rounded-e-lg text-black bg-white border border-gray-300 hover:bg-red-600 dark:bg-gray-600 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700" role="button"><span aria-hidden="true">&raquo;</span></a>
-        </li>
-      {% else %}
-        <li>
-          <a aria-disabled="true" aria-label="Next" class="flex items-center justify-center px-4 h-10 leading-tight rounded-e-lg text-gray-400 bg-white border border-gray-300 dark:bg-gray-500 dark:border-gray-700 dark:text-gray-400" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
-        </li>
-      {% endif %}
+      <!-- The right arrow -->
+      <li>
+        {% if pagination.href.next %}
+          <a href="{{ pagination.href.next }}" aria-label="Next" role="button" role="button" title="Next Page"><i class="bi bi-caret-right-fill"></i></a>
+        {% else %}
+          <span aria-disabled="true" aria-label="Next" role="button"><i class="bi bi-caret-right-fill inactive"></i></span>
+        {% endif %}
+      </li>
     </ul>
   {% endif %}
 </div>

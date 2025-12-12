@@ -10,7 +10,7 @@ title: Categories
 
   <ul class="mt-6 ml-6">
     {% for category in categoryData %}
-    <li class="pb-4 text-lg md:text-2xl hover:text-red-600 dark:text-gray-300 dark:hover:text-black">
+    <li>
       <a href="{{ category[1].slug }}" class="">{{ category[1].name }}</a>
     </li>
     {% endfor %}

@@ -1,23 +1,18 @@
 <div class="blog-meta blog-taxonomies">
   {% for category in post.data.categories %}
-    {% for array in postsByCategories %}
-      {% if array.categoryName == category %}
-        {% assign categoryURL = array.slug %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
-
     {% if forloop.first %}<i class="bi bi-folder"></i>&nbsp;{% endif %}
-    {% if page.url == categoryURL %}
-      {{ category }}
+
+    {% if page.url contains category %}
+      {{ category -}}
     {% else %}
-      <a href="{{ categoryURL }}">{{ category }}</a>
+      <a href="/categories/{{ category | slugify }}">{{ category -}}</a>
     {% endif %}
     {% unless forloop.last %}, {% endunless -%}
   {% endfor %}
 
   {% for tag in post.data.tags %}
     {% if forloop.first %}&nbsp;&nbsp;&nbsp;<i class="bi bi-tag"></i>{% endif %}
+
     {% if page.url contains tag %}
       {{ tag }}
     {% else %}

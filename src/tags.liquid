@@ -1,14 +1,20 @@
 ---
 layout: layouts/base.liquid
 title: Tags
+pagination:
+  data: collections.tagList
+  size: 10
+  alias: tags
 ---
 
 <div class="content taxonomy">
   <h1 class="heading">{{ title }}</h1>
 
   <ul class="mt-6 ml-6">
-    {% for tag in collections.tagList %}
+    {% for tag in tags %}
      <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
     {% endfor %}
   </ul>
+
+  {% render "partials/pagination.liquid", pagination: pagination, page: page %}
 </div>
