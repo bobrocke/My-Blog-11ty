@@ -178,7 +178,7 @@ export default function (eleventyConfig) {
         // construct the pagination object and add to postsByCategories Array
         postsByCategories.push({
           categoryName: category.categoryName,
-          pages: thisCategoriesPageSlugs,
+          hrefs: thisCategoriesPageSlugs,
 
           href: {
             all: thisCategoriesPageSlugs,
@@ -195,7 +195,7 @@ export default function (eleventyConfig) {
           numberOfPosts: category.numberOfPosts, // total number of posts in this category
           isFirstPage: isFirstPage, // true if this is first chunk/page of results.
           isLastPage: isLastPage, // true if this is last chunk/page of results.
-          currentPage: index + 1, // the current page (useful for UI)
+          pageNumber: index, // the current page (useful for UI)
           posts: posts, // the posts in this chunk
           categoryData,
         });
