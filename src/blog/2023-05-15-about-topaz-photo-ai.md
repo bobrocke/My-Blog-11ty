@@ -3,7 +3,7 @@ title: "About Topaz Photo AI\u2026"
 date: 2023-05-15 22:52:53
 publish: true
 pin: false
-categories: [Photography Software, Photography Gear]
+categories: [Photography Software]
 tags: [Topaz Photo AI]
 ---
 

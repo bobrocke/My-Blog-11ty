@@ -2,7 +2,7 @@
 title: I'm Not Missing Tailwind
 date: 2025-11-25
 categories: [Web Development]
-tags: [CSS, Tailwind]
+tags: [CSS]
 draft: false
 ---
 

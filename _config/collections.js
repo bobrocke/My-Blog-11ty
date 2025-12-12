@@ -108,7 +108,7 @@ export default function (eleventyConfig) {
           }
         } else {
           // Category is a string
-          if (post.data.category == categoryName) {
+          if (post.data.categories == categoryName) {
             allPostinCurrentCategory.push(post);
           }
         }
@@ -206,6 +206,156 @@ export default function (eleventyConfig) {
     return postsByCategories;
   });
 
+  // Create a collection of the posts with each tag with pagination.
+  // https://chriskirknielsen.com/blog/double-pagination-in-eleventy/
+  // https://github.com/dwkns/posts-by-categories/tree/main
+  eleventyConfig.addCollection("postsByTag", function (collectionAPI) {
+    let numberOfresultsPerPage = 4; // number of results per page
+    let slugPrefix = "/tags";
+
+    // some variables to help with creating our data structure
+    let postsByTags = [];
+    let pageDataForAllTags = [];
+    let tagData = {};
+
+    // Create a collection of posts.
+    const posts = collectionAPI.getFilteredByGlob("./src/blog/*.md").reverse();
+
+    // Create a Set to store unique tags.
+    let uniqueTags = new Set();
+
+    // Loop through each post and add its tags to the Set.
+    // Deals with a string or an array of strings.
+    posts.forEach((post) => {
+      if (post.data?.tags) {
+        if (Array.isArray(post.data.tags)) {
+          // tags is an array
+          // loop the array and extract tags
+          post.data.tags.forEach((element) => {
+            uniqueTags.add(element.toString());
+          });
+        } else {
+          // one tag
+          uniqueTags.add(post.data.tags);
+        }
+      }
+    });
+
+    // we now have a set of unique tags
+    // console.log(`There are ${posts.length} posts in ${uniqueTags.size} unique tags`)
+    // console.log(uniqueTags);
+
+    // Loop through each unique tag
+    uniqueTags.forEach((tagName) => {
+      let allPostsWithCurrentTag = [];
+
+      // loop through all the posts.
+      // If the current post tag matches the current tag
+      // then add it to the allPostsWithCurrentTag array.
+      posts.forEach((post) => {
+        if (Array.isArray(post.data.tags)) {
+          // Tags is an array
+          if (post.data.tags.includes(tagName)) {
+            allPostsWithCurrentTag.push(post);
+          }
+        } else {
+          // Tags is a string
+          if (post.data.tags == tagName) {
+            allPostsWithCurrentTag.push(post);
+          }
+        }
+      });
+
+      // chunk up all the posts with this tag by the number of results per page we want.
+      // We need to do this so we can create pagination.
+      // chunk() is from lodash-es imported above
+      let chunks = chunk(allPostsWithCurrentTag, numberOfresultsPerPage);
+
+      // create the slug for this tag
+      let slug = `${slugPrefix}/${slugify(tagName, { lower: true })}/`;
+
+      // create an array of pageSlugs for this category
+      let pageSlugs = [];
+      for (let i = 0; i < chunks.length; i++) {
+        let thisSlug = slug;
+        // If there is more than one page of results.
+        if (i > 0) {
+          thisSlug = `${i + 1}`;
+
+          // check to see if the slug has a prefix
+          // don't want to add an additional / if its not needed.
+          if (slug != "") {
+            thisSlug = `${slug}${i + 1}/`;
+          }
+        }
+        pageSlugs.push(`${thisSlug}`);
+      }
+
+      // create a data structure to hold the tag data
+      // makes the UI easier to create.
+      tagData[tagName] = {
+        name: tagName,
+        slug: slug,
+        numberOfPosts: allPostsWithCurrentTag.length,
+      };
+
+      // console.log(`[ tagData ]:`, tagData);
+
+      // create a data structure to hold all the posts
+      pageDataForAllTags.push({
+        tagName: tagName,
+        posts: allPostsWithCurrentTag,
+        tagData: tagData,
+        chunkedPosts: chunks,
+        numberOfPosts: allPostsWithCurrentTag.length,
+        numberOfPagesOfPosts: chunks.length,
+        pageSlugs: pageSlugs,
+      });
+    });
+
+    //  console.log(`[ pageDataForAllTags ]:`, pageDataForAllTags);
+
+    // Create a single flattened array of all the posts and pagination data.
+    // This allows us to use pagination in our templates.
+    pageDataForAllTags.forEach((tag) => {
+      let thisTagPageSlugs = tag.pageSlugs;
+
+      // loop each of the chunked posts
+      tag.chunkedPosts.forEach((posts, index) => {
+        // set some properties useful in the UI
+        let isFirstPage = index == 0 ? true : false;
+        let isLastPage =
+          tagData.numberOfPagesOfPosts == index + 1 ? true : false;
+
+        // construct the pagination object and add to postsByTags Array
+        postsByTags.push({
+          tagName: tag.tagName,
+          hrefs: thisTagPageSlugs,
+
+          href: {
+            all: thisTagPageSlugs,
+            next: thisTagPageSlugs[index + 1] || null,
+            previous: thisTagPageSlugs[index - 1] || null,
+            first: thisTagPageSlugs[0] || null,
+            last: thisTagPageSlugs[thisTagPageSlugs.length - 1] || null,
+            count: thisTagPageSlugs.length,
+          },
+          slug: thisTagPageSlugs[index],
+          totalPages: tag.numberOfPagesOfPosts, // total number of pages of posts
+          numberOfPosts: tag.numberOfPosts, // total number of posts with this tag
+          isFirstPage: isFirstPage, // true if this is first chunk/page of results.
+          isLastPage: isLastPage, // true if this is last chunk/page of results.
+          pageNumber: index, // the current page (useful for UI)
+          posts: posts, // the posts in this chunk
+          tagData,
+        });
+      });
+    });
+
+    // console.log(postsByTags);
+    return postsByTags;
+  });
+
   // Create a collection of all tags used in /blog
   eleventyConfig.addCollection("tagList", function (collectionApi) {
     let posts = collectionApi.getFilteredByGlob("src/blog/*.md");
@@ -222,22 +372,5 @@ export default function (eleventyConfig) {
 
     // Convert Set to Array and sort alphabetically
     return Array.from(tagsSet).sort();
-  });
-
-  // Create a collection of all categories used in /blog
-  eleventyConfig.addCollection("categoryList", function (collectionAPI) {
-    const categoriesSet = new Set();
-    collectionAPI.getFilteredByGlob(["blog/*.md"]).forEach((item) => {
-      if (item.data.categories) {
-        // Ensure item.data.tags is an array, even if it's a single string
-        const itemCategories = Array.isArray(item.data.categories)
-          ? item.data.categories
-          : [item.data.categories];
-        itemCategories.forEach((category) => tagsSet.add(category));
-      }
-    });
-
-    // Convert Set to Array and sort alphabetically
-    return Array.from(categoriesSet).sort();
   });
 }
