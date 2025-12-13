@@ -12,7 +12,7 @@ pagination:
 
   <ul class="mt-6 ml-6">
     {% for tag in tags %}
-     <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
+     <li><a href="/tags/{{ tag | slugify }}">{{ tag }}</a></li>
     {% endfor %}
   </ul>
 

@@ -1,25 +1,24 @@
 ---
 layout: layouts/base.liquid
 pagination:
-  data: collections
+  data: collections.postsByTag
   size: 1
-  alias: tag
-permalink: /tags/{{ tag }}/
+  alias: postsTags
+permalink: /{{ postsTags.slug }}/
 eleventyComputed:
-    title: "{{ tag }}"
+    title: "{{ postsTags.tagName }}"
 ---
-<!--https://www.11ty.dev/docs/quicktips/tag-pages/-->
-<!--This is a special case for tags which 11ty handles differently-->
-<div class="content">
-  <h1 class="heading">Posts about {{ tag }}</h1>
 
-    {% for post in collections[tag] | reverse %}
+<div class="content">
+  <h1 class="heading">Posts about {{ postsTags.tagName }}</h1>
+
+    {% for post in postsTags.posts %}
       <div>
         {% render "partials/post-meta-dates.liquid", page: page, post: post %}
 
         <h2 class="blog-title"> <a href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
-        {% render "partials/post-meta-tax.liquid", page: page, post: post, postsByCategories: collections.postsByCategories %}
+        {% render "partials/post-meta-tax.liquid", page: page, post: post %}
 
         <div class="prose post-summary">
           {{ post.data.post_excerpt | markdown }}

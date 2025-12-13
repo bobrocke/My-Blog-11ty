@@ -1,10 +1,14 @@
 <div class="blog-meta blog-taxonomies">
   {% for category in post.data.categories %}
-    {% assign categorySlug = category | slugify %}
 
     {% if forloop.first %}<i class="bi bi-folder"></i>&nbsp;{% endif %}
-    {% if page.url contains categorySlug %}
-      {{ category}}
+
+    {% assign parts = page.url | split: "/" %}
+    {% assign end = parts | last %}
+    {% assign thisCategory = category | slugify %}
+
+    {% if end == thisCategory %}
+      {{ category }}
     {% else %}
       <a href="/categories/{{ category | slugify }}">{{ category -}}</a>
     {% endif %}
@@ -13,12 +17,17 @@
   {% endfor %}
 
   {% for tag in post.data.tags %}
+
     {% if forloop.first %}&nbsp;&nbsp;&nbsp;<i class="bi bi-tag"></i>{% endif %}
 
-    {% if page.url contains tag %}
+    {% assign parts = page.url | split: "/" %}
+    {% assign end = parts | last %}
+    {% assign thisTag = tag | slugify %}
+
+    {% if end == thisTag %}
       {{ tag }}
     {% else %}
-      <a href="/tags/{{ tag }}">{{ tag }}</a>
+      <a href="/tags/{{ tag | slugify }}">{{ tag }}</a>
     {% endif %}
     {% unless forloop.last %}, {% endunless -%}
   {% endfor %}
