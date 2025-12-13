@@ -107,6 +107,7 @@ ul.button-nav {
 .prose a,
 p a {
   text-decoration: underline dotted;
+  text-decoration-color: var(--color-text-primary);
 }
 
 .prose a:hover,
@@ -114,6 +115,7 @@ p a:hover {
   color: var(--color-text-primary);
   text-decoration: underline;
   text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-text-accent);
 }
 
 .prose {
@@ -132,6 +134,7 @@ footer {
   background-color: var(--color-bg-darkest);
   padding: var(--space-xs);
   margin-top: var(--space-m);
+  border-top: var(--space-3xs) solid var(--color-text-accent);
   color: var(--color-text-light);
   font-family: var(--font-sans);
   font-size: var(--text-xs);
@@ -227,6 +230,7 @@ nav {
   nav {
     display: block;
     margin-bottom: 0;
+    border-right: var(--space-3xs) solid var(--color-text-accent);
 
     .vert-logo {
       display: block;
