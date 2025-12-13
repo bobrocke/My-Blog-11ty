@@ -310,9 +310,14 @@ Pagination
     font-size: var(--text-sm);
   }
 
-  ul a {
+  li a {
     text-decoration: none;
     color: var(--color-primary);
+    padding: var(--space-3xs);
+  }
+
+  li span {
+    padding: var(--space-3xs);
   }
 
   ul a:hover {

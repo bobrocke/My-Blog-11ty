@@ -12,7 +12,7 @@ I’ve spent the last couple of months working back and forth between the raw pr
 
 <!--more-->
 
-Needless to say, attempting to compare and select from these very capable applications isn’t easy. To try making it more so, I decided to use a [_decision matrix_](https://en.wikipedia.org/wiki/Decision_matrix#:~:text=A%20decision%20matrix%20is%20a,based%20on%20certain%20decision%20criteria.) in an attempt to force more objectivity into a greatly subjective choice.
+Needless to say, attempting to compare and select from these very capable applications isn’t easy. To try making it more so, I opted to use a [_decision matrix_](https://en.wikipedia.org/wiki/Decision_matrix#:~:text=A%20decision%20matrix%20is%20a,based%20on%20certain%20decision%20criteria.) in an attempt to force more objectivity into a greatly subjective choice.
 
 ### Selection Criteria
 
