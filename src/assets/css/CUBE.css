@@ -108,6 +108,7 @@ ul.button-nav {
 p a {
   text-decoration: underline dotted;
   text-decoration-color: var(--color-text-primary);
+  transition: all 0.3s ease;
 }
 
 .prose a:hover,
@@ -314,23 +315,23 @@ Pagination
     font-size: var(--text-sm);
   }
 
-  li a {
-    text-decoration: none;
-    color: var(--color-primary);
-    padding: var(--space-3xs);
-  }
+  li {
+    background-color: var(color-bg-light);
+    transition: background-color 0.3s ease;
 
-  li span {
-    padding: var(--space-3xs);
-  }
+    a {
+      text-decoration: none;
+      color: var(--color-primary);
+      padding: var(--space-2xs);
+    }
 
-  ul a:hover {
-    color: var(--color-text-accent);
-  }
+    span {
+      padding: var(--space-2xs);
+    }
 
-  .location {
-    padding-left: var(--space-s);
-    padding-right: var(--space-s);
+    &&:has(a:hover) {
+      background-color: var(--color-text-accent);
+    }
   }
 }
 

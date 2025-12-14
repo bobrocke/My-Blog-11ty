@@ -67,7 +67,7 @@
           <!-- The pages in the page block window -->
           <li>
             {% if page.url == pagination.hrefs[j] %}
-                <span aria-disabled="true" aria-current="page" role="button" aria-label="Page {{ i }}" role="button">{{ i }}</span>
+                <span aria-disabled="true" aria-current="page" role="button" aria-label="Page {{ i }}" role="button" class="inactive">{{ i }}</span>
             {% else %}
                 <a href="{{ pagination.hrefs[j] }}" aria-label="Page {{ i }}" role="button">{{ i }}</a>
             {% endif %}
