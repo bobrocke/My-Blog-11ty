@@ -52,7 +52,7 @@ I did use all those missing things in Lightroom Classic. AI Masking is somewhat 
 
 #### AI Masking
 
-<figure style="float: right; width: 50%; margin: 1em 0em 1em 1em"><a href="https://images.squarespace-cdn.com/content/v1/641f4673ddd4f748a3e6b2f6/5e241d84-2705-4b2a-bf87-41a94fe8bf75/control+point.jpeg"><img src="https://images.squarespace-cdn.com/content/v1/641f4673ddd4f748a3e6b2f6/5e241d84-2705-4b2a-bf87-41a94fe8bf75/control+point.jpeg" alt="Alt"></a><figcaption>A Control Point and its Adjustments</figcaption></figure>
+<figure style="float: right; width: 50%; margin: 1em 0em 1em 1em"><a class="glightbox" href="https://images.squarespace-cdn.com/content/v1/641f4673ddd4f748a3e6b2f6/5e241d84-2705-4b2a-bf87-41a94fe8bf75/control+point.jpeg"><img src="https://images.squarespace-cdn.com/content/v1/641f4673ddd4f748a3e6b2f6/5e241d84-2705-4b2a-bf87-41a94fe8bf75/control+point.jpeg" alt="Alt"></a><figcaption>A Control Point and its Adjustments</figcaption></figure>
 
 Instead of letting the computer generate the masks, I find that the older style of masking is working for me. PhotoLab Elite does have a masking brush and an automatic masking brush that work much the same as Lightroom Classic’s. Perhaps it’s because I haven’t become reliant on AI Masking, but the judicious use of simple brushes and erasers gets me where I need to be. And sometimes the effect is more subtle than the very exact masks AI Masking can create.
 

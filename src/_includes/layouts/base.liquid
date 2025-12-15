@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/assets/css/syntax.css"/>
     <link rel="stylesheet" href="/assets/css/bootstrap-icons.css"/>
     <link rel="stylesheet" href="/assets/css/brands.css"/>
-    <link rel="stylesheet" href="/assets/css/lightbox.css"/>
+    <link rel="stylesheet" href="/assets/css/glightbox.css"/>
     <link rel="stylesheet" href="/assets/css/reset.css"/>
     <link rel="stylesheet" href="/assets/css/global.css"/>
     <link rel="stylesheet" href="/assets/css/CUBE.css"/>
@@ -43,8 +43,12 @@
       {{ content }}
     {% render "partials/footer.liquid" %}
 
-    <script type="text/javascript" src="/assets/js/lightbox.js"></script>
+    <script type="text/javascript" src="/assets/js/glightbox.js"></script>
     <script type="text/javascript" src="/assets/js/main.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({ });
+    </script>
 
     <!--Dark/Light theme toggler -->
     <script>

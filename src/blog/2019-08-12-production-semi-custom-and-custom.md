@@ -33,7 +33,7 @@ Delivery is another difference in semi-custom 1911s. You may find a production m
 At the top of the cost, quality, delivery, and options list are full _custom_ makers. These are typically individual premier pistolsmiths with a vast knowledge of 1911s and an artistic flare to complement their world-class skills. They will create the 1911 that you want, exactly like you want it, and offer suggestions for options. Any feature is available that is not patented by another builder.
 
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
-  <a href="/assets/images/wp-content/uploads/2023/10/image-2.jpeg"><img src="/assets/images/wp-content/uploads/2023/10/image-2.jpeg" alt="A Harrison Custom" ></a>
+  <a class="glightbox" href="/assets/images/wp-content/uploads/2023/10/image-2.jpeg"><img src="/assets/images/wp-content/uploads/2023/10/image-2.jpeg" alt="A Harrison Custom" ></a>
   <figcaption>A Harrison Custom</figcaption>
 </figure>
 

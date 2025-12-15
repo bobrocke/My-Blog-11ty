@@ -17,7 +17,7 @@ A feature that I have always loved about the X-Tx series of cameras are the phys
 
 Focus mode (manual, single, or continuous) and drive mode (single, continuous low, or continuous high) have their own switch and dial, respectively. The ergonomics of the controls suit me well.
 
-<figure style="float: right; width: 50%; margin: 1em 0em 1em 1em"><a href="/assets/images/wp-content/uploads/2023/10/Fuji-XF-16-55mm-f2.8-R-LM-WR.png"><img src="/assets/images/wp-content/uploads/2023/10/Fuji-XF-16-55mm-f2.8-R-LM-WR.png" alt="Alt"></a><figcaption>Fujinon XF 16-55mm f/2.8</figcaption></figure>
+<figure style="float: right; width: 50%; margin: 1em 0em 1em 1em"><a class="glightbox" href="/assets/images/wp-content/uploads/2023/10/Fuji-XF-16-55mm-f2.8-R-LM-WR.png"><img src="/assets/images/wp-content/uploads/2023/10/Fuji-XF-16-55mm-f2.8-R-LM-WR.png" alt="Alt"></a><figcaption>Fujinon XF 16-55mm f/2.8</figcaption></figure>
 
 In general, the Fujifilm and Olympus systems are comparable. Both have some excellent lenses that cover all the bases. Both have weather resistant lenses that are better constructed and better sealed. And both will do the job for any but the most demanding photographers.
 

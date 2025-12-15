@@ -56,7 +56,7 @@ The hard part. These are my highlights and lowlights for each application:
 
 No, not that matrix!
 
-<figure style="display: block; margin: 1em auto 1em auto"><a href="/assets/images/wp-content/uploads/2023/10/image-5.jpeg"><img src="/assets/images/wp-content/uploads/2023/10/image-5.jpeg" alt="My Decision Matrix"></a><figcaption>My Decision Matrix</figcaption></figure>
+<figure style="display: block; margin: 1em auto 1em auto"><a class="glightbox" href="/assets/images/wp-content/uploads/2023/10/image-5.jpeg"><img src="/assets/images/wp-content/uploads/2023/10/image-5.jpeg" alt="My Decision Matrix"></a><figcaption>My Decision Matrix</figcaption></figure>
 
 This is where I ended up after the weighting and the ranking. I was a bit surprised to see how close PhotoLab Elite was to Lightroom Classic in the final score.
 
