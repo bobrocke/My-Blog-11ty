@@ -28,7 +28,7 @@ Today, [Laugo Arms USA](https://laugoarmsusa.com) has responsibility for US sale
 I mention the original Alien because Laugo Arms has introduced a new [Creator](https://laugoarmsusa.com/alien-creator-evolution/) series with several updates meant for the US market. Now you have a choice between the [original](https://laugoarmsusa.com/alien-pistol/) and the Creator. These are still very much niche pistols both in terms of their cost and their use cases. The cheapest you can get into an Alien is $3,900 and they don't really make much sense as a duty, home defense, or carry gun. As a competition gun in USPSA they are an awkward fit in Limited (they come only in 9mm) or Open (they have no compensator). They do fit just fine in PCSL's Factory division. Of course, they also make an extra special range toy!
 
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
-  <a href="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Exploded-View.png"><img src="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Exploded-View.png" alt="The Alien Components" ></a>
+  <a class="glightbox" href="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Exploded-View.png"><img src="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Exploded-View.png" alt="The Alien Components" ></a>
   <figcaption>The Alien Components</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ Another disadvantage comes from the gun's uniqueness. You won't drop into your l
 The gun can get hot around the trigger guard and front of the frame. Because some gas from the chamber is directly ported into the gas chamber, extra heat is introduced. It may not be a problem under USPSA match conditions, but I can imagine it getting uncomfortable under sustained rapid fire.
 
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
-  <a href="/assets/images/wp-content/uploads/2024/05/creator-lo.png"><img src="/assets/images/wp-content/uploads/2024/05/creator-lo.png" alt="The Alien Creator Limited Optics" ></a>
+  <a class="glightbox" href="/assets/images/wp-content/uploads/2024/05/creator-lo.png"><img src="/assets/images/wp-content/uploads/2024/05/creator-lo.png" alt="The Alien Creator Limited Optics" ></a>
   <figcaption>The Alien Creator Limited Optics</figcaption>
 </figure>
 

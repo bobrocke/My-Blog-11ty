@@ -12,7 +12,7 @@ In my last post, I ended by saying I had chosen Lightroom Classic and [Topaz Pho
 <!--more-->
 
 <figure style="float: left; width: 30%; margin: 1em 1em 1em 0em">
-  <a href="/assets/images/wp-content/uploads/2023/10/image-4.jpeg"><img src="/assets/images/wp-content/uploads/2023/10/image-4.jpeg" alt="Lightroom’s Denoise Panel"></a>
+  <a class="glightbox" href="/assets/images/wp-content/uploads/2023/10/image-4.jpeg"><img src="/assets/images/wp-content/uploads/2023/10/image-4.jpeg" alt="Lightroom’s Denoise Panel"></a>
   <figcaption>Lightroom’s Denoise Panel</figcaption>
 </figure>
 
