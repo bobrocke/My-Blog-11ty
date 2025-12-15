@@ -12,7 +12,7 @@ I've started back shooting a [Laugo Arms Alien](https://laugoarmsusa.com) pistol
 <!--more-->
 
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
-  <a href="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Magwell-Left-Side.png"><img src="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Magwell-Left-Side.png" alt="The Alien Pistol" ></a>
+  <a class="glightbox" href="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Magwell-Left-Side.png"><img src="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-Alien-Magwell-Left-Side.png" alt="The Alien Pistol" ></a>
   <figcaption>The Alien</figcaption>
 </figure>
 
@@ -21,7 +21,7 @@ Several years ago I owned two Alien Full Kits - one I shot and one I left unfire
 Today, [Laugo Arms USA](https://laugoarmsusa.com) has responsibility for US sales and service. Individual spare parts are available for sale on their website along with all the current Alien pistol models. They also seem knowledgeable and responsive. My past fears were not justified. Lancer Systems still had a few Alien models in stock at closeout prices so I was able to get a Full Kit (the original black and green model with the Glock grip angle) at a bit of a discount.
 
 <figure style="float: left; width: 50%; margin: 1em 1em 1em 0em">
-  <a href="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-USA-Alien-Full-Kit-Cased.png"><img src="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-USA-Alien-Full-Kit-Cased.png" alt="The Alien Full Kit"></a>
+  <a class="glightbox" href="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-USA-Alien-Full-Kit-Cased.png"><img src="/assets/images/wp-content/uploads/2024/05/Laugo-Arms-USA-Alien-Full-Kit-Cased.png" alt="The Alien Full Kit"></a>
   <figcaption>The Alien Full Kit</figcaption>
 </figure>
 
