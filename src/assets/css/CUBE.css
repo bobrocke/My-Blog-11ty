@@ -119,10 +119,6 @@ p a:hover {
   text-decoration-color: var(--color-text-accent);
 }
 
-.prose {
-  text-wrap: balance;
-}
-
 .prose.post-summary {
   margin-bottom: var(--space-l);
 }
