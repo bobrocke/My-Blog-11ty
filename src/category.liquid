@@ -12,11 +12,13 @@ eleventyComputed:
 <div class="content">
   <h1 class="heading">Posts about {{postsCategories.categoryName}}</h1>
 
+  {% assign thisPage = page %}
+
   {% for post in postsCategories.posts %}
     <div>
-      {% render "partials/post-meta-dates.liquid", page: page, post: post %}
+      {% render "partials/post-meta-dates.liquid", page: thisPage, post: post %}
       <h2 class="blog-title"><a href="{{ post.url }}" >{{ post.data.title }}</a></h2>
-      {% render "partials/post-meta-tax.liquid", page: page, post: post %}
+      {% render "partials/post-meta-tax.liquid", page: thisPage, post: post %}
 
       <div class="prose post-summary">
         {{ post.data.post_excerpt | markdown }}
@@ -24,6 +26,6 @@ eleventyComputed:
     </div>
   {%- endfor -%}
 
-   {% render "partials/pagination.liquid", pagination: postsCategories, page: page %}
+   {% render "partials/pagination.liquid", pagination: postsCategories, page: thisPage %}
 
 </div>
