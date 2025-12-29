@@ -2,11 +2,11 @@
 ReadMe.md
 node_modules
 _site
-yarn.lock
 pnpm-lock.yaml
 .zed
 .vscode
 codebook.toml
-scripts
+_scripts
 .DS_Store
 ToDo.md
+_sublime/my-blog-11ty.sublime-workspace
