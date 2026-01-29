@@ -7,19 +7,26 @@
     <meta name='description' content="{{ site.description }}">
     <meta name="generator" content="{{ eleventy.generator }}">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.ico">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon.ico">
 
-    <link rel="stylesheet" href="/assets/css/syntax.css"/>
-    <link rel="stylesheet" href="/assets/css/bootstrap-icons.css"/>
-    <link rel="stylesheet" href="/assets/css/brands.css"/>
-    <link rel="stylesheet" href="/assets/css/glightbox.css"/>
-    <link rel="stylesheet" href="/assets/css/reset.css"/>
-    <link rel="stylesheet" href="/assets/css/global.css"/>
-    <link rel="stylesheet" href="/assets/css/CUBE.css"/>
-    <link rel="stylesheet" href="/assets/css/semantics.css"/>
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/assets/css/brands.css" />
+    <link rel="stylesheet" href="/assets/css/glightbox.css" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="stylesheet" href="/assets/css/CUBE.css" />
+    <link rel="stylesheet" href="/assets/css/semantics.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 
     <script>
@@ -32,6 +39,13 @@
     </script>
 
     {% if prod %}
+      <script
+        defer
+        src="https://cloud.umami.is/script.js"
+        data-website-id="e7ac9bf8-1c39-4b58-b5d9-05ee92f92cb9"></script>
+    {% endif %}
+
+    {% if prod %}
       <title>BR | {{ title }}</title>
     {% else %}
       <title>11ty | {{ title }}</title>
@@ -39,8 +53,11 @@
   </head>
 
   <body>
-    {% render "partials/menus.liquid", page: page, site: site, title: title %}
-      {{ content }}
+    {% render "partials/menus.liquid"
+      , page: page
+      , site: site
+      , title: title %}
+    {{ content }}
     {% render "partials/footer.liquid" %}
 
     <script type="text/javascript" src="/assets/js/glightbox.js"></script>
@@ -50,7 +67,7 @@
       const lightbox = GLightbox({ });
     </script>
 
-    <!--Dark/Light theme toggler -->
+    <!-- Dark/Light theme toggler -->
     <script>
       var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
       var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
@@ -91,22 +108,5 @@
         }
       });
     </script>
-
-    {% if prod %}
-      <!-- Start of Woopra Code -->
-      <script>
-        !function(){var t,o,c,e=window,n=document,r=arguments,a="script",i=["call","cancelAction","config","identify","push","track","trackClick","trackForm","update","visit"],s=function(){var t,o=this,c=function(t){o[t]=function(){return o._e.push([t].concat(Array.prototype.slice.call(arguments,0))),o}};for(o._e=[],t=0;t<i.length;t++)c(i[t])};for(e.__woo=e.__woo||{},t=0;t<r.length;t++)e.__woo[r[t]]=e[r[t]]=e[r[t]]||new s;(o=n.createElement(a)).async=1,o.src="https://static.woopra.com/js/w.js",(c=n.getElementsByTagName(a)[0]).parentNode.insertBefore(o,c)}("woopra");
-
-        woopra.config({
-          domain: "bobrockefeller.com",
-          outgoing_tracking: true,
-          download_tracking: true,
-          click_tracking: true
-        });
-
-        woopra.track();
-      </script>
-      <!-- End of Woopra Code -->
-    {% endif %}
   </body>
 </html>
