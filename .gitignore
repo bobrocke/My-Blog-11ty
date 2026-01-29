@@ -6,7 +6,6 @@ pnpm-lock.yaml
 .zed
 .vscode
 codebook.toml
-_scripts
 .DS_Store
 ToDo.md
 _sublime/my-blog-11ty.sublime-workspace
