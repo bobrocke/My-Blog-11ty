@@ -1,5 +1,5 @@
 ---
-layout: layouts/about.liquid
+layout: layouts/about.vto
 title: About
 ---
 
