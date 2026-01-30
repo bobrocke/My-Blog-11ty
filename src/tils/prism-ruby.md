@@ -10,5 +10,4 @@ The Prism syntax highlighter doesn't do much for Ruby. Here's an example:
 ```ruby
 @color = Color.first
 ```
-
 Pretty plain.
