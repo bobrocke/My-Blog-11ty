@@ -58,7 +58,7 @@ export const config = {
     input: "src",
     output: "_site",
   },
-  templateFormats: ["html", "liquid", "md", "vto"],
+  templateFormats: ["vto", "html", "liquid", "md"],
 
   markdownTemplateEngine: false,
 };

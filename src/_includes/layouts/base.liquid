@@ -53,12 +53,12 @@
   </head>
 
   <body>
-    {% render "partials/menus.liquid"
+    {% render "partials/menus.vto"
       , page: page
       , site: site
       , title: title %}
     {{ content }}
-    {% render "partials/footer.liquid" %}
+    {% render "partials/footer.vto" %}
 
     <script type="text/javascript" src="/assets/js/glightbox.js"></script>
     <script type="text/javascript" src="/assets/js/main.js"></script>

@@ -1,0 +1,53 @@
+<nav>
+  <div class="horiz-logo">
+    <img src="/assets/images/logo-horiz.svg" alt="Logo" height="50" width="160" />
+  </div>
+  <div class="vert-logo">
+    <img src="/assets/images/logo-vert.svg" alt="Logo" width="180"/>
+  </div>
+
+  <a href="javascript:void(0);" class="icon" onclick="togglelinks()">
+    <i class="bi bi-list"></i>
+  </a>
+
+  <div class="nav-list" id="menu">
+    <ul>
+      {{ for menu of site.menu }}
+        {{ if menu.url == page.url }}
+          <li class="inactive">{{ menu.name }}</li>
+        {{ else }}
+          <li>
+            <a href="{{ menu.url }}">{{ menu.name }}</a>
+          </li>
+        {{ /if }}
+      {{ /for }}
+
+      <li>
+        <button id="theme-toggle" type="button">
+          <span id="theme-toggle-dark-icon" class="hidden"><i class="bi bi-moon-fill"></i></span>
+          <span id="theme-toggle-light-icon" class="hidden"><i class="bi bi-sun-fill"></i></span>
+        </button>
+      </li>
+    </ul>
+    <ul class="links">
+      <li>
+        <a href="https://github.com/bobrocke" title="Bob on GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </li>
+      <li>
+        <a href="https://stackoverflow.com/users/1938118/bob-rockefeller" title="Bob on Stack Overflow" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+      </li>
+      <li>
+        <a href="https://www.flickr.com/photos/bobrocke/" title="Bob on Flickr" target="_blank"><i class="fa-brands fa-flickr"></i></a>
+      </li>
+      <li>
+        <a href="https://500px.com/p/BobRockefeller?view=photos" title="Bob on 500px" target="_blank"><i class="fa-brands fa-500px"></i></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/bob.rockefeller" title="Bob on Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </li>
+      <li class="copyright">
+        <span>&copy; 2026 <br> Bob Rockefeller. <br> All Rights Reserved.</span>
+      </li>
+    </ul>
+  </div>
+</nav>
