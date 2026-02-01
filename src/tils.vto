@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.liquid
+layout: layouts/base.vto
 title: Today I Learned
 pagination:
   data: collections.tils
@@ -9,15 +9,15 @@ pagination:
 
 <h1>{{ title }}</h1>
 
-{% for til in collections.tils %}
+{{ for til of collections.tils }}
   <div class="mx-6 mt-8">
     <h2 class="font-serif text-xl hover:text-red-600 md:text-4xl">{{ til.data.title }}</h2>
 
     <div class="max-w-none prose-sm md:lead-1 prose prose-a:hover:text-red-600 md:prose-lg">
-      {{ til.rawInput | markdown }}
+      {{ til.rawInput |> markdown }}
     </div>
 
   </div>
-{% endfor %}
+{{ /for }}
 
-{% render "partials/pagination.liquid", pagination: pagination, page: page %}
+{{ include "partials/pagination.liquid" { pagination: pagination, page: page } }}

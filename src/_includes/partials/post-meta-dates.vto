@@ -1,0 +1,8 @@
+<div class="blog-meta blog-dates">
+  <i class="bi bi-calendar"></i>&nbsp;&nbsp;{{ post.date |> postDate }}
+
+  {{ if post.data.lastmod }}
+    &nbsp;&nbsp;Updated: {{ post.data.lastmod |> postDate }}
+  {{ /if }}
+
+</div>

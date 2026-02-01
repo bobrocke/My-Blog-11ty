@@ -1,0 +1,38 @@
+<div class="blog-meta blog-taxonomies">
+  {{ set loopCounter = 1 }}
+  {{ for category of post.data.categories }}
+
+    {{ if loopCounter == 1 }}<i class="bi bi-folder"></i>&nbsp;{{ /if }}
+
+    {{ set parts = page.url.split("/") }}
+    {{ set end = parts.at(-1) }}
+    {{ set thisCategory = category |> slugify }}
+
+    {{ if end == thisCategory }}
+      {{ category }}
+    {{ else }}
+      <a href="/categories/{{ category |> slugify }}">{{ category }}</a>
+    {{ /if }}
+
+    {{ if !loopCounter == post.data.categories.length }}, {{ /if -}}
+    {{ set loopCounter = loopCounter + 1 }}
+  {{ /for }}
+
+  {{ set tagCounter = 1 }}
+  {{ for tag of post.data.tags }}
+
+    {{ if tagCounter == 1 }}&nbsp;&nbsp;&nbsp;<i class="bi bi-tag"></i>{{ /if }}
+
+    {{ set parts = page.url.split("/") }}
+    {{ set end = parts.at(-1) }}
+    {{ set thisTag = tag |> slugify }}
+
+    {{ if end == thisTag }}
+      {{ tag }}
+    {{ else }}
+      <a href="/tags/{{ tag |> slugify }}">{{ tag }}</a>
+    {{ /if }}
+    {{ if !tagCounter == post.data.tags.length }}, {{ /if -}}
+    {{ set tagCounter = tagCounter + 1 }}
+  {{ /for }}
+</div>

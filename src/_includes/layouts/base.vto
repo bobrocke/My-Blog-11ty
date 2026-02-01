@@ -38,27 +38,19 @@
       }
     </script>
 
-    {% if prod %}
-      <script
-        defer
-        src="https://cloud.umami.is/script.js"
-        data-website-id="e7ac9bf8-1c39-4b58-b5d9-05ee92f92cb9"></script>
-    {% endif %}
-
-    {% if prod %}
+    {{ if prod }}
       <title>BR | {{ title }}</title>
-    {% else %}
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="e7ac9bf8-1c39-4b58-b5d9-05ee92f92cb9">
+      </script>
+    {{ else }}
       <title>11ty | {{ title }}</title>
-    {% endif %}
+    {{ /if }}
   </head>
 
   <body>
-    {% render "partials/menus.vto"
-      , page: page
-      , site: site
-      , title: title %}
+    {{ include "partials/menus.vto" }}
     {{ content }}
-    {% render "partials/footer.vto" %}
+    {{ include "partials/footer.vto" }}
 
     <script type="text/javascript" src="/assets/js/glightbox.js"></script>
     <script type="text/javascript" src="/assets/js/main.js"></script>
