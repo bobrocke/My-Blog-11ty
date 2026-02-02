@@ -16,11 +16,13 @@ footer {
     display: grid;
     max-width: 1000px;
     grid-template-columns: clamp(4rem, 20vw, 200px) 1fr;
+    min-width: 0;
   }
 
   .content {
     grid-column: 2;
     margin: 0 var(--space-m);
+    min-width: 0;
   }
 
   .pagination {
@@ -121,6 +123,31 @@ p a:hover {
 
 .prose.post-summary {
   margin-bottom: var(--space-l);
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+.prose.post-summary * {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.prose p,
+.post-summary p {
+  overflow-wrap: break-word;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.prose pre,
+.post-summary pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.prose code,
+.post-summary code {
+  overflow-wrap: break-word;
 }
 
 /*
