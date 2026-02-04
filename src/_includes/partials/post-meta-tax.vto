@@ -8,6 +8,9 @@
     {{ set end = parts.at(-2) }}
     {{ set thisCategory = category |> slugify }}
 
+    {{ parts }}
+    {{end}}
+
     {{ if end == thisCategory }}
       {{ category }}
     {{ else }}
