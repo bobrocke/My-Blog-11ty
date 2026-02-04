@@ -24,6 +24,7 @@ eleventyComputed:
     </div>
   {{ /for }}
 
-  {{ include "partials/pagination.vto" {pagination: pagination, page: page } }}
+  {{ pagination.hrefs.length }}
+  {{ include "partials/pagination.vto" { pagination: pagination, page: page } }}
 
 </div>
