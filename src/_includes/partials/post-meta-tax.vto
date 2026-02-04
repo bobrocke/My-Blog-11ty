@@ -5,7 +5,7 @@
     {{ if loopCounter == 1 }}<i class="bi bi-folder"></i>&nbsp;{{ /if }}
 
     {{ set parts = page.url.split("/") }}
-    {{ set end = parts.at(-1) }}
+    {{ set end = parts.at(-2) }}
     {{ set thisCategory = category |> slugify }}
 
     {{ if end == thisCategory }}
@@ -24,7 +24,7 @@
     {{ if tagCounter == 1 }}&nbsp;&nbsp;&nbsp;<i class="bi bi-tag"></i>{{ /if }}
 
     {{ set parts = page.url.split("/") }}
-    {{ set end = parts.at(-1) }}
+    {{ set end = parts.at(-2) }}
     {{ set thisTag = tag |> slugify }}
 
     {{ if end == thisTag }}
