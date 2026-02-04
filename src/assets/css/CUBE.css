@@ -40,7 +40,7 @@ CSS classes that do one job and do that one job well.
 */
 
 .inactive {
-  color: var(--color-text-secondary);
+  color: var(--color-text-tertiary);
 }
 
 .hidden {
