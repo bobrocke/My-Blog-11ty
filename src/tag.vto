@@ -25,4 +25,6 @@ eleventyComputed:
         </div>
       </div>
     {{ /for }}
+
+  {{ include "partials/pagination.vto" { pagination: postsTags, page: page } }}
 </div>

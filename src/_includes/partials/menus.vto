@@ -43,10 +43,11 @@
         <a href="https://500px.com/p/BobRockefeller?view=photos" title="Bob on 500px" target="_blank"><i class="fa-brands fa-500px"></i></a>
       </li>
       <li>
-        <a href="https://www.facebook.com/bob.rockefeller" title="Bob on Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.facebook.com/bob.rockefeller" title="Bob on Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
       </li>
       <li class="copyright">
-        <span>&copy; 2026 <br> Bob Rockefeller. <br> All Rights Reserved.</span>
+        {{ set now = new Date() }}
+        <span>&copy; {{ now.getFullYear() }} <br> Bob Rockefeller. <br> All Rights Reserved.</span>
       </li>
     </ul>
   </div>

@@ -110,6 +110,7 @@ ul.button-nav {
 p a {
   text-decoration: underline dotted;
   text-decoration-color: var(--color-text-primary);
+  text-decoration-thickness: 10%;
   transition: all 0.3s ease;
 }
 

@@ -9,11 +9,11 @@ pagination:
 
 <h1>{{ title }}</h1>
 
-{{ for til of collections.tils }}
-  <div class="mx-6 mt-8">
-    <h2 class="font-serif text-xl hover:text-red-600 md:text-4xl">{{ til.data.title }}</h2>
+{{ for til of tils }}
+  <div>
+    <h2>{{ til.data.title }}</h2>
 
-    <div class="max-w-none prose-sm md:lead-1 prose prose-a:hover:text-red-600 md:prose-lg">
+    <div class="prose">
       {{ til.rawInput |> markdown }}
     </div>
 
