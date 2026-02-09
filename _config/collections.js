@@ -108,7 +108,7 @@ export default function (eleventyConfig) {
           }
         } else {
           // Category is a string
-          if (post.data.categories == categoryName) {
+          if (post.data.categories === categoryName) {
             allPostinCurrentCategory.push(post);
           }
         }
@@ -260,7 +260,7 @@ export default function (eleventyConfig) {
           }
         } else {
           // Tags is a string
-          if (post.data.tags == tagName) {
+          if (post.data.tags === tagName) {
             allPostsWithCurrentTag.push(post);
           }
         }
@@ -324,8 +324,7 @@ export default function (eleventyConfig) {
       tag.chunkedPosts.forEach((posts, index) => {
         // set some properties useful in the UI
         let isFirstPage = index == 0 ? true : false;
-        let isLastPage =
-          tagData.numberOfPagesOfPosts == index + 1 ? true : false;
+        let isLastPage = tag.numberOfPagesOfPosts == index + 1 ? true : false;
 
         // construct the pagination object and add to postsByTags Array
         postsByTags.push({

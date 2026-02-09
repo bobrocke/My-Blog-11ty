@@ -1,0 +1,63 @@
+---
+layout: layouts/base.vto
+---
+{{ for post of collections.posts }}
+  {{ if post.data.page.url == page.url }}
+    {{ set nextPageURL = post.data.nextPost }}
+    {{ set previousPageURL = post.data.previousPost }}
+    {{ set publishedDate = post.date }}
+    {{ set modifiedDate = post.data.lastmod }}
+    {{ set categories = post.data.categories }}
+    {{ set thisPost = post }}
+  {{ /if }}
+{{ /for }}
+
+<div class="content">
+  {{ include "partials/post-meta-dates.vto" { post: thisPost } }}
+
+  <h1>{{ title }}</h1>
+
+  {{ include "partials/post-meta-tax.vto" { post: thisPost, page: page } }}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <div class="page-nav">
+    {{ if previousPageURL }}
+      <div>
+        <a
+          href="{{ previousPageURL }}"
+          aria-label="Newer Post"
+          role="button">
+          <i class="bi bi-caret-left-fill"></i>Newer Post</a>
+      </div>
+    {{ else }}
+      <div class="inactive">
+        <span
+          aria-label="Newer Post"
+          role="button"
+          aria-disabled="true">
+          <i class="bi bi-caret-left-fill"></i>Newer Post</span>
+      </div>
+    {{ /if }}
+
+    {{ if nextPageURL }}
+      <div>
+        <a
+          href="{{ nextPageURL }}"
+          aria-label="Older Post"
+          role="button">Older Post<i class="bi bi-caret-right-fill"></i>
+        </a>
+      </div>
+    {{ else }}
+      <div>
+        <span
+          aria-label="Older Post"
+          role="button"
+          aria-disabled="true">Older Post<i class="bi bi-caret-right-fill"></i>
+        </span>
+      </div>
+    {{ /if }}
+  </div>
+</div>

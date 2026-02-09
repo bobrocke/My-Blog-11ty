@@ -1,0 +1,103 @@
+<div class="pagination">
+  {{ if pagination.hrefs.length > 1 }}
+    <ul class="button-nav">
+
+      {{ set pagenumber = pagination.pageNumber + 1 }}
+      {{ set total_pages = pagination.hrefs.length }}
+      {{ set start_index = pagenumber - 1 }}
+
+      {{ if start_index < 2 }}
+        {{ set start_index = 2 }}
+      {{ /if }}
+
+      {{ set end_index = start_index + 2 }}
+
+      {{ set total_pages_1 = total_pages - 1 }}
+      {{ if end_index > total_pages_1 }}
+        {{ set end_index = total_pages - 1 }}
+        {{ set start_index = end_index - 2 }}
+      {{ /if }}
+
+      {{ if total_pages == 2 }}
+        {{ set start_index = 0 }}
+        {{ set end_index = 0 }}
+      {{ /if }}
+      {{ if total_pages == 3 }}
+        {{ set start_index = 2 }}
+        {{ set end_index = 2 }}
+      {{ /if }}
+      {{ if total_pages == 4 }}
+        {{ set start_index = 2 }}
+        {{ set end_index = 3 }}
+      {{ /if }}
+
+      <!-- The left arrow -->
+      <li>
+        {{ if pagination.href.previous }}
+          <a href="{{ pagination.href.previous }}" aria-label="Previous" role="button" title="Previous Page"> <i class="bi bi-caret-left-fill"></i></a>
+        {{ else }}
+          <span aria-disabled="true" aria-label="Previous" role="button"><i class="bi bi-caret-left-fill inactive"></i></span>
+        {{ /if }}
+      </li>
+
+      <!-- The fixed page 1 block -->
+      <li>
+        {{ if page.url == pagination.hrefs[0] }}
+          <span aria-disabled="true" aria-label="Page 1" role="button" class="inactive">1</span>
+        {{ else }}
+          <a href="{{ pagination.hrefs[0] }}" aria-label="Page 1" role="button">1</a>
+        {{ /if }}
+      </li>
+
+      <!-- The page block window -->
+      {{ if start_index > 0 || end_index > 0 }}
+        {{ for i of Array.from({length: end_index - start_index + 1}, (_, index) => index + start_index) }}
+          {{ set j = i - 1 }}
+
+          <!-- A gap if the next block is greater than page 2 -->
+          {{ if i == start_index }}
+            {{ if j >= 2 }}
+              &nbsp;&nbsp;
+            {{ /if }}
+          {{ /if }}
+
+          <!-- The pages in the page block window -->
+          <li>
+            {{ if page.url == pagination.hrefs[j] }}
+                <span aria-disabled="true" aria-current="page" role="button" aria-label="Page {{ i }}" class="inactive">{{ i }}</span>
+            {{ else }}
+                <a href="{{ pagination.hrefs[j] }}" aria-label="Page {{ i }}" role="button">{{ i }}</a>
+            {{ /if }}
+          </li>
+
+          <!-- A gap if the next block is the final page block -->
+          {{ if i == end_index }}
+            {{ if i != total_pages_1 }}
+              &nbsp;&nbsp;
+            {{ /if }}
+          {{ /if }}
+        {{ /for }}
+      {{ /if }}
+
+      <!-- The fixed last block -->
+      {{ set last_page = pagination.hrefs.length - 1 }}
+
+      <li>
+        {{ if page.url == pagination.hrefs[last_page] }}
+          <span aria-current="page" aria-label="Page {{ total_pages }}" role="button" class="inactive">{{ total_pages }}</span>
+        {{ else }}
+          <a href="{{ pagination.hrefs[last_page] }}" aria-label="Page {{ total_pages }}" role="button">{{ total_pages }}</a>
+        {{ /if }}
+      </li>
+
+      <!-- The right arrow -->
+      <li>
+        {{ if pagination.href.next }}
+          <a href="{{ pagination.href.next }}" aria-label="Next" role="button" title="Next Page"><i class="bi bi-caret-right-fill"></i></a>
+        {{ else }}
+          <span aria-disabled="true" aria-label="Next" role="button"><i class="bi bi-caret-right-fill inactive"></i></span>
+        {{ /if }}
+      </li>
+    </ul>
+  {{ /if }}
+</div>

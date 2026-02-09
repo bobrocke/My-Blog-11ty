@@ -1,0 +1,23 @@
+---
+layout: layouts/base.vto
+title: Today I Learned
+pagination:
+  data: collections.tils
+  size: 4
+  alias: tils
+---
+
+<h1>{{ title }}</h1>
+
+{{ for til of tils }}
+  <div>
+    <h2>{{ til.data.title }}</h2>
+
+    <div class="prose">
+      {{ til.rawInput |> markdown }}
+    </div>
+
+  </div>
+{{ /for }}
+
+{{ include "partials/pagination.vto" { pagination: pagination, page: page } }}

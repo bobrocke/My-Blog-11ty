@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.liquid
+layout: layouts/base.vto
 pagination:
   data: collections.postsByTag
   size: 1
@@ -12,17 +12,19 @@ eleventyComputed:
 <div class="content">
   <h1 class="heading">Posts about {{ postsTags.tagName }}</h1>
 
-    {% for post in postsTags.posts %}
+    {{ for post of postsTags.posts }}
       <div>
-        {% render "partials/post-meta-dates.liquid", page: page, post: post %}
+        {{ include "partials/post-meta-dates.vto" { page: page, post: post } }}
 
         <h2 class="blog-title"> <a href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
-        {% render "partials/post-meta-tax.liquid", page: page, post: post %}
+        {{ include "partials/post-meta-tax.vto" { page: page, post: post } }}
 
         <div class="prose post-summary">
-          {{ post.data.post_excerpt | markdown }}
+          {{ post.data.post_excerpt |> markdown }}
         </div>
       </div>
-    {% endfor %}
+    {{ /for }}
+
+  {{ include "partials/pagination.vto" { pagination: postsTags, page: page } }}
 </div>

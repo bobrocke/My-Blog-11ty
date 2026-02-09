@@ -8,6 +8,7 @@ import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
 import logToConsole from "eleventy-plugin-console-plus";
 // markdown-it-deflist add definition list formatting to Markdown-It
 import markdownItDef from "markdown-it-deflist";
+import { VentoPlugin } from "eleventy-plugin-vento";
 
 import filters from "./_config/filters.js";
 import collections from "./_config/collections.js";
@@ -47,6 +48,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyPluginMarkdown);
   // Add console plus plugin
   eleventyConfig.addPlugin(logToConsole, { depth: 10 });
+  eleventyConfig.addPlugin(VentoPlugin, {
+    autotrim: true
+  });
 }
 
 export const config = {
@@ -54,7 +58,7 @@ export const config = {
     input: "src",
     output: "_site",
   },
-  templateFormats: ["html", "liquid", "md"],
+  templateFormats: ["vto", "html", "liquid", "md"],
 
   markdownTemplateEngine: false,
 };

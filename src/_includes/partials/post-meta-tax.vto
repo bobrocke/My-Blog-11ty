@@ -1,0 +1,32 @@
+<div class="blog-meta blog-taxonomies">
+  {{ set categoryCounter = 1 }}
+  {{ for category of post.data.categories }}
+    {{ if categoryCounter == 1 }}<i class="bi bi-folder"></i>&nbsp;{{ /if }}
+
+    {{ set categorySlug = category |> slugify }}
+
+    {{ if page.url.includes(categorySlug) }}
+      {{ category }}
+    {{ else }}
+      <a href="/categories/{{ categorySlug }}">{{ category }}</a>
+    {{ /if }}
+
+    {{ if categoryCounter != post.data.categories.length }}, {{ /if -}}
+    {{ set categoryCounter = categoryCounter + 1 }}
+  {{ /for }}
+
+  {{ set tagCounter = 1 }}
+  {{ for tag of post.data.tags }}
+    {{ if tagCounter == 1 }}&nbsp;&nbsp;&nbsp;<i class="bi bi-tag"></i>{{ /if }}
+
+    {{ set tagSlug = tag |> slugify }}
+
+    {{ if page.url.includes(tagSlug) }}
+      {{ tag }}
+    {{ else }}
+      <a href="/tags/{{ tagSlug }}">{{ tag }}</a>
+    {{ /if }}
+    {{ if tagCounter != post.data.tags.length }}, {{ /if -}}
+    {{ set tagCounter = tagCounter + 1 }}
+  {{ /for }}
+</div>

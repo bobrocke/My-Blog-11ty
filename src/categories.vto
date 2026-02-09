@@ -1,0 +1,18 @@
+---
+layout: layouts/base.vto
+title: Categories
+---
+
+<div class="content taxonomy">
+  <h1 class="heading">{{ title }}</h1>
+
+  {{ set categoryData = collections.postsByCategories[0].categoryData }}
+
+  <ul>
+    {{ for category of categoryData }}
+      <li>
+        <a href="{{ category.slug }}">{{ category.name }}</a>
+      </li>
+    {{ /for }}
+  </ul>
+</div>
