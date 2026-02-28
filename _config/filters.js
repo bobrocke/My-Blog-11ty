@@ -11,5 +11,9 @@ export default function (eleventyConfig) {
     return thisDateTime.toLocaleString(DateTime.DATE_MED);
   });
 
+  eleventyConfig.addFilter("getPost", function (collection, url) {
+    return collection.find((post) => post.data.page.url === url);
+  });
+
   eleventyConfig.getFilter("slugify");
 }

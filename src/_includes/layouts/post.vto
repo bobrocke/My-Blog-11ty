@@ -1,16 +1,7 @@
 ---
 layout: layouts/base.vto
 ---
-{{ for post of collections.posts }}
-  {{ if post.data.page.url == page.url }}
-    {{ set nextPageURL = post.data.nextPost }}
-    {{ set previousPageURL = post.data.previousPost }}
-    {{ set publishedDate = post.date }}
-    {{ set modifiedDate = post.data.lastmod }}
-    {{ set categories = post.data.categories }}
-    {{ set thisPost = post }}
-  {{ /if }}
-{{ /for }}
+{{ set thisPost = collections.posts |> getPost(page.url) }}
 
 <div class="content">
   {{ include "partials/post-meta-dates.vto" { post: thisPost } }}
@@ -24,10 +15,10 @@ layout: layouts/base.vto
   </div>
 
   <div class="page-nav">
-    {{ if previousPageURL }}
+    {{ if previousPost }}
       <div>
         <a
-          href="{{ previousPageURL }}"
+          href="{{ previousPost }}"
           aria-label="Newer Post"
           role="button">
           <i class="bi bi-caret-left-fill"></i>Newer Post</a>
@@ -42,10 +33,10 @@ layout: layouts/base.vto
       </div>
     {{ /if }}
 
-    {{ if nextPageURL }}
+    {{ if nextPost }}
       <div>
         <a
-          href="{{ nextPageURL }}"
+          href="{{ nextPost }}"
           aria-label="Older Post"
           role="button">Older Post<i class="bi bi-caret-right-fill"></i>
         </a>
