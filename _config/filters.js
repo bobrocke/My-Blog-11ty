@@ -1,5 +1,6 @@
 // For eleventyConfig.addDateParsing below
 import { DateTime } from "luxon";
+import slugify from "slugify";
 
 // https://www.eladnarra.com/blog/2024/dates-and-eleventy/
 export default function (eleventyConfig) {
@@ -16,4 +17,8 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.getFilter("slugify");
+
+  eleventyConfig.addFilter("postSlugify", (str) =>
+    slugify(str, { lower: true }),
+  );
 }
