@@ -6,7 +6,7 @@ pagination:
   alias: postsTags
 permalink: /{{ postsTags.slug }}/
 eleventyComputed:
-    title: "{{ postsTags.tagName }}"
+    title: (data) => data.postsTags.tagName
 ---
 
 <div class="content">
