@@ -9,6 +9,7 @@
     "newpost": "node ./_scripts/newPost.cjs",
     "serve": "pnpm run clean && eleventy --serve --quiet",
     "serve-l": "eleventy --serve",
+    "serve-db": "DEBUG=Eleventy:Vento* eleventy --serve",
     "serve-d": "DRAFTS=1 eleventy --serve --quiet",
     "build": "pnpm run clean && eleventy  --quiet"
   },
