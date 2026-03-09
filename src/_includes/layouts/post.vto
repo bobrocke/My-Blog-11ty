@@ -6,7 +6,7 @@ layout: layouts/base.vto
 <div class="content">
   {{ include "partials/post-meta-dates.vto" { post: thisPost } }}
 
-  <h1>{{ title }}</h1>
+  <h1 class="blog-title">{{ title |> markdown }}</h1>
 
   {{ include "partials/post-meta-tax.vto" { post: thisPost, page: page } }}
 

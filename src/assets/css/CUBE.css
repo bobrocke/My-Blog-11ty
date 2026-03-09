@@ -60,6 +60,14 @@ Blog
   text-decoration: none;
 }
 
+.blog-title a p {
+  margin-bottom: 0;
+}
+
+.blog-title p {
+  margin-bottom: 0;
+}
+
 .blog-meta {
   font-family: var(--font-sans);
   font-size: var(--text-sm);
