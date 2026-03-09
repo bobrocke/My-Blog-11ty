@@ -11,7 +11,7 @@ My experiments in web development have led me all over the field of Content Mana
 
 <!--more-->
 
-With the exception of WordPress, the others all required a fair amount of file system management, PHP and CSS coding, and lots of document reading in exchange for very flexible systems that could do almost anything you could code for. But WordPress is simply not secure enough; every hacker seems to target WordPress installations and they have gotten very good at bypassing WordPress’ security features.
+With the exception of WordPress, the others all required a fair amount of file system management, PHP and CSS coding, and lots of document reading in exchange for very flexible systems that could do almost anything you could code for. But WordPress is simply not secure enough; every hacker seems to target WordPress installations and they have gotten very good at bypassing WordPress’s security features.
 
 [Squarespace](https://www.squarespace.com/) has been on my radar for several years, at least back to 2019. Its clever combination of web server, WYSIWYG design, elegant themes, and superb support can’t help but be attractive. For me, back then, the system was too restrictive and didn’t offer enough flexibility or options to make it viable for what I wanted to do.
 

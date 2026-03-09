@@ -50,7 +50,7 @@ Another change I made from Tailwind in my CSS is for text size and spacing as th
 
 For spacing, as an example, I used Utopia's [space calculator](https://utopia.fyi/space/calculator) to develop this:
 
-```CSS
+```css
 --space-3xs: clamp(0.1875rem, 0.1065rem + 0.3322vw, 0.3125rem);
 --space-2xs: clamp(0.375rem, 0.213rem + 0.6645vw, 0.625rem);
 --space-xs: clamp(0.5625rem, 0.3196rem + 0.9967vw, 0.9375rem);

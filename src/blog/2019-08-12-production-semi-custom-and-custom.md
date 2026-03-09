@@ -30,13 +30,13 @@ Delivery is another difference in semi-custom 1911s. You may find a production m
 
 <img src="/assets/images/wp-content/uploads/2023/10/image.png" alt="Stan Chen Customs Logo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
 
-At the top of the cost, quality, delivery, and options list are full _custom_ makers. These are typically individual premier pistolsmiths with a vast knowledge of 1911s and an artistic flare to complement their world-class skills. They will create the 1911 that you want, exactly like you want it, and offer suggestions for options. Any feature is available that is not patented by another builder.
+At the top of the cost, quality, delivery, and options list are full _custom_ makers. These are typically individual premier pistolsmiths with a vast knowledge of 1911s and an artistic flair to complement their world-class skills. They will create the 1911 that you want, exactly like you want it, and offer suggestions for options. Any feature is available that is not patented by another builder.
 
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em">
   <a class="glightbox" href="/assets/images/wp-content/uploads/2023/10/image-2.jpeg"><img src="/assets/images/wp-content/uploads/2023/10/image-2.jpeg" alt="A Harrison Custom" ></a>
   <figcaption>A Harrison Custom</figcaption>
 </figure>
 
-The names of these custom builders are legends in the 1911 community – [Chuck Rogers](http://www.rogersprecision.com/), [Jason Burton](https://www.heirloomprecision.com/), [Steve Owens](https://www.integrityarmscustoms.com/), [Stan Chen](http://www.chencustom.com/), and [John Harrison](http://www.harrisoncustom.com/) to name a few. Their work is a combination of near-perfect hand filing, precision machining, and impeccable finishing. If there is art in a pistol, these men are 1911 artists. And, as artists, their guns reflect their personal style.
+The names of these custom builders are legends in the 1911 community – [Chuck Rogers](http://www.rogersprecision.com/), [Jason Burton](https://www.heirloomprecision.com/), [Steve Owens](https://www.integrityarmscustoms.com/), [Stan Chen](http://www.chencustom.com/), and [John Harrison](http://www.harrisoncustom.com/) to name a few. Their work is a combination of near-perfect hand-filing, precision machining, and impeccable finishing. If there is art in a pistol, these men are 1911 artists. And, as artists, their guns reflect their personal style.
 
 To produce fully custom work at this level of quality is not cheap and it is not fast. A cliché that applies is cheap, fast, good – pick two. These guns can cost from $7,000 to beyond the limits of your checkbook and waiting lists may run into years. But what you will get at the end is a one-of-a-kind work of pistolsmith art made to suit your exact tastes.

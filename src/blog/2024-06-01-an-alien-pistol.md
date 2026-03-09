@@ -40,7 +40,7 @@ Although the pistol looks like a striker-fired gun from the outside, it's really
 
 <img src="/assets/images/wp-content/uploads/2024/05/SB.png" alt="S&B Ammo" style="float: left; width: 50%; margin: 1em 1em 1em 0em">
 
-I did mention disadvantages. The primary one derives from the clever gas delayed blow back design. The gun is **_very_** picky about the ammunition it likes. It wants FMJ bullets and clean powder. [Sellier & Bellot 124gr FMJ ammunition](https://www.sellierbellot.us/products/pistol-and-revolver-ammunition/pistol-and-revolver-cartridges/detail/286/) is the factory ammo to choose because that's what the pistol was designed around (both Laugo Arms and Sellier & Bellot are Czech companies, after all).
+I did mention disadvantages. The primary one derives from the clever gas-delayed blow back design. The gun is **_very_** picky about the ammunition it likes. It wants FMJ bullets and clean powder. [Sellier & Bellot 124gr FMJ ammunition](https://www.sellierbellot.us/products/pistol-and-revolver-ammunition/pistol-and-revolver-cartridges/detail/286/) is the factory ammo to choose because that's what the pistol was designed around (both Laugo Arms and Sellier & Bellot are Czech companies, after all).
 
 I'll post a follow-up article soon discussing ammunition requirements in more detail and offering some suggestions on what components make sense if you want to reload your own.
 

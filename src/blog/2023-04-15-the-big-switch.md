@@ -19,7 +19,7 @@ Focus mode (manual, single, or continuous) and drive mode (single, continuous lo
 
 <figure style="float: right; width: 50%; margin: 1em 0em 1em 1em"><a class="glightbox" href="/assets/images/wp-content/uploads/2023/10/Fuji-XF-16-55mm-f2.8-R-LM-WR.png"><img src="/assets/images/wp-content/uploads/2023/10/Fuji-XF-16-55mm-f2.8-R-LM-WR.png" alt="Alt"></a><figcaption>Fujinon XF 16-55mm f/2.8</figcaption></figure>
 
-In general, the Fujifilm and Olympus systems are comparable. Both have some excellent lenses that cover all the bases. Both have weather resistant lenses that are better constructed and better sealed. And both will do the job for any but the most demanding photographers.
+In general, the Fujifilm and Olympus systems are comparable. Both have some excellent lenses that cover all the bases. Both have weather-resistant lenses that are better constructed and better sealed. And both will do the job for any but the most demanding photographers.
 
 Some of the key reasons I wanted to switch back are that Fujifilm now has **I** n **B** ody **I** mage **S** tabilization (IBIS) – the X-T1 did not, the APS-C sensor which is a nice happy medium between the Olympus’ micro four-thirds and a full frame, and the [Profoto light system I picked](/blog/2023-04-04-off-camera-flash-choices) does not support Olympus in its newest controllers. Nor does Elinchrom; there are just too few Olympus shooters for them to provide for.
 

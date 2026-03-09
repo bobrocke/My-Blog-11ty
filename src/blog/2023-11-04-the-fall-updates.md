@@ -24,7 +24,7 @@ PhotoLab Elite 7 was the biggest disappointment to me. It brought an improved in
 
 <figure style="float: left; width: 30%; margin: 1em 1em 1em 0em">
   <img src="/assets/images/wp-content/uploads/2023/10/Point-Color-Screen-Shot.png" alt="Lightroom's Point Color" >
-  <figcaption>Lightrooms's Point Color</figcaption>
+  <figcaption>Lightroom's Point Color</figcaption>
 </figure>
 
 Adobe leads all in popularity with Lightroom and Photoshop. Earlier this year they added impressive, but not best-in-class, noise reduction. This Fall they added [Point Color](https://jkost.com/blog/2023/10/everything-you-need-to-know-about-point-color-in-lightroom-classic.html) to make detailed color adjustments possible and to bring Lightroom into close competition with Capture One in this area. Some may find value in [Lens Blur](https://helpx.adobe.com/lightroom-classic/help/lens-blur.html) effects, also added. For me, those features don't add much that I need, but they don't lessen the value, either.

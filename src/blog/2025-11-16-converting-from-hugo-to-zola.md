@@ -47,7 +47,7 @@ Verbose, repetitive, and difficult to remain consistent across the site.
 
 Zola takes care of my inexperience with Go templates without giving up capabilities I need. Its Tera template language looks like Jinja2. So the examples above become:
 
-```Jinja
+```jinja
 {% end = start + 2 %}
 
 {% if start < 2 %}

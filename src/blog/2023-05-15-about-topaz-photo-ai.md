@@ -20,7 +20,7 @@ After a bit more reading and some deeper thought, it became clear to me that the
 
 With Photo AI, applying its denoise abilities early means one of two things. Either you have Lightroom convert your RAW image into a TIFF for Photo AI to process or you let Photo AI handle the decoding of the RAW image and work with the resulting DNG file. Both options are bad.
 
-Converting to TIFF that early robs your process of the non-destructive, RAW file-based approach that Lightroom was designed for. Letting Photo AI do the image conversion removes Adobe’s ACR technology from the workflow and replaces it with the [LibRaw open-source library](https://www.libraw.org/) for conversion. I trust Adobe to do the best job on RAW decoding (with the possible exemption of Capture One).
+Converting to TIFF that early robs your process of the non-destructive, RAW file-based approach that Lightroom was designed for. Letting Photo AI do the image conversion removes Adobe’s ACR technology from the workflow and replaces it with the [LibRaw open-source library](https://www.libraw.org/) for conversion. I trust Adobe to do the best job on RAW decoding (with the possible exception of Capture One).
 
 So, to sum up this short post, I find that using Lightroom’s Denoise option as the first step in processing a noisy image gets me a very clean starting point for more work. Adding a bit of global sharpening, with careful attention to the masking slider, gets me very good results without risking the occasional sharpening artifacts induced by Photo AI (or any AI based sharpening algorithm, really).
 

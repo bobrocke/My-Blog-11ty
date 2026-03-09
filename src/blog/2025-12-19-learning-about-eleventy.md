@@ -45,5 +45,4 @@ eleventyConfig.addFilter("postDate", (dateObj) => {
 
 Seeing [dates displayed off by one day](https://www.11ty.dev/docs/dates/#dates-off-by-one-day) is another thing to be aware of. Once I got the UTC to local time conversion figured out, the off by one day problem cleared up.
 
-And now it's all good. This blog is running on 11ty and I'm very happy to be away from Hugo's odd template language and its idiosyncratic way of doing things. 11ty's Liquid templates (and maybe one day, Vento) feels more natural to me.
-
+And now it's all good. This blog is running on 11ty and I'm very happy to be away from Hugo's odd template language and its idiosyncratic way of doing things. 11ty's Liquid templates (and maybe one day, Vento) feel more natural to me.
