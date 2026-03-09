@@ -7,9 +7,10 @@ title: Categories
   <h1 class="heading">{{ title }}</h1>
 
   {{ set categoryData = collections.postsByCategories[0].categoryData }}
+  {{ set categoriesArray = Object.values(categoryData) |> sort((a, b) => a.name.localeCompare(b.name)) }}
 
   <ul>
-    {{ for category of categoryData }}
+    {{ for category of  categoriesArray }}
       <li>
         <a href="{{ category.slug }}">{{ category.name }}</a>
       </li>
