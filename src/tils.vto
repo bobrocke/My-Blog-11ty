@@ -14,7 +14,7 @@ pagination:
     <h2>{{ til.data.title }}</h2>
 
     <div class="prose">
-      {{ til.rawInput |> markdown }}
+      {{ til.rawInput |> markdownify }}
     </div>
 
   </div>

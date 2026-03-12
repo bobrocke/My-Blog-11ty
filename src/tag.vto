@@ -19,7 +19,7 @@ permalink: /{{ postsTags.slug }}/
         {{ include "partials/post-meta-tax.vto" { page: page, post: post } }}
 
         <div class="prose post-summary">
-          {{ post.data.post_excerpt |> markdown }}
+          {{ post.data.post_excerpt |> markdownify }}
         </div>
       </div>
     {{ /for }}
