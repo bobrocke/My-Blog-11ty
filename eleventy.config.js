@@ -1,26 +1,37 @@
-// eleventy-plugin-highlightjs = HighLightJS; eleventy-plugin-syntaxhighlight = PrismJS
-// PrismJS may be getting old
-import syntaxHighlight from "eleventy-plugin-highlightjs";
-// import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
-//
-// eleventy-plugin-console-plus improves on the standard console.log function
 import logToConsole from "eleventy-plugin-console-plus";
-// markdown-it-deflist add definition list formatting to Markdown-It
 import markdownItDef from "markdown-it-deflist";
+import markdownItShiki from "@shikijs/markdown-it";
 import { VentoPlugin } from "eleventy-plugin-vento";
-
-//Load and configure my own Markdown-It instance
 import markdownIt from "markdown-it";
-const md = markdownIt({
-  typographer: true,
-});
-
-// Define two Markdown functions
-export const markdownify = (content) => md.render(content);
-export const markdownifyInline = (content) => md.renderInline(content);
 
 import filters from "./_config/filters.js";
 import collections from "./_config/collections.js";
+
+import vento from "./vento.tmLanguage.json" with { type: "json" };
+
+const md = markdownIt({ typographer: true }).use(
+  await markdownItShiki({
+    langs: [
+      "javascript",
+      "typescript",
+      "blade",
+      "ruby",
+      "php",
+      "css",
+      "html",
+      "python",
+      "twig",
+      "jinja",
+      "toml",
+      {
+        ...vento,
+        id: "vento",
+        aliases: ["vto"],
+      },
+    ],
+    theme: "one-dark-pro",
+  }),
+);
 
 export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/images");
@@ -45,19 +56,19 @@ export default async function (eleventyConfig) {
 
   // Add my filters
   eleventyConfig.addPlugin(filters);
-  eleventyConfig.addFilter("markdownify", markdownify);
+  eleventyConfig.addFilter("markdownify", (content) => md.render(content));
 
   // Add my collections
   eleventyConfig.addPlugin(collections);
 
-  // Add the Highlight.js syntax highlighter
-  eleventyConfig.addPlugin(syntaxHighlight);
   // Add console plus plugin
   eleventyConfig.addPlugin(logToConsole, { depth: 10 });
+
   eleventyConfig.addPlugin(VentoPlugin, {
     autotrim: true,
   });
 
+  // Set markdown-it as the library with Shiki and deflist
   eleventyConfig.setLibrary("md", md);
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItDef));
 }
@@ -68,6 +79,5 @@ export const config = {
     output: "_site",
   },
   templateFormats: ["vto", "md"],
-
   markdownTemplateEngine: false,
 };
