@@ -12,7 +12,7 @@ pagination:
 
   <ul class="mt-6 ml-6">
     {{ for tag of tags }}
-     <li><a href="/tags/{{ tag |> postSlugify }}">{{ tag }}</a></li>
+     <li><a href="/tags/{{ tag |> stringSlugify}}">{{ tag }}</a></li>
     {{ /for }}
   </ul>
 

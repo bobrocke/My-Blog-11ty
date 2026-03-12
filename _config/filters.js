@@ -16,9 +16,7 @@ export default function (eleventyConfig) {
     return collection.find((post) => post.data.page.url === url);
   });
 
-  eleventyConfig.getFilter("slugify");
-
-  eleventyConfig.addFilter("postSlugify", (str) =>
+  eleventyConfig.addFilter("stringSlugify", (str) =>
     slugify(str, { lower: true }),
   );
 }
