@@ -9,7 +9,7 @@ import collections from "./_config/collections.js";
 
 import vento from "./vento.tmLanguage.json" with { type: "json" };
 
-const md = markdownIt({ typographer: true }).use(
+const md = markdownIt({ typographer: true, html: true }).use(
   await markdownItShiki({
     langs: [
       "javascript",
