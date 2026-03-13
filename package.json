@@ -18,7 +18,6 @@
     "@jgarber/eleventy-plugin-markdown": "^2.0.1",
     "@shikijs/markdown-it": "^4.0.2",
     "eleventy-plugin-console-plus": "^2.0.0",
-    "eleventy-plugin-highlightjs": "^1.1.0",
     "eleventy-plugin-vento": "^5.4.1",
     "lodash-es": "^4.17.23",
     "luxon": "^3.7.2",
