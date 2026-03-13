@@ -57,6 +57,9 @@ export default async function (eleventyConfig) {
   // Add my filters
   eleventyConfig.addPlugin(filters);
   eleventyConfig.addFilter("markdownify", (content) => md.render(content));
+  eleventyConfig.addFilter("markdownifyInline", (content) =>
+    md.renderInline(content),
+  );
 
   // Add my collections
   eleventyConfig.addPlugin(collections);
