@@ -18,14 +18,14 @@
     "@jgarber/eleventy-plugin-markdown": "^2.0.1",
     "@shikijs/markdown-it": "^4.0.2",
     "eleventy-plugin-console-plus": "^2.0.0",
-    "eleventy-plugin-vento": "^5.4.1",
+    "eleventy-plugin-vento": "^5.4.2",
     "lodash-es": "^4.17.23",
     "luxon": "^3.7.2",
     "markdown-it": "^14.1.1",
     "markdown-it-deflist": "^3.0.0",
     "prompt-sync": "^4.2.0",
     "shiki": "^4.0.2",
-    "slugify": "^1.6.6"
+    "slugify": "^1.6.8"
   },
   "type": "module"
 }
